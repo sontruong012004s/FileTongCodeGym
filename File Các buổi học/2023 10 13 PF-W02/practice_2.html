@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice_2</title>
+</head>
+<body>
+    <h1>Practice_2</h1>
+    <p>
+        Hai vòi nước cùng được sử dụng để làm đầy một bể chứa nước hình hộp chữ nhật. 
+        Vòi thứ nhất có thể đong được x m3 trong một phút, 
+        vòi thứ hai có thể đong được y m3 trong một phút. 
+        Viết chương trình nhập vào công suất x, y của hai vòi và các kích thước dài, rộng, cao
+         của bể nước theo đơn vị mét và cho biết nếu sử dụng cả hai vòi thì 
+         sau bao nhiêu giờ có thể làm đầy bể.
+    </p>
+    <div id="ketqua"></div>
+    <script>
+        let firstFaucet, secondFaucet, length, width, height;
+        firstFaucet = parseInt(prompt("Nhập công suất x vòi thứ nhất"));
+        secondFaucet = parseInt(prompt("Nhập công suất y vòi thứ 2"));
+        length = parseInt(prompt("Nhập chiều dài của bể nước"));
+        width = parseInt(prompt("Nhập chiều rộng của bể nước"));
+        height = parseInt(prompt("Nhập chiều cao của bể nước"));
+
+            let volume = length * width * height;
+            let result = volume / (x + y) / 60;
+            console.log(result);
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Conditional Statement</title>
+</head>
+<body>
+    <h1>Bài 1</h1>
+    <p>Viết chương trình nhập vào chiều dài và chiều rộng của hình chữ nhật và cho biết đó có phải là hình vuông hay không.</p>
+    <div id="">
+        <span>Chiều dài:</span>
+        <input id="length" type="number">
+    </div>
+    <div id="">
+        <span>Chiều rộng:</span>
+        <input id="width" type="number">
+    </div>
+    <div id="">
+        <button id="btn-action-1" type="button">Kiểm tra</button>
+    </div>
+    <!-- <div id="result" style="color: red; margin: 5px; font-weight: bolder;"></div> -->
+    <div id="result"></div>
+    <script>
+        let btnAction = document.getElementById("btn-action-1");
+        btnAction.addEventListener("click", () => {
+            let inputLength = parseFloat(document.getElementById("length").value);
+            let inputWeidth = parseFloat(document.getElementById("width").value);
+            let result;
+            if(inputLength == inputWeidth){
+                result = ("Đây là hình vuông");
+            } else{
+                result = ("Đây không phải hình vuông");
+            }
+            // result = (inputLength == inputWeidth) ? "Đây là hình vuông" : "Đây không phải hình vuông";
+            document.getElementById("result").innerHTML = result;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Conditional Statement</title>
+</head>
+<body>
+    <h1>Bài 2</h1>
+    <p>Viết chương trình nhập vào 2 số a, b và hiển thị giá trị của số lớn nhất bằng lệnh alert.</p>
+    <div id="">
+        <span>Số a:</span>
+        <input id="number_a" type="number">
+    </div>
+    <div id="">
+        <span>Số b:</span>
+        <input id="number_b" type="number">
+    </div>
+    <div id="">
+        <button id="btn-action-2" type="button">Kiểm tra</button>
+    </div>
+    <script>
+        let btnAction = document.getElementById("btn-action-2");
+        btnAction.addEventListener("click", () => {
+            let inputA = parseFloat(document.getElementById("number_a").value);
+            let inputB = parseFloat(document.getElementById("number_b").value);
+            let result;
+            if(inputA >= inputB){
+                result = "Số lớn nhất là: " + inputA;
+            } else if(inputA <= inputB){
+                result = "Số lớn nhất là: " + inputB;
+            } else {
+                result = "Bạn đã nhập 2 số bằng nhau";
+            }
+            alert(result);
+            // result = (inputA > inputB) ? "Số lớn nhất là: " + inputA : (inputA < inputB) ? "Số lớn nhất là: " + inputB : "Bạn đã nhập 2 số bằng nhau";
+
+        });
+    </script>
+</body>
+</html>

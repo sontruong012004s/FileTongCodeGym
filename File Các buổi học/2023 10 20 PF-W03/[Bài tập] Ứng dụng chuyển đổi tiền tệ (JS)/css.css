@@ -1,0 +1,40 @@
+html{
+    zoom: 2;
+}
+#text-amount, #From-Currency-List, #To-Currency-List, #submit {
+    float: left;
+    margin: 30px;
+    text-align: center;
+    font-weight: bold;
+
+}
+#text-amount input{
+    margin-top: 5px;
+}
+#From-Currency-List select, #To-Currency-List select{
+    width: 110px;
+    height: 20px;
+    margin-top: 5px;
+}
+#submit button{
+    width: 80px;
+    height: 20px;
+    margin-top: 24px;
+    background-color: rgb(136, 0, 255);
+    border: 1px solid rgb(0, 76, 255);
+    border-radius: 2px;
+}
+#submit button:hover{
+    color: red;
+    background-color: aqua;
+}
+
+#result{
+    float: left;
+    clear: both;
+    padding-left: 30px;
+    color: blue;
+}
+input:hover, select:hover{
+    border: 1px solid rgb(0, 76, 255);
+}

@@ -1,0 +1,29 @@
+body{
+    margin: auto;
+    text-align: center;
+}
+#BMI{
+    margin-top: 15%;
+    font-weight: bolder;
+    font-size: 30px;
+    color: red;
+}
+#weight, #height{
+    clear: both;
+    float: left;
+    margin-left: 38%;
+}
+.text-content{
+    float: left;
+    padding-left: 38%;
+}
+#submit{
+    clear: both;
+}
+#submit button{
+    margin: 10px;
+    width: 100px;
+    background-color: rgb(238, 255, 0);
+    border-radius: 2px;
+    border: 2px solid rgb(34, 255, 0);;
+}

@@ -1,0 +1,56 @@
+html{
+    background-color: rgb(165, 199, 250);
+    zoom: 2;
+}
+
+#wrapper{
+    background: floralwhite;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    margin: 8% auto;
+    
+}
+.menu{
+    background-color: rgb(255, 67, 67);
+    color: white;
+    
+}
+#wrapper_1{
+    padding: 5px;    
+}
+#wrapper_2{
+    color: red;
+}
+#Full_name{
+    margin: 8px;
+    float: right;
+    padding-right: 30%;
+}
+#Email{
+    margin: 8px;
+    float: right;
+    padding-right: 30%;
+    
+}
+.text_name{
+    color:rgb(0, 102, 255);
+}
+#text_name_1{
+    float: left;
+    margin-left: -10px;
+    
+}
+#checkbox1{
+    padding: 50px 50px 0px 50px;
+
+}
+#checkbox2{
+    padding-left: 55px;
+}
+#checkbox3{
+    padding-right: 34%;
+}
+#submit{
+    padding: 10px;
+}

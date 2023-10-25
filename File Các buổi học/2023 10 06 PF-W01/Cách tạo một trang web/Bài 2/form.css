@@ -1,0 +1,44 @@
+html{
+    background-color: white;
+    zoom: 2;
+}
+
+body{
+    background-color: rgb(255, 255, 96);
+    padding: 5px;
+    height: auto;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#form_register{
+    background-color: aquamarine;
+    color: blue;
+    font-weight: 700;
+    padding: 3px;
+}
+
+.class_full_name, .class_date_birthday, .class_gender, .class_address, .class_name, .class_email, .class_phone_number {
+    color: blue;
+    min-width: 100px;
+    display: inline-block;
+}
+
+#full_name input, #date_birthday input, #address input, #email input, #phone_number input, #select_class {
+    width: auto;
+    margin: 5px 0;
+}
+#address input{
+    padding-bottom: 40px;
+    padding-right: 5%;
+}
+#full_name input{
+    padding-right: 10%;
+}
+#register {
+    padding-left: 0;
+    margin-left: 104px;
+}
+
+

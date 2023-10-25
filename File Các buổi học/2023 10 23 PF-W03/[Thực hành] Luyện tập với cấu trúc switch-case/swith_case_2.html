@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch-Case 2</title>
+    <style>
+        #check_number, #number{
+            padding: 5px;
+            margin: 5px;
+        }
+        .text-number{
+            font-size: xx-large;
+        }
+        #output-name-number{
+            color: blue;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Switch-Case 2</h1>
+    <div>
+        <span class="text-number">Enter number a:</span>
+        <input type="text" id="number">
+        <button type="button" id="check_number">Check</button>
+    </div>
+    <div id="output-name-number"></div>
+    <script>
+        let checknumber = document.getElementById("check_number");
+
+        checknumber.addEventListener("click", () => {
+        let inputBrowser = parseInt(document.getElementById("number").value);
+        let result = "";
+            switch (inputBrowser){
+                case 0:
+                    result = "Number a = " + inputBrowser;
+                    break;
+                case 1:
+                    result = "Number a = " + inputBrowser;
+                    break;
+                case 2:
+                case 3:
+                    result = "Number a = " + 2 + " , " + 3;
+                    break;
+                default:
+                    alert("erro");
+                    break;
+            }
+            document.getElementById("output-name-number").innerHTML = result;
+
+        });
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Bài 1: Viết chương trình nhập vào giá trị cho a và b. 
+        Tính tổng a và b, nếu tổng nhỏ hơn 4, 
+        hiển thị chuỗi Below, ngược lại hiển thị Over. 
+        Lưu ý sử dụng toán tử ? : -->
+    <form action="">
+        <label for="">Input value a</label>
+        <input type="number" id="value-a"> <br> 
+        <label for="">Input value b</label>
+        <input type="number" id="value-b"> <br>
+        <div id="check-it">
+            <button onclick="check()">Check</button>
+        </div>
+        <script>
+            function check(){
+                let a = parseInt(document.getElementById("value-a").value);
+                let b = parseInt(document.getElementById("value-b").value);
+                let result;
+                // if((a + b) < 4){
+                //     result = "Below";
+                // } else{
+                //     result = "Over";
+                // } 
+                result = ((a + b) < 4) ? "Below" : "Over";
+                document.getElementById("check-it").innerHTML = "Result: " + result;
+            }
+        </script>
+    </form>
+</body>
+</html>

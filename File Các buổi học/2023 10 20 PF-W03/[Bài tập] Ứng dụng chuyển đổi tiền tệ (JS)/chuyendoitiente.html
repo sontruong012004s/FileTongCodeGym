@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency conversion</title>
+    <link rel="stylesheet" href="./css.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <div id="text-amount"><span id="amount">Amount</span>
+             <br>
+            <input type="number" name="amount" id="amount" > 
+        </div>
+        <div id="From-Currency-List">
+            From Currency <br>
+            <select name="" id="From-Currency">
+                <option disabled selected>Select</option>
+                <option value="VietNam" id="VietNam">VietNam</option>
+                <option value="USD" id="USD">USD</option>
+            </select>
+        </div>
+        <div id="To-Currency-List">
+            To Currency <br>
+            <select name="" id="To-Currency">
+                <option disabled selected>Select</option>
+                <option value="USD" id="USD">USD</option>
+                <option value="VietNam" id="VietNam">VietNam</option>
+            </select>
+        </div>
+        <div id="submit">
+            <button type="submit" onclick="Convert()">Convert</button>
+        </div>
+        <div id="result">
+             <!-- result -->
+        </div>
+    </div>
+</body>
+</html>

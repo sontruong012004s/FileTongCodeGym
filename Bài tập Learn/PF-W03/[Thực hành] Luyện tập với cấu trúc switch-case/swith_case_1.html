@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch-Case 1</title>
+    <style>
+        #check_browser, #browser{
+            padding: 5px;
+            margin: 5px;
+        }
+        .text-browser{
+            font-size: xx-large;
+        }
+        #output-name-browser{
+            color: blue;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Switch-Case 1</h1>
+    <div>
+        <span class="text-browser">Enter browser name: </span>
+        <input type="text" id="browser">
+        <button type="button" id="check_browser">Check</button>
+    </div>
+    <div id="output-name-browser"></div>
+    <script>
+        let checkbroserElem = document.getElementById("check_browser");
+        checkbroserElem.addEventListener("click", () => {
+            let result;
+            let inputBrowser = document.getElementById("browser").value;
+            switch (inputBrowser) {
+                case 'Edge':
+                    result = "You've got the Edge!";
+                    break;
+                case 'Chrome':
+                case 'Firefox':
+                case 'Safari':
+                case 'Opera':
+                    result = "Okay we support these browsers too";
+                    break;
+                default:
+                    result = "We hope that this page looks ok!";
+                    break;
+
+            }
+            document.getElementById("output-name-browser").innerHTML = result;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tính số ngày trong 1 tháng</h1>
+    <div>
+        <input type="number" name="" id="number_day">
+        <button type="button" id="btn-day">Tính số ngày</button>
+    </div>
+    <br>
+    <div id="result"></div>
+    <script>
+        let btnDay = document.getElementById("btn-day").addEventListener("click", () => {
+        let inputDay = parseInt(document.getElementById("number_day").value);
+        let result = "";
+        switch (inputDay){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                result = `Tháng ${inputDay} có 31 ngày`;
+                break;
+            case 2:
+                result = `Tháng ${inputDay} có 28 hoặc 29 ngày`;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                result = `Tháng ${inputDay} có 30 ngày`;
+                break;
+            default:
+                alert("Erro")
+                break;
+            }
+        document.getElementById("result").innerHTML = result;
+        });
+    </script>
+</body>
+</html>

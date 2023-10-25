@@ -2,7 +2,8 @@ html{
     background-color: rgb(165, 199, 250);
     zoom: 2;
 }
-
+body{
+}
 #wrapper{
     background: floralwhite;
     width: 400px;
@@ -39,14 +40,13 @@ html{
 #text_name_1{
     float: left;
     margin-left: -10px;
-    
 }
 #checkbox1{
     padding: 50px 50px 0px 50px;
 
 }
 #checkbox2{
-    padding-left: 55px;
+    padding-left: 43px;
 }
 #checkbox3{
     padding-right: 34%;

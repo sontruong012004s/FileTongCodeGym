@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year Calculator</title>
+</head>
+<body>
+    <h1>Year Calculator</h1>
+    <div>
+        Nhập năm cần tìm:
+        <input type="number" name="" id="number_years">
+        <button type="button" id="check_years">Check</button>
+    </div>
+    <div id="result" style="color: red"></div>
+
+    <script>
+        let btnYears = document.getElementById("check_years").addEventListener("click", () => {
+            let inputNumberY = parseInt(document.getElementById("number_years").value);
+            let can, chi;
+            let canResult = inputNumberY % 10;
+            switch (canResult) {
+                case 0: 
+                    can = "Canh"; 
+                    break;
+                case 1:
+                    can = "Tân";
+                    break;
+                case 2:
+                    can = "Nhâm";
+                    break;
+                case 3:
+                    can = "Quý";
+                    break;
+                case 4:
+                    can = "Giáp";
+                    break;
+                case 5:
+                    can = "Ất";
+                    break;
+                case 6:
+                    can = "Bính";
+                    break;
+                case 7:
+                    can = "Đinh";
+                    break;
+                case 8:
+                    can = "Mậu";
+                    break;
+                case 9:
+                    can = "Kỷ";
+                    break;
+                default:
+                    alert("Error - Can");
+                    return;
+            }
+            let chiResult = inputNumberY % 12;
+            switch (chiResult) {
+                case 0:
+                    chi = "Thân";
+                    break;
+                case 1:
+                    chi = "Dậu";
+                    break;
+                case 2:
+                    chi = "Tuất";
+                    break;
+                case 3:
+                    chi = "Hợi";
+                    break;
+                case 4:
+                    chi = "Tý";
+                    break;
+                case 5:
+                    chi = "Sửu";
+                    break;
+                case 6:
+                    chi = "Dần";
+                    break;
+                case 7:
+                    chi = "Mẹo";
+                    break;
+                case 8:
+                    chi = "Thìn";
+                    break;
+                case 9:
+                    chi = "Tỵ";
+                    break;
+                case 10:
+                    chi = "Ngọ";
+                    break;
+                case 11:
+                    chi = "Mùi";
+                    break;
+                default:
+                    alert("Error - Chi");
+                    return;
+            }
+            let result = `Can: ${can} <br> Chi: ${chi} <br> Năm Âm Lịch: ${can} ${chi}`;
+            document.getElementById("result").innerHTML = result;
+        });
+    </script>
+</body>
+</html>

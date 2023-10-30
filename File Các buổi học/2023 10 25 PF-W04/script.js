@@ -1,9 +1,8 @@
 let btnSubmit = document.getElementById("btn-submit").addEventListener("click", () => {
     let inputHours = parseInt(document.getElementById("hours").value);
-    let inputLevel = parseInt(document.getElementById("list-option").value);
     let result = 0;
     if(inputHours >= 400){
-        switch (inputLevel){
+        switch (parseInt(document.getElementById("list-option").value)){
             case 1:
                 result = 1000;
                 break;

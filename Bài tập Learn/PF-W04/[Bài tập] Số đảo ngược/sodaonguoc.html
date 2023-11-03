@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Nhập vào một số
+        <input type="number" name="" id="number">
+        <button typr="button" id="btn-submit">Check</button>
+        <div id="result" style="color: red"></div>
+    </div>
+    <script>
+        document.getElementById("btn-submit").addEventListener("click", () => {
+        let inputNumber = parseInt(document.getElementById("number").value);
+        let reversedNum = 0;
+        while(inputNumber > 0){
+            let n = inputNumber % 10;
+            reversedNum = reversedNum * 10 + n;
+            inputNumber = Math.floor(inputNumber / 10);
+        }
+            document.getElementById("result").innerHTML = `Số nguyên dương đảo ngược là: ${reversedNum}`;
+        });
+    </script>
+</body>
+</html>

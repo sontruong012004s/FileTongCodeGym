@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vừng ơi mở ra</title>
+</head>
+<body>
+    <h1>Vừng ơi mở ra</h1>
+<script>
+    let password = "Vung oi mo ra";
+    let inputPassword;
+    do{
+        inputPassword = prompt("Nhập câu thần chú");
+        if(inputPassword !== password){
+            alert("Sai mật khẩu! Vui lòng nhập lại.");
+        }
+    } while(inputPassword !== password);
+    alert("Đúng mật khẩu! Vừng ơi đã mở ra.");
+
+</script>
+
+</body>
+</html>

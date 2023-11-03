@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Nhập số A:
+        <input type="number" name="" id="number_a">
+        <br>
+        Nhập số B:
+        <input type="number" name="" id="number_b">
+        <button type="button" id="btn-submit">Check</button>
+        <div id="result" style="color: red"></div>
+    </div>
+    <script>
+        document.getElementById("btn-submit").addEventListener("click", () => {
+            let inputNumberA = parseInt(document.getElementById("number_a").value);
+            let inputNumberB = parseInt(document.getElementById("number_b").value);
+            let result = 0;
+            for(let i = inputNumberA; i <= inputNumberB; i++){
+                result += i;
+            }
+            document.getElementById("result").innerHTML = `Tổng số từ ${inputNumberA} đến ${inputNumberB} là: ${result}`;
+        });
+    </script>
+</body>
+</html>

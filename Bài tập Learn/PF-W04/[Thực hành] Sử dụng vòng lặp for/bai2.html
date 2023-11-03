@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Viết chương trình nhập vào một số bất kỳ lớn hơn 0. Tính tổng các phần tử từ 1 đến số vừa nhập vào</p>
+    <div>
+        Nhập số nguyên N 
+        <input type="number" name="" id="number_n">
+        <button type="button" id="btn-submit">Check</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        document.getElementById("btn-submit").addEventListener("click", () => {
+            let inputNumberN = parseInt(document.getElementById("number_n").value);
+            let total = 0;
+            if(inputNumberN < 1){
+                alert("Nhập số lớn hơn 0");
+            }
+            for(let i = 1; i <= inputNumberN; i++){
+                total += i;
+                document.getElementById("result").innerHTML = `Số vừa nhập ${inputNumberN} <br> Tổng các phần từ 1 đến ${inputNumberN} là: ${total}`;
+            }
+        });
+    </script>
+</body>
+</html>

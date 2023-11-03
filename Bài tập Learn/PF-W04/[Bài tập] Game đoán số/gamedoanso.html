@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Nâng cấp game Hãy thử đoán xem!</h1>
+        <button id="start-btn">Chơi</button>
+    </div>
+    <script>
+        document.getElementById("start-btn").addEventListener("click", () => {
+            function inputNumber(){
+                let maxNumber;
+                do{
+                    maxNumber = parseInt(prompt("Nhập số mà bạn muốn đoán"));
+                    if(maxNumber < 1){
+                        alert("Vui lòng nhập số hợp lệ lớn hơn hoặc bằng 1");
+                    }
+                } while(maxNumber < 1);
+                return maxNumber;
+            }
+    
+            function randomNumbers(){
+                return Math.floor(Math.random() * maxNumber) + 1;
+            }
+    
+            let maxNumber = inputNumber();
+            let randomNumber = randomNumbers();
+    
+            let maxInput = 0;
+            do{
+                let inputRandomNumber = parseInt(prompt(`Nhập số ngẫu nhiên từ 1 đến ${maxNumber}`));
+                maxInput++;
+                if(inputRandomNumber === randomNumber){
+                    alert(`Chúc mừng! Bạn đã đoán đúng số ${randomNumber} sau ${maxInput} lần đoán.`);
+                    break;
+                } else if(maxInput >= 3){
+                    alert(`Rất tiếc! Bạn đã hết số lần đoán. Số đúng là ${randomNumber}.`);
+                    break;
+                } else if(inputRandomNumber < randomNumber){
+                    alert(`Số bạn đoán nhỏ hơn số đúng. Bạn còn ${3 - maxInput} lần đoán.`);
+                } else{
+                    alert(`Số bạn đoán lớn hơn số đúng. Bạn còn ${3 - maxInput} lần đoán.`);
+                }
+            } while(maxInput < 3);
+        });
+    </script>
+</body>
+</html>

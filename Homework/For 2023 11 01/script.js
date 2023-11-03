@@ -49,3 +49,17 @@ let btnSubmit4 = document.getElementById("btn-submit4").addEventListener("click"
     document.getElementById("result4").innerHTML = outputResult;
 });
 
+// Bài 5
+let btnSubmit5 = document.getElementById("btn-submit5").addEventListener("click", () => {
+    let inputNumber_n = parseInt(document.getElementById("number_5").value);
+    let sum = 0;
+    for(var i = 1; i < inputNumber_n; i++){
+        if (inputNumber_n % i === 0){
+            sum += i;
+        }
+    } if(sum === inputNumber_n && inputNumber_n !== 0){
+        document.getElementById('result5').innerHTML = `${inputNumber_n} là số hoàn hảo`;
+    } else{
+        document.getElementById('result5').innerHTML = `${inputNumber_n} không phải là số hoàn hảo`;
+    }
+});

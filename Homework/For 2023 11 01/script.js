@@ -1,6 +1,6 @@
 // Bài 1
-let btnSubmit1 = document.getElementById("btn-submit").addEventListener("click", () => {
-    let inputNumber_n = parseInt(document.getElementById("number").value);
+let btnSubmit1 = document.getElementById("btn-submit1").addEventListener("click", () => {
+    let inputNumber_n = parseInt(document.getElementById("number1").value);
     let tongChan = 0;
     for(let i = 0; i <= inputNumber_n; i++){
         if(i %2 === 0){
@@ -11,15 +11,16 @@ let btnSubmit1 = document.getElementById("btn-submit").addEventListener("click",
 });
 
 
+
 // Bài 2
 let btnSubmit2 = document.getElementById("btn-submit2").addEventListener("click", () => {
     // n! = n*(n - 1)*(n - 2)*....1
     let inputNumber_n = parseInt(document.getElementById("number2").value);
-    let giaithua = 1;
+    let giaiThua = 1;
         for(let i = 1; i <= inputNumber_n; i++){
-            giaithua *= i;
+            giaiThua *= i;
         }
-        document.getElementById("result2").innerHTML = `${inputNumber_n}! = ${giaithua}`;
+        document.getElementById("result2").innerHTML = `${inputNumber_n}! = ${giaiThua}`;
 });
 
 

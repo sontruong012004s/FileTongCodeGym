@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Conditional Statement</title>
+</head>
+<body>
+    <h1>Bài 4</h1>
+    <p>Viết chương trình nhập vào một số từ 2 đến 8 và in ra kết quả theo quy tắc sau: 
+        2 - Monday 
+        3 - Tuesday 
+        4 - Wednesday 
+        5 - Thurday 
+        6 - Friday 
+        7 - Saturday 
+        8 - Sunday</p>
+    <div id="">
+        <span>Day: </span>
+        <input id="number_day" type="number">
+    </div>
+    <div id="">
+        <button id="btn-action-4" type="button">Kiểm tra</button>
+    </div>
+    <script>
+    let bntAction = document.getElementById("btn-action-4");
+        bntAction.addEventListener("click", () => {
+            let inputDay = parseInt(document.getElementById("number_day").value);
+            let result;
+            if(inputDay == 2){
+                result = "Monday";
+            } else if(inputDay == 3){
+                result = "Tuesday";
+            } else if(inputDay == 4){
+                result = "Wednesday";
+            } else if(inputDay == 5){
+                result = "Thurday";
+            } else if(inputDay == 6){
+                result = "Friday";
+            } else if(inputDay == 7){
+                result = "Saturday";
+            } else if(inputDay == 8){
+                result = "Sunday";
+            } else{
+                result = "Không hợp lệ";
+            }
+            alert(result);
+            // switch (inputDay){
+            //     case 2:
+            //         result = "Monday";
+            //         break;
+            //     case 3:
+            //         result = "Tuesday";
+            //         break;
+            //     case 4:
+            //         result = "Wednesday";
+            //         break;
+            //     case 5:
+            //         result = "Thurday";
+            //         break;
+            //     case 6:
+            //         result = "Friday";
+            //         break;
+            //     case 7:
+            //         result = "Saturday";
+            //         break;
+            //     case 8:
+            //         result = "Sunday";
+            //         break;
+            // default:
+            //     result = "Không hợp lệ!";
+            //     break;
+            // }
+        });
+    </script>
+</body>
+</html>

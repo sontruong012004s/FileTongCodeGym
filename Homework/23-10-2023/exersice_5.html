@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Conditional Statement</title>
+</head>
+<body>
+    <h1>Bài 5</h1>
+    <p>Viết chương trình nhập vào 3 số n1, n2. n3 và in ra số lớn nhất.</p>
+    <div id="class_number">
+        <span>Số n1:</span>
+        <input id="number_n1" type="number"><br>
+        <span>Số n2:</span>
+        <input id="number_n2" type="number"><br>
+        <span>Số n3:</span>
+        <input id="number_n3" type="number"><br>
+    </div>
+    <div id="">
+        <button id="btn-action-5" type="button">Kiểm tra</button>
+    </div>
+    <div id="result"></div>
+    <script>
+    let bntAction = document.getElementById("btn-action-5");
+        bntAction.addEventListener("click", () => {
+            let inputN1 = parseFloat(document.getElementById("number_n1").value);
+            let inputN2 = parseFloat(document.getElementById("number_n2").value);
+            let inputN3 = parseFloat(document.getElementById("number_n3").value);
+            let note = `Số lớn nhất trong 3 số (${inputN1} , ${inputN2} , ${inputN3}) là: `;
+            let result;
+            if(inputN1 >= inputN2 && inputN1 >= inputN3){
+                result = inputN1;
+            } else if(inputN2 >= inputN1 && inputN2 >= inputN3){
+                result = inputN2;
+            } else{
+                result = inputN3;
+            }
+            document.getElementById("result").innerHTML = note + result;
+        });
+    </script>
+</body>
+</html>

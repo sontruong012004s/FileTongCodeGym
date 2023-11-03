@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo If Statement</title>
+</head>
+<body>
+    <h1>Demo If Statement</h1>
+    <p>Nhập vào giá trị của một đơn hàng 
+        if đơn hàng giá trị lơn hơn = 2tr vnd
+        giảm 10% giá trị đơn hàng
+        in ra giá trị đơn hàng mà khách hàng phải thanh toán.
+    </p>
+    <form action="">
+        <label for="">Giá trị đơn hàng: </label>
+        <input type="number" id="bill-value">
+        <button id="btn-action" type="button">Submit</button>
+        <a href="chrome-extension://clajjojfmmfjohpnhleegokkfdegdcab/popup.html?url=aHR0cHM6Ly93d3cudGlrdG9rLmNvbS8%3D">te</a>
+    </form>
+    <p id="ouput-bill"></p>
+    <!-- <script src="./demo_if_statement.js"></script> -->
+    <script>
+        // Chuỗi đã được mã hóa theo Base64
+// Chuỗi Base64 chứa ký tự `%3D` ở cuối
+// Lấy tham số URL từ địa chỉ trang web
+var urlParams = new URLSearchParams(window.location.search);
+var base64EncodedString = urlParams.get('url');
+
+// Kiểm tra xem có chuỗi Base64 được truyền qua tham số không
+if (base64EncodedString) {
+    // Loại bỏ ký tự `%3D` và chuyển đổi thành dấu `=`
+    var cleanedBase64String = base64EncodedString.replace(/%3D$/, '=');
+
+    // Giải mã chuỗi Base64
+    var decodedString = atob(cleanedBase64String);
+
+    // Hiển thị chuỗi đã giải mã
+    console.log("Địa chỉ URL đã giải mã: " + decodedString);
+} else {
+    console.log("Không có chuỗi Base64 để giải mã.");
+}
+
+
+    </script>
+
+</body>
+</html>

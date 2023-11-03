@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Conditional Statement</title>
+</head>
+<body>
+    <h1>Bài 3</h1>
+    <p>Viết chương trinh nhập vào 1 số n và thông báo(alert) ra giá trị tuyệt đối của số n.</p>
+    <div id="">
+        <span>Số n:</span>
+        <input id="number_n" type="number">
+    </div>
+    <div id="">
+        <button id="btn-action-3" type="button">Kiểm tra</button>
+    </div>
+    <script>
+    let bntAction = document.getElementById("btn-action-3");
+        bntAction.addEventListener("click", () => {
+            let inputN = parseFloat(document.getElementById("number_n").value);
+            if(inputN >= 0){
+                result = `Giá trị tuyệt đối ${inputN} là: ${inputN}`;
+            } else {
+                result = `Giá trị tuyệt đối ${inputN} là: ${-inputN}`;
+            }
+            alert(result);
+        });
+    </script>
+</body>
+</html>

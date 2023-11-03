@@ -1,0 +1,6 @@
+git init
+git status
+git add 
+git commit -m "them file abc.txt"
+
+git push origin master

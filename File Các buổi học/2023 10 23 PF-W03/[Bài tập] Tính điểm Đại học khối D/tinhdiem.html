@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list-math, #list-literature, #list-english, #list-area, #list-submit{
+            margin: 20px;
+        }
+        div input{
+            float: right;
+            margin-right: 60%;
+        }
+        #list-option{
+            margin-left: 20px;
+        }
+        #list-result{
+            margin: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tính điểm ĐH khối D</h1>
+
+    <div id="list-math">
+        Môn Toán<input type="number" name="" id="math">
+    </div>
+    <div id="list-literature">
+        Môn Văn<input type="number" name="" id="literature">
+    </div>
+    <div id="list-english">
+        Môn Anh<input type="number" name="" id="english">
+    </div>
+    <div id="list-area">
+        Khu vực
+        <select value="" id="list-option">
+            <option id="KV1">KV1</option>
+            <option id="KV2">KV2</option>
+            <option id="KV2NT">KV2-NT</option>
+            <option id="KV3">KV3</option>
+        </select>
+    </div>
+    <div id="list-submit">
+        <button type="button" id="btn_submit">Tính điểm</button>
+    </div>
+    <div id="list-result"></div>
+    <script>
+        let listSubmit = document.getElementById("btn_submit");
+        listSubmit.addEventListener("click", () => {
+            let inputMath = parseFloat(document.getElementById("math").value);
+            let inputLiterature = parseFloat(document.getElementById("literature").value);
+            let inputEnglish = parseFloat(document.getElementById("english").value);
+            let inputKv1 = "KV1";
+            let inputKv2 = "KV2";
+            let inputKv2NT = "KV2NT";
+            let inputKv3 = "KV3";
+            let result = inputMath + inputLiterature + inputEnglish;
+            switch (document.getElementById("list-option").value){
+                case inputKv1:
+                    result += 0.75;
+                    break;
+                case inputKv2:
+                    result += 0.5;
+                    break;
+                case inputKv3:
+                    break;
+                default:
+                    result += 0.25;
+                    break;
+            }
+            document.getElementById("list-result").innerHTML = `Tổng điểm ĐH khối D của bạn là: ${result.toFixed(2)}`;
+        });
+    </script>
+</body>
+</html>

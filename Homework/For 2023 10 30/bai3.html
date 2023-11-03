@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exersice_3</title>
+</head>
+<body>
+    <h1>Exersice_3</h1>
+    <p>Viết chương trình nhập vào chiều cao tam giác vuông và in ra tam giác có hình dạng như sau:
+                <br>
+        ***** <br>
+        **** <br>
+        *** <br>
+        ** <br>
+        * <br>
+    </p>
+    <div>Nhập chiều cao tam giác: 
+        <input type="number" name="" id="height">
+        <button type="button" id="btn-submit">Submit</button>
+    </div>
+    <div id="result"></div>
+    <script>
+        let btnSubmit = document.getElementById("btn-submit").addEventListener("click", () => {
+            let btnHeight = parseInt(document.getElementById("height").value);
+            let output = "";
+            for(let i = btnHeight; i >= 1; i--){
+                output += "<br>";
+                for(let j = 1; j <= i; j++){
+                    output += "*";
+                }
+            }
+            document.getElementById("result").innerHTML = output ;
+        });
+
+
+
+        // let btnSubmit = document.getElementById("btn-submit").addEventListener("click", () => {
+        //     let btnHeight = parseInt(document.getElementById("height").value);
+        //     let output = "";
+        //     let i = btnHeight;
+        //     while(i >= 1){
+        //         output += "<br>";
+        //         for(let j = 1; j <= i; j++){
+        //             output += "*";
+        //         }
+        //         i--;
+        //     }
+        //     document.getElementById("result").innerHTML = output;
+        // });
+    </script>
+</body>
+</html>

@@ -49,7 +49,10 @@ let btnSubmit4 = document.getElementById("btn-submit4").addEventListener("click"
     document.getElementById("result4").innerHTML = outputResult;
 });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3c0231235fd0b61da990e27e4f143738e5821df2
 // Bài 5
 let btnSubmit5 = document.getElementById("btn-submit5").addEventListener("click", () => {
     let inputNumber_n = parseInt(document.getElementById("number_5").value);
@@ -63,4 +66,8 @@ let btnSubmit5 = document.getElementById("btn-submit5").addEventListener("click"
     } else{
         document.getElementById('result5').innerHTML = `${inputNumber_n} không phải là số hoàn hảo`;
     }
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 3c0231235fd0b61da990e27e4f143738e5821df2

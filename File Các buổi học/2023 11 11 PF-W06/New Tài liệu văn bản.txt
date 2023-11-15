@@ -1,0 +1,15 @@
+reverse()
+push()
+pop()
+shift()
+unshift()
+built-in function
+
+https://script.google.com/macros/s/AKfycbwUo227SPjL_TDy1puvvNEeFMyl-jx4IS8b2FU2QMo5lzrjbnSGZN7uNFlNbQS5oFwH/exec
+https://script.google.com/macros/s/AKfycbzPR2yY4Q6zrTZvweLp5NC-LOT8_v5blNG48xHqdJyYnRcla5nawhIHnRIQpRMgQTSl/exec
+chrome-extension://apdgeccdmodmfpohccpnjnkgjkphggfp/popup/popup.html
+
+
+https://script.google.com/macros/s/AKfycbzf6mvqqgN4ezlcp2ZdUsl8n6an6cJHRn2kGHKObhb49Vcv2wz77wHX4jqttGMgPbd5/exec
+https://script.google.com/macros/s/AKfycby2YfZ9ouashmnsF0fuyNOyRWU0dvDBeymbV1BMbKca1lyzDoJ9qRClPgdxOTt7BIJw/exec
+chrome-extension://clplikhaehekgalghjdjlogfbjbmjkjo/popup/popup.html

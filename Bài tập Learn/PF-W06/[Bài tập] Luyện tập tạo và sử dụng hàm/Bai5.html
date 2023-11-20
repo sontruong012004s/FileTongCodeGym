@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Bài 5: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</p>
+    <script>
+        function giaiThua(n){
+            let count = 1;
+            for(let i = 1; i <= n; i++){
+                count *= i;
+            }
+            document.write(`Giai thừa của số ${n} là: ${count}`);
+        }
+        giaiThua(prompt("Nhập số n"));
+    </script>
+</body>
+</html>

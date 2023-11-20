@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<body>
+    <p>Bài 4: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+    </p>
+    <script>
+        let S, C, r;
+        function chuVidienTichR(r){
+            S = 3.14 * r * r;
+            C = 2*3.14 *r;
+            document.write(`Chu vi hình tròn là: ${C} </br>`);
+            document.write(`Diện tích hình tròn là: ${S}`);
+
+        }
+        chuVidienTichR(prompt("Nhập bán kính R"));
+    </script>
+</body>
+</html>

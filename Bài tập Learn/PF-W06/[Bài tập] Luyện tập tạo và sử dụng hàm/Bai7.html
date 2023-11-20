@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+</head>
+<body>
+    <p>Bài 7: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</p>
+    <br>
+    <div>
+        <input type="number" name="" id="numberA"> Nhập số A <br>
+        <input type="number" name="" id="numberB"> Nhập số B <br>
+        <input type="number" name="" id="numberC"> Nhập số C <br>
+        <button id="Check" onclick="findMin()">Check GTNN</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        function findMin(){
+            let inputNumberA = parseInt(document.getElementById("numberA").value);
+            let inputNumberB = parseInt(document.getElementById("numberB").value);
+            let inputNumberC = parseInt(document.getElementById("numberC").value);
+            let minValue = getMinValue(inputNumberA, inputNumberB, inputNumberC);
+            document.getElementById("result").innerHTML = `Số nguyên nhỏ nhất là: ${minValue}`;
+        }
+        function getMinValue(a, b, c){
+            return Math.min(a, b, c);
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+</head>
+<body>
+    <p>Bài 6: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+    </p>
+    <script>
+        function checkIsNumber(input){
+        if(!isNaN(input)){
+            return true;
+        } else{
+            return false;
+            }
+        }
+        let result = checkIsNumber(prompt("Nhập giá trị: "));
+        document.write(`Input là số: ${result}`);
+    </script>
+</body>
+</html>

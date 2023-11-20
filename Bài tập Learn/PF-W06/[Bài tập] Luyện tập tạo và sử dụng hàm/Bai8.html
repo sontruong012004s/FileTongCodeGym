@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8</title>
+</head>
+<body>
+    <p>Bài 8: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.
+    </p>
+    <div> Nhập N
+        <input type="number" name="" id="number">
+        <button type="button" onclick="checkNumber()">Check</button>
+    </div>
+    <script>
+        function checkNumber(){
+            function inputNumber(){
+                let inputNumber = parseInt(document.getElementById("number").value);
+                if(inputNumber > 0){
+                    return true;
+                } else{
+                    return false;
+                }
+            }
+            alert(inputNumber());
+        }
+    </script>
+</body>
+</html>

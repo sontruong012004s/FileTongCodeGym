@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Bài 9: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.</p>
+    <div> Nhập N
+        <input type="number" name="" id="number">
+        <button type="button" onclick="checkNumber()">Check</button>
+    </div>
+<script>
+    function checkNumber(){
+        let inputNumber = parseInt(document.getElementById("number").value);
+        reverseNumber(inputNumber);
+    }
+    function reverseNumber(n) {
+        let reversedString = n.toString().split('').reverse().join('');
+        let reversedNumber = parseInt(reversedString);
+        document.write(reversedNumber);
+    }
+</script>
+
+</script>
+
+</body>
+</html>

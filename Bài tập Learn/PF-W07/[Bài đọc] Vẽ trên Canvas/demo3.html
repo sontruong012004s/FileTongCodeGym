@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
+    <script>
+        function Circle(x, y, radius, color) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+            this.color = color;
+        }
+
+        function getRandomHex() {
+            return Math.floor(Math.random() * 255);
+        }
+
+        function getRandomColor() {
+            var red = getRandomHex();
+            var green = getRandomHex();
+            var blue = getRandomHex();
+            return "rgb(" + red + "," + blue + "," + green + ")";
+        }
+
+        function createCircle(x, y) {
+            var ctx = document.getElementById("myCanvas").getContext("2d");
+            var radius = Math.floor(Math.random() * 80);
+            var color = getRandomColor();
+            var circle = new Circle(x, y, radius, color);
+            return circle;
+        }
+
+        function createMultipleCircle() {
+            var circles = [];
+            for (var i = 0; i < 30; i++) {
+                var x = Math.random() * window.innerWidth;
+                var y = Math.random() * window.innerHeight;
+                circles.push(createCircle(x, y));
+            }
+            return circles;
+        }
+
+        function animateCircles(circles) {
+            var ctx = document.getElementById("myCanvas").getContext("2d");
+
+            function animate() {
+                ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+                for (var i = 0; i < circles.length; i++) {
+                    var circle = circles[i];
+                    circle.x += 2; 
+                    circle.y += 1; 
+
+                    ctx.beginPath();
+                    ctx.arc(circle.x, circle.y, circle.radius, 0, 2 * Math.PI);
+                    ctx.fillStyle = circle.color;
+                    ctx.fill();
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        }
+
+        var circles = createMultipleCircle();
+        animateCircles(circles);
+
+    </script>
+</body>
+</html>

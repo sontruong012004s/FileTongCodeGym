@@ -1,0 +1,65 @@
+#menuBtn{
+    text-align: center;
+    height: auto;
+    width: 310px;   
+}
+
+#bodyBtn{
+    background-color: rgb(228, 228, 228);
+    height: 70px;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+input, #add{
+    padding: 5px 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(180, 180, 180);
+    margin: 20px 0px;
+}
+
+#add{
+    background-color: rgb(7, 190, 22);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#textMenu{
+    padding-right: 50%;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#allProduct{
+    padding-right: 56%;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+#productName, #totalProducts{
+    font-weight: bold;
+    margin: 30px 5px;
+}
+
+#totalProducts{
+    color: rgb(211, 11, 11);
+    padding-left: 47%;
+}
+#productTableBody button{
+    margin-left: 120px;
+    padding: 8px 13px;
+    background-color: rgb(7, 190, 22);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid rgb(180, 180, 180);
+   
+}
+
+#productTableBody #deleteBtn {
+    margin: 0px 100px;
+    
+}
+#productTableBody button:hover, #add:hover{
+    background-color: red;
+}

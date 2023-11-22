@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra số chẳn</title>
+</head>
+<body>
+    <div>
+        Nhập số <br>
+        <input type="number" name="" id="number">
+        <button type="button" id="kiemtra">Kiểm Tra</button>
+    </div>
+    <script>
+        document.getElementById("kiemtra").addEventListener("click", () => {
+            let inputNumber = parseInt(document.getElementById("number").value);
+            if(inputNumber %2 === 0){
+                alert(`${inputNumber} là số chẳn`);
+            } else{
+                alert(`${inputNumber} là số lẻ`);
+            }
+        });
+    </script>
+</body>
+</html>

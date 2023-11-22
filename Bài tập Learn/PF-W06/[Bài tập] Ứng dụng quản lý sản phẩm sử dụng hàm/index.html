@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <div id="menuBtn">
+        <span id="textMenu">Add New Product</span>
+        <div id="bodyBtn">
+            <input type="text" placeholder="New Product" id="text">
+            <button type="submit" id="add">Add</button>
+        </div>
+        <div id="allProduct">Display All Product</div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th id="totalProducts">Total Products: <span id="productCount">1</span></th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody">
+            <!-- Existing row -->
+            <tr>
+                <td>
+                    <div class="productName"></div>
+                </td>
+                <td>
+                    <div class="editBtn"></div>
+                    <div class="deleteBtn"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="./index.js"></script>
+</body>
+</html>

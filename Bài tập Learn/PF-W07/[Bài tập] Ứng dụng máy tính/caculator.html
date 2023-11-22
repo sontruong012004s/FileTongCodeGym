@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <style>
+        button{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <div>
+        <input type="number" name="" id="number_A">
+        <input type="number" name="" id="number_B"> <br><br>
+        <button type="button" id="additionBtn">Addition(+)</button>
+        <button type="button" id="subtractionBtn">Subtration(-)</button>
+        <button type="button" id="multiplicationBtn">Multiplication(X)</button>
+        <button type="button" id="divisionBtn">Division(/)</button>
+    </div> <br>
+    <div id="result"></div>
+    <script>
+    function addition(){
+        let numberA = parseInt(document.getElementById("number_A").value);
+        let numberB = parseInt(document.getElementById("number_B").value);
+        let result = numberA + numberB;
+        document.getElementById("result").innerHTML = `Result Addition: ${result}`;
+    }
+
+    function subtraction(){
+        let numberA = parseInt(document.getElementById("number_A").value);
+        let numberB = parseInt(document.getElementById("number_B").value);
+        let result = numberA - numberB;
+        document.getElementById("result").innerHTML = `Result Subtraction: ${result}`;
+    }
+    function multiplication(){
+        let numberA = parseInt(document.getElementById("number_A").value);
+        let numberB = parseInt(document.getElementById("number_B").value);
+        let result = numberA * numberB;
+        document.getElementById("result").innerHTML = `Result Subtraction: ${result}`;
+    }
+    function division(){
+        let numberA = parseInt(document.getElementById("number_A").value);
+        let numberB = parseInt(document.getElementById("number_B").value);
+        let result = numberA / numberB;
+        document.getElementById("result").innerHTML = `Result Subtraction: ${result}`;
+    }
+    document.addEventListener("click", function (event){
+        if(event.target.id === "additionBtn"){
+            addition();
+        } else if(event.target.id === "subtractionBtn"){
+            subtraction();
+        } else if(event.target.id === "multiplicationBtn"){
+            multiplication();
+        } else if(event.target.id === "divisionBtn"){
+            division();
+        }
+    });
+
+    </script>
+</body>
+</html>

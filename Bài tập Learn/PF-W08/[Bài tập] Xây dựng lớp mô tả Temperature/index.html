@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+</head>
+<body>
+    <h1>Temperature</h1>
+    <canvas id="rectangleCanvas" style="border:1px solid #000;"></canvas>
+    <script>
+        class Temperature {
+        constructor(celsius) {
+            if (celsius < -273) {
+                throw new Error("Temperature cannot be less than -273 degrees Celsius.");
+            }
+
+            this.celsius = celsius;
+        }
+
+        toFahrenheit() {
+            return (this.celsius * 9/5) + 32;
+        }
+
+        toKelvin() {
+            return this.celsius + 273.15;
+        }
+    }
+
+    const myTemperature = new Temperature(25);
+    const celsiusTemperature = myTemperature.celsius;
+    const fahrenheitTemperature = myTemperature.toFahrenheit();
+    const kelvinTemperature = myTemperature.toKelvin();
+
+    console.log(`Nhiệt độ Celsius: ${celsiusTemperature} °C`);
+    console.log(`Nhiệt độ Fahrenheit: ${fahrenheitTemperature} °F`);
+    console.log(`Nhiệt độ Kelvin: ${kelvinTemperature} K`);
+    </script>
+</body>
+</html>

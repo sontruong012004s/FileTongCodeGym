@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình chữ nhật</title>
+</head>
+<body>
+    <h1>Hình chữ nhật</h1>
+    <canvas id="rectangleCanvas" width="400" height="400" style="border:1px solid #000;"></canvas>
+    <script>
+        class Rectangle {
+            constructor(length, width) {
+                this.length = length;
+                this.width = width;
+            }
+
+            getArea() {
+                return this.length * this.width;
+            }
+
+            getPerimeter() {
+                return 2 * (this.length + this.width);
+            }
+
+            drawRectangle() {
+                const canvas = document.getElementById('rectangleCanvas');
+                const ctx = canvas.getContext('2d');
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.fillRect(10, 10, this.length, this.width);
+            }
+        }
+        const myRectangle = new Rectangle(50, 30);
+        myRectangle.drawRectangle();
+        myRectangle.length = 70;
+        myRectangle.width = 40;
+        myRectangle.drawRectangle();
+        console.log('Diện tích:', myRectangle.getArea());
+        console.log('Chu vi:', myRectangle.getPerimeter());
+    </script>
+</body>
+</html>

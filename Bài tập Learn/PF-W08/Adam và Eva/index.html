@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam và Eva</title>
+</head>
+<body>
+    <h1>Adam và Eva</h1>
+    <script>
+        class Apple{
+            constructor(){
+                this.weight = 10;
+            }
+            getWeight(){
+                return this.weight;
+            }
+            decreaseWeight(){
+                if(this.weight > 0) this.weight--;
+            }
+        }
+
+        class Human{
+            constructor(name, gender, weight){
+                this.name = name;
+                this.gender = gender;
+                this.weight = weight;
+            }
+
+            speak(words){
+                console.log(`${this.name} nói: ${words}`);
+            }
+
+            eat(apple){
+                if(apple.getWeight() > 0){
+                    this.weight++;
+                    apple.decreaseWeight();
+                    console.log(`${this.name} ăn một miếng táo.`);
+                } else{
+                    console.log(`${this.name} cố ăn một quả táo, nhưng không còn nữa.`);
+                }
+            }
+
+            checkWeight(){
+                console.log(`Can nang cua: ${this.name} ${this.weight} đv`);
+            }
+        }
+
+        const apple = new Apple();
+        const adam = new Human("Adam", "Nam", 70);
+        const eva = new Human("Eva", "Nữ", 60);
+
+        adam.checkWeight();
+        eva.checkWeight();
+    </script>
+</body>
+</html>

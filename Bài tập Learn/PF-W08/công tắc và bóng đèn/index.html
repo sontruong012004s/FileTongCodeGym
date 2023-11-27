@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công tắc và bóng đèn</title>
+</head>
+<body>
+    <h1>Công tắc và bóng đèn</h1>
+    <script>
+    class BongDen{
+        constructor(){
+            this.trangThai = false;
+        }
+        batTat(){
+            this.trangThai = !this.trangThai;
+        }
+        hienThiTrangThai(){
+            if(this.trangThai) console.log("Bóng đèn đã bật.");
+            else console.log("Bóng đèn đã tắt.");
+        }
+    }
+
+    class CongTac{
+        constructor(bongDen){
+            this.bongDen = bongDen;
+        }
+        batTatCongTac(){
+            this.bongDen.batTat();
+        }
+    }
+
+    let bongDen = new BongDen();
+    let congTac = new CongTac(bongDen);
+
+    for(let i = 1; i <= 10; i++){
+        console.log(`Lần ${i}:`);
+        congTac.batTatCongTac();
+        bongDen.hienThiTrangThai();
+    }
+    </script>
+</body>
+</html>

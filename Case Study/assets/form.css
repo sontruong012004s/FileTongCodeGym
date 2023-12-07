@@ -1,0 +1,145 @@
+
+html{
+    margin: 10px;
+    zoom: 1;
+    background: floralwhite;
+}
+
+form label, .text-class{
+    display: inline-block;
+    width: 11%;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+#fullname, #number, #email, #students-code, #cccd-cmnd, #birthplace, #birthdays{
+    width: 20%;
+    border-radius: 4px;
+    border: 1px solid #000;
+    height: 25px;
+    margin: 5px;
+    padding-left: 5px;
+}
+#birthdays{
+    width: 10%;
+}
+#fullname:hover, #number:hover, #email:hover, #students-code:hover, #birthdays:hover, #cccd-cmnd:hover, #birthplace:hover{
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+#class #class-option{
+    height: 25px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+
+#class #class-option:hover{
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+#btn-submit{
+    display: inline-block;
+    font-size: 25px;
+    background-color: rgb(7, 190, 22);
+    color: aliceblue;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 1px solid #000;
+    text-align: center;
+    width: 10%;
+    margin-left: 218px;
+    height: 40px;
+}
+
+
+#btn-submit:hover, #change-history:hover, #btn-search:hover, #btn-reset:hover{
+    background-color: red;
+}
+
+#text-student-list, #total-students{
+    font-weight: bold;
+    margin-right: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+}
+
+#total-students {
+    clear: both;
+}
+
+#productCount {
+    color: red;
+}
+#text-search-value, #text-search-type{
+    font-size: 25px;
+    
+}
+#search-type{
+    width: 110px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    height: 29px;
+    margin: 5px;
+
+}
+#search-value{
+    width: 8%;
+    border-radius: 4px;
+    border: 1px solid #000;
+    height: 25px;
+    margin: 5px;
+    padding-left: 5px;
+}
+#search-type:hover, #search-value:hover, option:hover{
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+#btn-search, #btn-reset{
+    display: inline-block;
+    font-size: 15px;
+    background-color: rgb(7, 190, 22);
+    color: aliceblue;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 2px;
+    height: 29px;
+}
+#btn-search i, #btn-reset i{
+    padding-right: 3px;
+}
+#student-table{
+    border-collapse: collapse;
+    margin-top: 10px;
+    height: 30px;
+}
+
+#student-table th{
+    border: 1.5px solid #000;
+    padding: 2px;
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(7, 190, 22);
+}
+
+#student-table td{
+    border: 1.5px solid #000;
+    text-align: left;
+    padding: 5px;
+}
+
+#student-table th:first-child{
+    width: 30px;
+}
+
+#student-table td:nth-child(n+6):nth-child(-n+12){
+    text-align: center;
+}
+
+
+

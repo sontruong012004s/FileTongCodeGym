@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <form method="POST" action="reg.php">
+            <title>HELLO WORK</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="./reg.css">
+        </head>
+        <body>
+            <div id="text-reg">Đăng ký tài khoản</div>
+            <div class="mb-3">
+                <b>hoặc</b><span><a href="../login/login.html">Đăng nhập tài khoản</a></span>
+            </div>
+    <hr>
+            <div class="mb-4">
+                <span class="nav-link-icon">
+                    <i class="fa fa-lock"></i>
+                </span>
+                <span class="nav-link-text">Tên đăng nhập:</span>
+            <br>
+                <input id="username" name="username" type="text" value="" placeholder="Nhập tên đăng nhập">
+            </div>
+            
+            <div class="mb-4">
+                <span class="nav-link-icon">
+                    <i class="fa fa-lock"></i>
+                </span>
+                <span class="nav-link-text">Nhập mật khẩu:</span>
+            <br>
+                <input id="password1" name="password" type="password" value="" placeholder="Nhập mật khẩu">
+            </div>
+            
+            <div class="mb-4">
+                <span class="nav-link-icon">
+                    <i class="fa fa-lock"></i>
+                </span>
+                <span class="nav-link-text">Nhập lại mật khẩu:</span>
+            <br>
+                <input id="password2" type="password" name="passwords" value="" placeholder="Nhập lại mật khẩu">
+            </div>
+            <div id="erroPW"></div>
+            <div class="submit">
+                <button id="reg" type="button">Đăng Ký</button>
+            </div>
+            <script src="./reg.js"></script>
+        </form>
+</html>

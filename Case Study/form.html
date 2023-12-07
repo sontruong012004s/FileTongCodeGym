@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Quản lý học sinh K12 thi bằng A1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="./image/update.png">
+    <link rel="stylesheet" href="./assets/form.css">
+</head>
+<body>
+    <form action="">
+    <div id="menu">
+        <h2>Quản lý học sinh K12 thi bằng A1</h2>
+        <label for="students-code">Mã sinh viên:</label>
+        <input type="text" id="students-code" placeholder="Nhập mã sinh viên"><br>
+        <label for="cccd-cmnd">Số CCCD/CMND:</label>
+        <input id="cccd-cmnd" type="number" placeholder="Nhập CCCD/CMND"><br>
+        <label for="fullname">Họ và tên:</label>
+        <input id="fullname" type="text" placeholder="Nhập họ và tên sinh viên"><br>
+        <label for="birthdays">Ngày sinh:</label>
+        <input id="birthdays" type="date"><br>
+        <div id="gender-list">
+            <label for="gender">Giới tính:</label>
+            <input type="radio" name="gender" value="Nam">Nam
+            <input type="radio" name="gender" value="Nữ">Nữ
+        </div>
+        <div id="class">
+            <span class="text-class">Lớp:</span>
+            <select name="class-option" id="class-option">
+                <option name="class12" value="" selected disabled="disabled">Lớp 12</option>
+                <option name="class12" value="12C1">12C1</option>
+                <option name="class12" value="12C2">12C2</option>
+                <option name="class12" value="12C3">12C3</option>
+                <option name="class12" value="12C4">12C4</option>
+                <option name="class12" value="12C5">12C5</option>
+                <option name="class12" value="12C6">12C6</option>
+                <option name="class12" value="12C7">12C7</option>
+                <option name="class12" value="12C8">12C8</option>
+                <option name="class12" value="12C9">12C9</option>
+                <option name="class12" value="12C10">12C10</option>
+                <option name="class12" value="12C11">12C11</option>
+                <option name="class12" value="12C12">12C12</option>
+            </select>
+        </div>
+        <label for="birthplace">Nơi sinh:</label>
+        <input id="birthplace" type="text" placeholder="Nhập nơi sinh (Tỉnh hoặc thành phố)"><br>
+        <label for="number">Số điện thoại:</label>
+        <input id="number" type="number" placeholder="Nhập số điện thoại"><br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Nhập email"><br>
+        <button type="button" id="btn-submit" onclick="addIntrodu()">Cập nhật</button>
+    </div>
+    </form>
+    <hr id="hr" style="display:none;">
+    <div id="student-list" style="display:none;"><ins id="text-student-list">Danh sách học sinh</ins>
+        <div id="form-search">
+            <label for="search-type" id="text-search-type">Chọn mục muốn tìm kiếm:</label>
+            <select id="search-type" onchange="updatePlaceholder()">
+                <option selected disabled="disabled">Select</option>
+                <option value="studentsCode">Mã sinh viên</option>
+                <option value="cccdCmnd">CCCD/CMND</option>
+                <option value="fullName">Họ và tên</option>
+                <option value="genderList">Giới tính</option>
+                <option value="classOption">Lớp</option>
+                <option value="birthPlace">Nơi sinh</option>
+                <option value="conditionInfo">Đủ điều kiện thi hay chưa</option>
+            </select>
+            
+            <input type="text" id="search-value" placeholder="Điền dữ liệu">
+            <button type="button" id="btn-search" onclick="searchIntrodu(event)"><i class="fa-solid fa-magnifying-glass"></i>Tìm kiếm</button>
+            <button type="button" id="btn-reset" onclick="resetSearch()" style="display:none;"><i class="fa-solid fa-backward"></i>Quay lại</button>
+        </div>
+        <div id="total-students">Tổng số học sinh: <span id="productCount">0</span></div>
+    </div>
+    <table id="student-table" style="display:none;">
+        <tr>
+            <th>STT</th>
+            <th>Mã sinh viên</th>
+            <th>CCCD/CMND</th>
+            <th>Họ và tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Lớp</th>
+            <th>Nơi sinh</th>
+            <th>Số điện thoại</th>
+            <th>Email</th>
+            <th>Đủ điều kiện thi hay chưa</th>
+            <th>Functions</th>
+        </tr>
+    </table>
+<script src="./assets/form.js"></script>
+</body>
+</html>

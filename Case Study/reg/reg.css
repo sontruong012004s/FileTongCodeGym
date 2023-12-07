@@ -1,0 +1,104 @@
+html {
+    padding-top: 150px;
+}
+form {
+    border: 1px solid red;
+    background: floralwhite;
+    width: 310px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top:20px
+}
+#text-reg {
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.regacc {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.mb-4 {
+    display: inline-block;
+}
+.mb-3{
+    margin-top: 20px;
+}
+.mb-3 a {
+    float: right;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+} 
+.mb-3 b {
+    float: left;
+    padding-left: 95px
+}
+
+.mb-4 input {
+    width: 230px;
+    height: 32px;
+    border: 2px solid green;
+    border-radius: 7px;
+    margin: 5px 0px 10px 0px;
+    display: inline-block;
+}
+.mb-4 input:hover{
+    border: 2px solid red;
+    border-radius: 7px;
+}
+.nav-link-icon {
+    float: left;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.nav-link-text {
+    float: left;
+    padding-left: 8px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.checkbox {
+    float: left;
+    padding-left: 35px;
+    padding-bottom: 5px;
+    font-size: 20px
+}
+  
+.submit button {
+    width: 250px;
+    height: 45px;
+    border: 2px solid green;
+    border-radius: 10px; 
+    font-size: 20px;
+    background:rgb(7, 190, 22);
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.submit button:hover {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(7, 39, 224);
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+#erroPW{
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    color: red;
+}

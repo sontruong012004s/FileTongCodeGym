@@ -1,0 +1,104 @@
+html{
+    padding-top: 150px;
+}
+
+#text-login {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+form {
+    margin: 0 auto;
+    width: 310px;
+    height: 310px;
+    background: floralwhite;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+.mb-3 {
+    display: inline-block;
+   
+}
+
+.mb-3 input {
+    display: inline-block;
+    width: 230px;
+    height: 32px;
+    border-radius: 7px;
+    border: 2px solid green;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.mb-3 input:hover{
+    border: 2px solid red;
+    border-radius: 7px;
+}
+
+
+.mb-4 {
+    float: right;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-link-icon {
+    float: left;
+    padding-left: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.nav-link-text {
+    float: left;
+    padding-left: 7px;
+    padding-bottom: 7px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.checkbox {
+    float: left;
+    padding-left: 24px;
+}
+
+.resetpass a {
+    float: right;
+    padding-right: 20px;
+    margin: 10px 0px 10px;
+}
+
+
+.submit button {
+    width: 250px;
+    height: 45px;
+    border: 2px solid green;
+    border-radius: 10px; 
+    font-size: 20px;
+    background:rgb(7, 190, 22);
+
+}
+.submit button {
+    color: white;
+}
+.submit a {
+    text-decoration: none;
+    color: var(--text-color);
+} 
+
+.submit button:hover {
+    background: red;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(7, 39, 224);
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}

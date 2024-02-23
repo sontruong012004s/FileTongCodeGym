@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oder-Form</title>
+    <style>
+        html{
+            margin: 20px;
+        }
+        form {
+            border: 1px solid;
+            width: 22%;
+            box-shadow: 0px 0px 10px 10px #87d3ff;
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+            font-weight: bolder;
+        }
+        div {
+            margin-left: 15px;
+        }
+        select{
+            width: 35%;
+            margin: 15px 0px;
+        }
+        .btn-submit{
+            margin-bottom: 20px;
+            font-weight: bold;
+            border: 1px solid;
+            border-radius: 6px;
+            padding: 4px 10px;
+            background-color: white;
+        }
+    </style>    
+</head>
+<body>
+    <form>
+        <div class="">
+            <h1>Oder Form</h1>
+            <label for="">What would you like to buy?</label>
+            <br>
+            <select name="" id="">
+                <option value="">A</option>
+                <option value="">B</option>
+                <option value="">C</option>
+                <option value="">D</option>
+            </select>
+            <br>
+            <label for="">How many would you like to order?</label><br><br>
+            <input type="radio" name="oder" checked><span>1 - $10</span><br>
+            <input type="radio" name="oder"><span>2 - $20</span><br>
+            <input type="radio" name="oder"><span>3 - $25</span>
+            <br><br>
+
+            <label for="">Name <span style="color: red;">*</span></label>
+            <br><br>
+            <input type="text" name="" id="" placeholder="FirstName" style="width: 35%;">
+            <input type="text" name="" id="" placeholder="LastName" style="width: 35%;">
+            <br><br>
+    
+            <label for="email">Email</label><br><br>
+            <input type="email" name="" id="email" style="width: 75%;">
+            <br><br>
+    
+            <label for="">Phone Number</label><br><br>
+            <input type="text" name="phone" style="width: 15%;"> - 
+            <input type="text" name="phone" style="width: 15%;"> - 
+            <input type="text" name="phone" style="width: 15%;">
+            <br><br>
+            <button class="btn-submit" type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

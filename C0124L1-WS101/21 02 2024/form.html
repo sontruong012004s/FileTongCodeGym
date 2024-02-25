@@ -15,7 +15,7 @@
             font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
             font-weight: bolder;
         }
-        div {
+        .main {
             margin-left: 15px;
         }
         select{
@@ -30,26 +30,45 @@
             padding: 4px 10px;
             background-color: white;
         }
+        .buy:hover{
+            background-color: #fff387;
+        }
+        p{
+            display: none;
+        }
+        .dolar:hover p{
+            display: block;
+        }
     </style>    
 </head>
 <body>
     <form>
-        <div class="">
+        <div class="main">
             <h1>Oder Form</h1>
-            <label for="">What would you like to buy?</label>
-            <br>
-            <select name="" id="">
-                <option value="">A</option>
-                <option value="">B</option>
-                <option value="">C</option>
-                <option value="">D</option>
-            </select>
-            <br>
+            <div class="buy">
+                <label for="">What would you like to buy?</label><br>
+                <select name="" id="">
+                    <option value="">A</option>
+                    <option value="">B</option>
+                    <option value="">C</option>
+                    <option value="">D</option>
+                </select><br>
+            </div>
             <label for="">How many would you like to order?</label><br>
             <input type="radio" name="oder" checked><span>1 - $10</span><br>
             <input type="radio" name="oder"><span>2 - $20</span><br>
             <input type="radio" name="oder"><span>3 - $25</span>
-            <br><br>
+            <div class="dolar">
+                <input type="text" name="" id="">
+                <p>maximum</p>
+            </div>
+            <label for="where">What would you like to buy?</label><br>
+            <input type="checkbox" name="place" id=""><span>Hà Nội</span>
+            <input type="checkbox" name="place" id=""><span>Đà Nẵng</span>
+            <input type="checkbox" name="place" id=""><span>Hồ Chí Minh</span>
+            <input type="checkbox" name="place" id=""><span>Huế</span>
+            <input type="checkbox" name="place" id=""><span>Quảng Trị</span>
+            <br>    
 
             <label for="">Name <span style="color: red;">*</span></label>
             <br>
@@ -65,6 +84,12 @@
             <input type="text" name="phone" style="width: 15%;"> - 
             <input type="text" name="phone" style="width: 15%;"> - 
             <input type="text" name="phone" style="width: 15%;">
+            <br><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="" id="password" style="width: 75%;">
+            <br><br>
+            <label for="op">Opinion</label><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
             <br>
             <button class="btn-submit" type="submit">Submit</button>
         </div>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            margin: 15px;
+        }
+        label{
+            font-weight: bolder;
+        }
+        select{
+            width: 35%;
+            height: 25px;
+            margin: 5px 0px 20px;
+        }
+        .header input{
+            margin: 7px 10px 0px 0px ;
+        }
+        .text-gender{
+            margin: 5px 19px;
+        }
+        .text-maximum{
+            padding-left: 19px;
+            display: none;
+        }
+        .dolar1{
+            width: 100px;
+            height: 20px;
+        }
+        .dolar2{
+            width: 20px;
+            float: left;
+            height: 20px;
+        }
+        .btn-dolar{
+            margin: 10px 0px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        .btn-follow th{
+            font-weight: 100;
+            padding: 10px 50px;
+        }
+        .btn-follow tr td:first-child {
+            font-weight: bold;
+            padding: 10px ;
+        }
+        td {
+            text-align: center;
+        }
+        .btn-number1 td:first-child, .btn-number2 td:first-child, .btn-number3 td:first-child{
+            text-align: start;
+        }
+        .btn-follow tr:nth-child(2n+1) {
+            background-color: #e6e6e6;
+        }
+        .btn-number1:hover, .btn-number2:hover, .btn-number3:hover{
+            background-color: rgb(253, 248, 168);
+        }
+        a{
+            color: #039aff;
+        }
+
+    </style>
+
+</head>
+<body>
+    <form action="">
+        <div class="header">
+            <h2>Market Research Survey</h2>
+            <span>Please take a few moments to complete this satisfaction survey.</span><br>
+        <div>
+            <label for="">What is your age range?</label><br>
+            <select name="" id="">
+                <option value="">18-24</option>
+                <option value="">25-34</option>
+                <option value="">35-50</option>
+                <option value="">50+</option>
+            </select><br>
+        </div>
+        <label for="">What is your yearly income range?</label><br>
+        <select name="" id="">
+            <option value="" checked>$0 - $25,000</option>
+            <option value="">$25,001 - $50,000</option>
+            <option value="">$50,001 - $100,000</option>
+            <option value="">$100,000+</option>
+        </select><br>
+
+        <label for="">Gender Identity</label><br>
+        <input type="radio" name="gender" id="">Male <br>
+        <input type="radio" name="gender" id="">Female <br>
+        <input type="radio" name="gender" id="">Nonbinary <br>
+        <input type="radio" name="gender" class="other" onclick="showText()">Other <br>
+        <input type="text" id="gender" name="gender" class="text-gender" maxlength="250" oninput="updateLength()"><br>
+        <span class="text-maximum">Maximum of 250 characters. Currently Used: <span id="sumGender">0</span> characters.</span><br>
+
+        <label for="">Which of the following products have your purchased in the last 2 months. Please check all that apply.</label><br>
+        <input type="checkbox" name="checkbox" id="">Product 1 <br>
+        <input type="checkbox" name="checkbox" id="">Product 2 <br>
+        <input type="checkbox" name="checkbox" id="">Product 3 <br>
+
+        <label for="">How often would you use our new product?</label><br>
+        <input type="radio" name="time" id="">Daily <br>
+        <input type="radio" name="time" id="">Weekly <br>
+        <input type="radio" name="time" id="">Monthly <br>
+        </div>
+        <label for="">What would you pay for the new product?</label><br>
+        <table class="btn-dolar">
+            <tr>
+                <th style="font-size:large">$</th>
+                <th><input type="text" name="dolar" class="dolar1"></th>
+                <th>.</th>
+                <th><input type="text" name="dolar" class="dolar2"></th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td></td>
+                <td>Cents</td>
+            </tr>
+        </table>
+        <label for="">What features would you like to see in the new product.</label><br>
+        <textarea name="" id="" cols="144" rows="10"></textarea><br><br>
+        <table class="btn-follow" border="1">
+            <thead>Please rate your level of agreement with the following statements.
+                <tr>
+                    <th></th>
+                    <th>Strongly Disagree</th>
+                    <th>Disagree</th>
+                    <th>Agree</th>
+                    <th>Strongly Agree</th>
+                </tr>
+                <tr class="btn-number1">
+                    <td>Our products are priced fairly.</td>
+                    <td><input type="radio" name="number1" id="">1</td>
+                    <td><input type="radio" name="number1" id="">2</td>
+                    <td><input type="radio" name="number1" id="">3</td>
+                    <td><input type="radio" name="number1" id="">4</td>
+                </tr>
+                <tr class="btn-number2">
+                    <td>Our products are high quality.</td>
+                    <td><input type="radio" name="number2" id="">1</td>
+                    <td><input type="radio" name="number2" id="">2</td>
+                    <td><input type="radio" name="number2" id="">3</td>
+                    <td><input type="radio" name="number2" id="">4</td>
+                </tr>
+                <tr class="btn-number3">
+                    <td>You would recommend our product to a friend or coworker.</td>
+                    <td><input type="radio" name="number3" id="">1</td>
+                    <td><input type="radio" name="number3" id="">2</td>
+                    <td><input type="radio" name="number3" id="">3</td>
+                    <td><input type="radio" name="number3" id="">4</td>
+                </tr>
+            </thead>
+        </table><br>
+        <button type="submit">Submit</button>
+        <div>
+            <p>This site is protected by reCAPTCHA Enterprise and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms"> Terms of Service</a> apply.</p>
+        </div>
+    </form>
+</body>
+<script>
+   function showText() {
+        let pElement = document.querySelector('.text-maximum');
+        let otherRadio = document.querySelector('.other');
+        if (otherRadio.checked) {
+            pElement.style.display = 'block';
+        } else {
+            pElement.style.display = 'none';
+        }
+    }
+    function updateLength() {
+        let inputElement = document.getElementById("gender");
+        let spanElement = document.getElementById("sumGender");
+        let currentLength = inputElement.value.length;
+        spanElement.textContent = currentLength;
+    }
+</script>
+</html>

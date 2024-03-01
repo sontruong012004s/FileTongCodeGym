@@ -89,7 +89,7 @@ input {
 .erro, #percentage {
     color: red;
 }
-#erro-fullName, #erro-classRoom, #erro-product {
+#erro-fullName, #erro-classRoom, #erro-product, #erro-skill {
     display: none;
     color: red;
 }

@@ -7,33 +7,121 @@
     <style>
         table {
             border-collapse: collapse;
+            border: 1px solid black;
         }
-        th {
+        #Part1 th {
             background-color: yellow;
         }
-        th, td {
+        #Part1 th, td {
             padding: 10px;
+        }
+        /* part2 */
+        .name-tkb {
+            padding-left: 15em;
+            font-size: larger;
+            font-weight: 900;
+            color: blue;
+        }
+        .left, .right {
+            float: left;
+            width: 25em;
+            color: blue;
+            
+        }
+        #Part2 {
+            clear: both;
+        }
+        #Part2 th, td {
+            padding: 10px;
+        }
+        #Part2 th:nth-child(1) {
+            background-color: white;
+        }
+        #Part2 tr:nth-child(1) {
+            background-color: rgb(255, 238, 0);
+            text-align: center;
+        }
+        #Part2 tr:nth-child(2) {
+            background-color: rgb(199, 125, 14);
+            text-align: center;
+            font-weight: bolder;
         }
     </style>
 </head>
 <body>
+    <h1>Phần 1</h1>
     <h1>Thời khóa biểu lớp T09081</h1>
-    <table border="1">
-        <tr>
-            <th>Thứ 3</th>
-            <th>Thứ 5</th>
-            <th>Thứ 7</th>
-        </tr>
-        <tr>
-            <td>CF - T1, L1</td>
-            <td>CF - T2, L2</td>
-            <td>CF - T3, L3</td>
-        </tr>
-        <tr>
-            <td>CF - T4, L4</td>
-            <td>CF - Written Test, L5</td>
-            <td>C - T1, L1</td>
-        </tr>
-    </table>
+    <div id="Part1">
+        <table border="1">
+            <tr>
+                <th>Thứ 3</th>
+                <th>Thứ 5</th>
+                <th>Thứ 7</th>
+            </tr>
+            <tr>
+                <td>CF - T1, L1</td>
+                <td>CF - T2, L2</td>
+                <td>CF - T3, L3</td>
+            </tr>
+            <tr>
+                <td>CF - T4, L4</td>
+                <td>CF - Written Test, L5</td>
+                <td>C - T1, L1</td>
+            </tr>
+        </table>
+    </div>
+    <h1>Phần 2</h1>
+    <div class="name-tkb">THỜI KHÓA BIỂU</div>
+    <div class="left">
+        <p>Lớp: T0908I</p>
+        <p>Giáo viên: KhoaNV</p>
+        <p>Phòng học: Class3/Lab3</p>
+    </div>
+    <div class="right">
+        <p>Thời gian học: 13h30 - 17h30</p>
+        <p>Ngày học: Thứ 3, 5, 7</p>
+    </div>
+    
+
+    <div id="Part2">
+        <table border="1">
+            <tr>
+                <th colspan="3"></th>
+                <th>Thứ 3</th>
+                <th>Thứ 5</th>
+                <th>Thứ 7</th>
+            </tr>
+            <tr>
+                <td>Tuần</td>
+                <td>Ngày bắt đầu</td>
+                <td>Ngày kết thúc</td>
+                <td colspan="3">Môn học</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>01/09/2009</td>
+                <td>05/09/2009</td>
+                <td>CF - T1, L1</td>
+                <td>CF - T2, L2</td>
+                <td>CF - T3, L3</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>09/08/2009</td>
+                <td>12/09/2009</td>
+                <td>CF - T4, L4</td>
+                <td>CF - Written Test, L5</td>
+                <td>C - T1, L1</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

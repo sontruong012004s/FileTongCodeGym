@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #part1 td:first-child {
+            width: 1.3em;
+            height: 2em;
+        }
+        #part1 td {
+            width: 2em;
+            height: 2em;
+            text-align: right;
+            padding-right: 0.2em;
+        }
+        #part1 #bottom, #part1 #right {
+            width: 10px;
+            height: 10px;
+            clear: both;
+            background-color: rgb(248, 163, 4);
+        }
+        #part1 {
+            border-collapse: collapse;
+            border: none; 
+        }
+        
+        #part1 tr:first-child, #part1 #class-name {
+            background-color: rgb(248, 163, 4);
+            
+        }
+        #part1 tr:nth-child(odd) td:nth-child(even), 
+        #part1 tr:nth-child(even) td:nth-child(odd) {
+            background-color: black;
+        }
+        #part1 tr:nth-child(odd) td:nth-child(odd), 
+        #part1 tr:nth-child(even) td:nth-child(even) {
+            background-color: white;
+        }
+
+        /* part2 */
+        h3 {
+            padding-left: 5em;
+            color: blue;
+            font-size: xx-large;
+        }
+        #part2 {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        #part2 th {
+            width: 5em;
+            height: 2em;
+        }
+
+        #part2 tr:nth-child(1) {
+            background-color: chocolate;
+        }
+
+        #sun {
+            background-color: red;
+            color: white;
+        }
+
+        #sat {
+            background-color: blue;
+            color: white;
+        }
+        #part2 tr:nth-child(2) {
+            font-weight: 300;
+        }
+        #part2 td:nth-child(1), #sun1 {
+            color: red;
+        }
+
+        #part2 td:last-child, #sat1 {
+            color: blue;
+        }
+
+        #part2 td {
+            width: 2em;
+            height: 2em;
+            border: 1px solid black; /* Add border to cells */
+        }
+        sub {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Phần 1:</h1>
+    <table id="part1">
+        <tr>
+            <th></th>
+            <th colspan="1">1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th id="right"></th>
+        </tr>
+        <tr>
+            <td id="class-name">A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="right"></td>
+        </tr>
+        <tr>
+            <td id="class-name">B</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="right"></td>
+        </tr>
+        <tr>
+            <td id="class-name">C</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="right"></td>
+        </tr>
+        <tr>
+            <td id="class-name">D</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="right"></td>
+        </tr>
+        <tr>
+            <td id="class-name">E</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="right"></td>
+        </tr>
+        <tr>
+            <td id="class-name">F</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="right"></td>
+        </tr>
+        <tr>
+            <td id="class-name">G</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="right"></td>
+        </tr>
+        <tr>
+            <td id="class-name">H</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="right"></td>
+        </tr>
+        <tr>
+            <td colspan="10" id="bottom" ></td>
+        </tr>
+    </table>
+    <h2>Phần 2:</h2>
+    <h3>Tháng 10 - October</h3>
+    <table id="part2">
+        <tr>
+            <th id="sun">C.Nhật</th>
+            <th>T.Hai</th>
+            <th>T.Ba</th>
+            <th>T.Tư</th>
+            <th>T.Năm</th>
+            <th>T.Sáu</th>
+            <th id="sat">T.Bảy</th>
+        </tr>
+        <tr>
+            <th id="sun1">Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th id="sat1">Sat</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1<sub>13</sub></td>
+            <td>2<sub>14</sub></td>
+            <td>3<sub>15</sub></td>
+        </tr>
+        <tr>
+            <td>4<sub>16</sub></td>
+            <td>5<sub>17</sub></td>
+            <td>6<sub>18</sub></td>
+            <td>7<sub>19</sub></td>
+            <td>8<sub>20</sub></td>
+            <td>9<sub>21</sub></td>
+            <td>10<sub>22</sub></td>
+        </tr>
+        <tr>
+            <td>11<sub>23</sub></td>
+            <td>12<sub>24</sub></td>
+            <td>13<sub>25</sub></td>
+            <td>14<sub>26</sub></td>
+            <td>15<sub>27</sub></td>
+            <td>16<sub>28</sub></td>
+            <td>17<sub>29</sub></td>
+        </tr>
+        <tr>
+            <td>18<sub>1.9</sub></td>
+            <td>19<sub>2</sub></td>
+            <td>20<sub>3</sub></td>
+            <td>21<sub>4</sub></td>
+            <td>22<sub>5</sub></td>
+            <td>23<sub>6</sub></td>
+            <td>24<sub>7</sub></td>
+        </tr>
+        <tr>
+            <td>25<sub>8</sub></td>
+            <td>26<sub>9</sub></td>
+            <td>27<sub>10</sub></td>
+            <td>28<sub>11</sub></td>
+            <td>29<sub>12</sub></td>
+            <td>30<sub>13</sub></td>
+            <td>31<sub>14</sub></td>
+        </tr>
+    </table>
+</body>
+</html>

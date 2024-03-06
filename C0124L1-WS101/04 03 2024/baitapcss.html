@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #img1, #img2, #img3, #img4 {
-            width: 28.7em;
-            height: 360px;
-            border: 1px solid rgb(180, 175, 175);
-            float: left;
-            margin: 7px;
-            text-align: center;
+        * {
+            box-sizing: border-box;
         }
-        #img1 > img, #img2 > img, #img3 > img, #img4 > img {
+        body {
+            margin: 15px;
+        }
+        #image {
+            width: 25%;
+            float: left;
+            padding-right: 12px;
+        }
+        #img1, #img2, #img3, #img4 {
             width: 100%;
-            height: 300px;
+            border: 1px solid rgb(180, 175, 175);
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        #img1 > a img, #img2 > a img, #img3 > a img, #img4 > a img {
+            width: 100%;
+            height: 280px;
             float: left;
             margin-bottom: 20px;
         }
-        #content > div:hover {
+        #content > #image div:hover {
             border: 1px solid black;
         }
         #footer {
             clear: both;
             padding-top: 10px;
-            margin: 7px;
         }
     </style>
 </head>
@@ -33,10 +41,34 @@
     <h2>Responsive Image Gallery</h2>
     <h4>Resize the browser window to see the effect.</h4>
     <div id="content">
-        <div id="img1"><img src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" alt="">Add a description of the image here</div>
-        <div id="img2"><img src="https://demo.codegym.vn/web/15/gallery/img_forest.jpg" alt="">Add a description of the image here</div>
-        <div id="img3"><img src="https://demo.codegym.vn/web/15/gallery/img_lights.jpg" alt="">Add a description of the image here</div>
-        <div id="img4"><img src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" alt="">Add a description of the image here</div>
+        <div id="image">
+            <div id="img1">
+                <a href="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" target="_blank" >
+                  <img src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" alt="image1">
+                </a>Add a description of the image here
+            </div>
+        </div>
+        <div id="image">
+            <div id="img2">
+                <a href="https://demo.codegym.vn/web/15/gallery/img_forest.jpg" target="_blank" >
+                  <img src="https://demo.codegym.vn/web/15/gallery/img_forest.jpg" alt="image2">
+                </a>Add a description of the image here
+            </div>
+        </div>
+        <div id="image">
+            <div id="img3">
+                <a href="https://demo.codegym.vn/web/15/gallery/img_lights.jpg" target="_blank" >
+                  <img src="https://demo.codegym.vn/web/15/gallery/img_lights.jpg" alt="image3">
+                </a>Add a description of the image here
+            </div>
+        </div>
+        <div id="image">
+            <div id="img4">
+                <a href="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" target="_blank">
+                  <img src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" alt="image4">
+                </a>Add a description of the image here
+            </div>
+        </div>
     </div>
     <div id="footer">This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide,
          it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).

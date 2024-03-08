@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        margin: 20px;
+    }
+    li {
+        list-style: none;
+    }
+
+    .cap2, .cap3 {
+        display: none;
+    }
+
+    .cap13:hover .cap2, .cap23:hover .cap3 {
+        display: block;
+    }
+
+
+    li {
+        padding: 5px 0px;
+        text-align: center;
+        color: white;
+    }
+    li:hover {
+        border-radius: 3px;
+        background-color: #a0ca8b;
+    }
+    .cap1, .cap2, .cap3 {
+        padding: 5px;
+        width: 70px;
+        background-color: #47991f;
+        border-radius: 3px;
+    }
+    .cap13 {
+        position: relative;
+    }
+    .cap2 {
+        position: absolute;
+        top: -5px;
+        left: 3.8em;
+    }
+    .cap23 {
+        position: relative;
+    }
+    .cap3 {
+        position: absolute;
+        top: -5px;
+        left: 3.8em;
+    }
+</style>
+<body>
+    <ul class="cap1">
+        <li>Cấp 1</li>
+        <li>Cấp 1</li>
+        <li class="cap13">Cấp 1
+            <ul class="cap2">
+                <li>Cấp 2</li>
+                <li>Cấp 2</li>
+                <li class="cap23">Cấp 2
+                    <ul class="cap3">
+                        <li>Cấp 3</li>
+                        <li>Cấp 3</li>
+                    </ul>
+                </li>
+                <li>Cấp 2</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

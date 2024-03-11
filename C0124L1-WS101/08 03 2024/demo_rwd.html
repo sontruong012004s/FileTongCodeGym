@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./demo_rwd.css">
+</head>
+<style>
+    header {
+        background-color: aquamarine;
+        height: 100px;
+    }
+    aside.left {
+        background-color: brown;
+    }
+    aside.right {
+        background-color: rgb(107, 93, 93);
+    }
+    main {
+        background-color: cornsilk;
+    }
+    footer {
+        background-color: darkkhaki;
+        height: 100px;
+        clear: both;
+    }
+
+    /* laptop/desktop */
+    @media screen and (min-width:769px){
+        header{
+            height: 200px;
+        }
+        aside.left {
+            height: 500px;
+            float: left;
+        } 
+        aside.right {
+            height: 500px;
+            float: left;
+        } 
+        main {
+            height: 500px;
+            float: left;
+        }      
+        footer {
+            height: 100px;
+        }
+
+    }
+    /* May tinh bang */
+    @media screen and (min-width:577px) and ( max-width:768px){
+        aside.left {
+            height: 400px;
+            float: left;
+        } 
+        aside.right {
+            height: 100px;
+            clear: both;
+        } 
+        main {
+            height: 400px;
+            float: left;
+        }      
+    }
+
+    /* Dien thoai */
+    @media screen and (max-width:576px){
+        aside.left, aside.right{
+            height: 200px;
+        }
+        main {
+            height: 300px;
+        }
+    }
+</style>
+<body>
+    <header class="col-md-12 col-sm-12 col-12"></header>
+    <aside class="col-md-3 col-sm-4 col-12 left"></aside>
+    <main class="col-md-6 col-sm-8 col-12"></main>
+    <aside class="col-md-3 col-sm-12 col-12 right"></aside>
+    <footer class="col-md-12 col-sm-12 col-12 right"></footer>
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./vnexpress.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-item header-left">
+            <div class="info-item header-left-img">
+                <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v872/v2_2019/pc/graphics/logo.svg" alt="">
+            </div>
+            <div class="info-item header-left-time">
+                <p>Thứ bảy, 16/3/2024</p>
+            </div>
+            <div class="info-item header-left-country">
+                <p>TP HCM</p>
+            </div>
+        </div>
+        <div class="header-item header-right">
+            <div class="info-item header-right-new">
+                <p>Mới nhất</p>
+            </div>
+            <div class="info-item header-right-area">
+                <p>Tin theo khu vực</p>
+            </div>
+            <div class="info-item header-right-interna">
+                <p>International</p>
+            </div>
+            <div class="info-item header-right-login">
+                <div class="search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></div>
+                <div class="login"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+                    <span>Đăng Nhập</span>
+                </div>
+                <div class="notifi"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112v25.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V208c0-61.9 50.1-112 112-112zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/></svg></div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg></li>
+            <li class="menu news"><a href="">Thời sự</a>
+                <ul class="sub">
+                    <li><a href="">Chính trị</a></li>
+                    <li><a href="">Dân sinh</a></li>
+                    <li><a href="">Lao động - Việc làm</a></li>
+                    <li><a href="">Giao thông</a></li>
+                    <li><a href="">Mekong</a></li>
+                    <li><a href="">Quỹ Hy vọng</a></li>
+                </ul>
+            </li>
+            <li class="menu gocnhin"><a href="">Góc nhìn</a>
+                <ul class="sub">
+                    <li class="comment"><a href="">Bình luận nhiều</a></li>
+                    <li><a href="">Chính trị & chính sách</a></li>
+                    <li><a href="">Y tế & sức khỏe</a></li>
+                    <li><a href="">Kinh doanh & quản trị</a></li>
+                    <li><a href="">Giáo dục & tri thức</a></li>
+                    <li><a href="">Môi trường</a></li>
+                    <li><a href="">Văn hóa & lối sống</a></li>
+                    <li><a href="">Covid 19</a></li>
+                    <li><a href="">Tác giả</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Thế giới</a>
+                <ul class="sub">
+                    <li><a title="Tư liệu" href="https://vnexpress.net/the-gioi/tu-lieu" data-medium="Menu-TuLieu" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TuLieu&amp;vn_term=Desktop" data-itm-added="1">Tư liệu</a></li>
+                    <li><a title="Phân tích" href="https://vnexpress.net/the-gioi/phan-tich" data-medium="Menu-PhanTich" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-PhanTich&amp;vn_term=Desktop" data-itm-added="1">Phân tích</a></li>
+                    <li><a title="Người Việt 5 châu" href="https://vnexpress.net/the-gioi/nguoi-viet-5-chau" data-medium="Menu-NguoiViet5Chau" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-NguoiViet5Chau&amp;vn_term=Desktop" data-itm-added="1">Người Việt 5 châu</a></li>
+                    <li><a title="Cuộc sống đó đây" href="https://vnexpress.net/the-gioi/cuoc-song-do-day" data-medium="Menu-CuocSongDoDay" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-CuocSongDoDay&amp;vn_term=Desktop" data-itm-added="1">Cuộc sống đó đây</a></li>
+                    <li><a title="Quân sự" href="https://vnexpress.net/the-gioi/quan-su" data-medium="Menu-QuanSu" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-QuanSu&amp;vn_term=Desktop" data-itm-added="1">Quân sự</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Video</a>
+                <ul class="sub">
+                    <li><a title="Thời sự" href="https://video.vnexpress.net/thoi-su" data-medium="Menu-ThoiSu" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ThoiSu&amp;vn_term=Desktop" data-itm-added="1">Thời sự</a></li>
+                    <li><a title="Nhịp sống" href="https://video.vnexpress.net/nhip-song" data-medium="Menu-NhipSong" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-NhipSong&amp;vn_term=Desktop" data-itm-added="1">Nhịp sống</a></li>
+                    <li><a title="Food" href="https://video.vnexpress.net/food" data-medium="Menu-Food" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Food&amp;vn_term=Desktop" data-itm-added="1">Food</a></li>
+                    <li><a title="Pháp luật" href="https://video.vnexpress.net/phap-luat" data-medium="Menu-PhapLuat" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-PhapLuat&amp;vn_term=Desktop" data-itm-added="1">Pháp luật</a></li>
+                    <li><a title="Giải trí" href="https://video.vnexpress.net/giai-tri" data-medium="Menu-GiaiTri" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-GiaiTri&amp;vn_term=Desktop" data-itm-added="1">Giải trí</a></li>
+                    <li><a title="Thế giới" href="https://video.vnexpress.net/the-gioi" data-medium="Menu-TheGioi" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TheGioi&amp;vn_term=Desktop" data-itm-added="1">Thế giới</a></li>
+                    <li><a title="Khoa học" href="https://video.vnexpress.net/khoa-hoc" data-medium="Menu-KhoaHoc" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-KhoaHoc&amp;vn_term=Desktop" data-itm-added="1">Khoa học</a></li>
+                    <li><a title="Thể thao" href="https://video.vnexpress.net/the-thao" data-medium="Menu-TheThao" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TheThao&amp;vn_term=Desktop" data-itm-added="1">Thể thao</a></li>
+                    <li><a title="Giáo dục" href="https://video.vnexpress.net/giao-duc" data-medium="Menu-GiaoDuc" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-GiaoDuc&amp;vn_term=Desktop" data-itm-added="1">Giáo dục</a></li>
+                    <li><a title="Xe" href="https://video.vnexpress.net/oto-xemay" data-medium="Menu-Xe" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Xe&amp;vn_term=Desktop" data-itm-added="1">Xe</a></li>
+                    <li><a title="Số hóa" href="https://video.vnexpress.net/so-hoa" data-medium="Menu-SoHoa" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-SoHoa&amp;vn_term=Desktop" data-itm-added="1">Số hóa</a></li>
+                    <li><a title="Du lịch" href="https://video.vnexpress.net/du-lich" data-medium="Menu-DuLich" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DuLich&amp;vn_term=Desktop" data-itm-added="1">Du lịch</a></li>
+                    <li><a title="Sức khỏe" href="https://video.vnexpress.net/suc-khoe" data-medium="Menu-SucKhoe" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-SucKhoe&amp;vn_term=Desktop" data-itm-added="1">Sức khỏe</a></li>
+                    <li><a title="Chủ đề" href="https://video.vnexpress.net/chu-de" data-medium="Menu-ChuDe" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ChuDe&amp;vn_term=Desktop" data-itm-added="1">Chủ đề</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Podcasts</a>
+                <ul class="sub">
+                    <li><a title="VnExpress hôm nay" href="https://vnexpress.net/podcast/vnexpress-hom-nay" data-medium="Menu-VnexpressHomNay" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-VnexpressHomNay&amp;vn_term=Desktop" data-itm-added="1">VnExpress hôm nay</a></li>
+                    <li><a title="Tiền làm gì?" href="https://vnexpress.net/podcast/tien-lam-gi" data-medium="Menu-TienLamGi" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TienLamGi&amp;vn_term=Desktop" data-itm-added="1">Tiền làm gì?</a></li>
+                    <li><a title="Tài chính cá nhân" href="https://vnexpress.net/podcast/tai-chinh-ca-nhan" data-medium="Menu-TaiChinhCaNhan" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TaiChinhCaNhan&amp;vn_term=Desktop" data-itm-added="1">Tài chính cá nhân</a></li>
+                    <li><a title="Giải mã" href="https://vnexpress.net/podcast/giai-ma" data-medium="Menu-GiaiMa" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-GiaiMa&amp;vn_term=Desktop" data-itm-added="1">Giải mã</a></li>
+                    <li><a title="Hộp đen" href="https://vnexpress.net/podcast/hop-den" data-medium="Menu-HopDen" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-HopDen&amp;vn_term=Desktop" data-itm-added="1">Hộp đen</a></li>
+                    <li><a title="Họ nói gì?" href="https://vnexpress.net/podcast/ho-noi-gi" data-medium="Menu-HoNoiGi" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-HoNoiGi&amp;vn_term=Desktop" data-itm-added="1">Họ nói gì?</a></li>
+                    <li><a title="Ly hôn" href="https://vnexpress.net/podcast/ly-hon" data-medium="Menu-LyHon" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-LyHon&amp;vn_term=Desktop" data-itm-added="1">Ly hôn</a></li>
+                    <li><a title="Thầm thì" href="https://vnexpress.net/podcast/tham-thi" data-medium="Menu-ThamThi" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ThamThi&amp;vn_term=Desktop" data-itm-added="1">Thầm thì</a></li>
+                    <li><a title="Bạn ổn không?" href="https://vnexpress.net/podcast/ban-on-khong" data-medium="Menu-BanOnKhong" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-BanOnKhong&amp;vn_term=Desktop" data-itm-added="1">Bạn ổn không?</a></li>
+                    <li><a title="Tôi trong gương" href="https://vnexpress.net/podcast/toi-trong-guong" data-medium="Menu-ToiTrongGuong" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ToiTrongGuong&amp;vn_term=Desktop" data-itm-added="1">Tôi trong gương</a></li>
+                    <li><a title="Chuyện đi làm" href="https://vnexpress.net/podcast/chuyen-di-lam" data-medium="Menu-ChuyenDiLam" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ChuyenDiLam&amp;vn_term=Desktop" data-itm-added="1">Chuyện đi làm</a></li>
+                    <li><a title="Úp mở 18+" href="https://vnexpress.net/podcast/up-mo-18" data-medium="Menu-UpMo18+" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-UpMo18+&amp;vn_term=Desktop" data-itm-added="1">Úp mở 18+</a></li>
+                    <li><a title="Điểm tin" href="https://vnexpress.net/podcast/diem-tin" data-medium="Menu-DiemTin" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DiemTin&amp;vn_term=Desktop" data-itm-added="1">Điểm tin</a></li>
+                    <li><a title="Nguy cơ" href="https://vnexpress.net/podcast/nguy-co" data-medium="Menu-NguyCo" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-NguyCo&amp;vn_term=Desktop" data-itm-added="1">Nguy cơ</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Kinh doanh</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Quốc tế" href="https://vnexpress.net/kinh-doanh/quoc-te" data-medium="Menu-QuocTe" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-QuocTe&amp;vn_term=Desktop" data-itm-added="1">Quốc tế</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Doanh nghiệp" href="https://vnexpress.net/kinh-doanh/doanh-nghiep" data-medium="Menu-DoanhNghiep" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DoanhNghiep&amp;vn_term=Desktop" data-itm-added="1">Doanh nghiệp</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Chứng khoán" href="https://vnexpress.net/kinh-doanh/chung-khoan" data-medium="Menu-ChungKhoan" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ChungKhoan&amp;vn_term=Desktop" data-itm-added="1">Chứng khoán</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Ebank" href="https://vnexpress.net/kinh-doanh/ebank" data-medium="Menu-Ebank" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Ebank&amp;vn_term=Desktop" data-itm-added="1">Ebank</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Vĩ mô" href="https://vnexpress.net/kinh-doanh/vi-mo" data-medium="Menu-ViMo" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ViMo&amp;vn_term=Desktop" data-itm-added="1">Vĩ mô</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Tiền của tôi" href="https://vnexpress.net/kinh-doanh/tien-cua-toi" data-medium="Menu-TienCuaToi" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TienCuaToi&amp;vn_term=Desktop" data-itm-added="1">Tiền của tôi</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Bảo hiểm" href="https://vnexpress.net/kinh-doanh/bao-hiem" data-medium="Menu-BaoHiem" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-BaoHiem&amp;vn_term=Desktop" data-itm-added="1">Bảo hiểm</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Hàng hóa" href="https://vnexpress.net/kinh-doanh/hang-hoa" data-medium="Menu-HangHoa" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-HangHoa&amp;vn_term=Desktop" data-itm-added="1">Hàng hóa</a>
+                    </li>
+                    
+                    <li>
+                        <a title="eBox" href="https://ebox.vnexpress.net/" data-medium="Menu-Ebox" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Ebox&amp;vn_term=Desktop" data-itm-added="1">eBox</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Bất động sản</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Chính sách" href="https://vnexpress.net/bat-dong-san/chinh-sach" data-medium="Menu-ChinhSach" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ChinhSach&amp;vn_term=Desktop" data-itm-added="1">Chính sách</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Thị trường" href="https://vnexpress.net/bat-dong-san/thi-truong" data-medium="Menu-ThiTruong" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ThiTruong&amp;vn_term=Desktop" data-itm-added="1">Thị trường</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Dự án" href="https://vnexpress.net/bat-dong-san/du-an" data-medium="Menu-DuAn" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DuAn&amp;vn_term=Desktop" data-itm-added="1">Dự án</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Không gian sống" href="https://vnexpress.net/bat-dong-san/khong-gian-song" data-medium="Menu-KhongGianSong" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-KhongGianSong&amp;vn_term=Desktop" data-itm-added="1">Không gian sống</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Tư vấn" href="https://vnexpress.net/bat-dong-san/tu-van" data-medium="Menu-TuVan" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TuVan&amp;vn_term=Desktop" data-itm-added="1">Tư vấn</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Khoa học</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Khoa học trong nước" href="https://vnexpress.net/khoa-hoc/khoa-hoc-trong-nuoc" data-medium="Menu-KhoaHocTrongNuoc" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-KhoaHocTrongNuoc&amp;vn_term=Desktop" data-itm-added="1">Khoa học trong nước</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Chỉ số PII" href="https://vnexpress.net/khoa-hoc/pii-doi-moi-sang-tao" data-medium="Menu-ChiSoPii" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ChiSoPii&amp;vn_term=Desktop" data-itm-added="1">Chỉ số PII</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Tin tức" href="https://vnexpress.net/khoa-hoc/tin-tuc" data-medium="Menu-TinTuc" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TinTuc&amp;vn_term=Desktop" data-itm-added="1">Tin tức</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Phát minh" href="https://vnexpress.net/khoa-hoc/phat-minh" data-medium="Menu-PhatMinh" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-PhatMinh&amp;vn_term=Desktop" data-itm-added="1">Phát minh</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Ứng dụng" href="https://vnexpress.net/khoa-hoc/ung-dung" data-medium="Menu-UngDung" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-UngDung&amp;vn_term=Desktop" data-itm-added="1">Ứng dụng</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Thế giới tự nhiên" href="https://vnexpress.net/khoa-hoc/the-gioi-tu-nhien" data-medium="Menu-TheGioiTuNhien" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TheGioiTuNhien&amp;vn_term=Desktop" data-itm-added="1">Thế giới tự nhiên</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Thường thức" href="https://vnexpress.net/khoa-hoc/thuong-thuc" data-medium="Menu-ThuongThuc" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ThuongThuc&amp;vn_term=Desktop" data-itm-added="1">Thường thức</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Sáng kiến Khoa học 2024" href="https://vnexpress.net/khoa-hoc/cuoc-thi-sang-kien-khoa-hoc" data-medium="Menu-SangKienKhoaHoc2024" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-SangKienKhoaHoc2024&amp;vn_term=Desktop" data-itm-added="1">Sáng kiến Khoa học 2024</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Giai trí</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Giới sao" href="https://vnexpress.net/giai-tri/gioi-sao" data-medium="Menu-GioiSao" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-GioiSao&amp;vn_term=Desktop" data-itm-added="1">Giới sao</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Sách" href="https://vnexpress.net/giai-tri/sach" data-medium="Menu-Sach" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Sach&amp;vn_term=Desktop" data-itm-added="1">Sách</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Video" href="https://video.vnexpress.net/giai-tri" data-medium="Menu-Video" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Video&amp;vn_term=Desktop" data-itm-added="1">Video</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Phim" href="https://vnexpress.net/giai-tri/phim" data-medium="Menu-Phim" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Phim&amp;vn_term=Desktop" data-itm-added="1">Phim</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Nhạc" href="https://vnexpress.net/giai-tri/nhac" data-medium="Menu-Nhac" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Nhac&amp;vn_term=Desktop" data-itm-added="1">Nhạc</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Thời trang" href="https://vnexpress.net/giai-tri/thoi-trang" data-medium="Menu-ThoiTrang" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ThoiTrang&amp;vn_term=Desktop" data-itm-added="1">Thời trang</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Làm đẹp" href="https://vnexpress.net/giai-tri/lam-dep" data-medium="Menu-LamDep" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-LamDep&amp;vn_term=Desktop" data-itm-added="1">Làm đẹp</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Sân khấu - Mỹ thuật" href="https://vnexpress.net/giai-tri/san-khau-my-thuat" data-medium="Menu-SanKhauMyThuat" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-SanKhauMyThuat&amp;vn_term=Desktop" data-itm-added="1">Sân khấu - Mỹ thuật</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Thể thao</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Bóng đá" href="/bong-da" data-medium="Menu-BongDa" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-BongDa&amp;vn_term=Desktop" data-itm-added="1">Bóng đá</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Lịch thi đấu" href="https://vnexpress.net/the-thao/du-lieu-bong-da" data-medium="Menu-LichThiDau" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-LichThiDau&amp;vn_term=Desktop" data-itm-added="1">Lịch thi đấu</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Marathon" href="https://vnexpress.net/the-thao/marathon" data-medium="Menu-Marathon" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Marathon&amp;vn_term=Desktop" data-itm-added="1">Marathon</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Tennis" href="https://vnexpress.net/the-thao/tennis" data-medium="Menu-Tennis" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Tennis&amp;vn_term=Desktop" data-itm-added="1">Tennis</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Các môn khác" href="https://vnexpress.net/the-thao/cac-mon-khac" data-medium="Menu-CacMonKhac" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-CacMonKhac&amp;vn_term=Desktop" data-itm-added="1">Các môn khác</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Hậu trường" href="https://vnexpress.net/the-thao/hau-truong" data-medium="Menu-HauTruong" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-HauTruong&amp;vn_term=Desktop" data-itm-added="1">Hậu trường</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Ảnh" href="https://vnexpress.net/the-thao/photo" data-medium="Menu-Anh" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Anh&amp;vn_term=Desktop" data-itm-added="1">Ảnh</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Video" href="/the-thao/video" data-medium="Menu-Video" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Video&amp;vn_term=Desktop" data-itm-added="1">Video</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Pháp luật</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Hồ sơ phá án" href="https://vnexpress.net/phap-luat/ho-so-pha-an" data-medium="Menu-HoSoPhaAn" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-HoSoPhaAn&amp;vn_term=Desktop" data-itm-added="1">Hồ sơ phá án</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Tư vấn" href="https://vnexpress.net/phap-luat/tu-van" data-medium="Menu-TuVan" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TuVan&amp;vn_term=Desktop" data-itm-added="1">Tư vấn</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Video" href="https://vnexpress.net/phap-luat/video" data-medium="Menu-Video" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Video&amp;vn_term=Desktop" data-itm-added="1">Video</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Giao dục</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Tin tức" href="https://vnexpress.net/giao-duc/tin-tuc" data-medium="Menu-TinTuc" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TinTuc&amp;vn_term=Desktop" data-itm-added="1">Tin tức</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Tuyển sinh" href="https://vnexpress.net/giao-duc/tuyen-sinh" data-medium="Menu-TuyenSinh" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TuyenSinh&amp;vn_term=Desktop" data-itm-added="1">Tuyển sinh</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Chân dung" href="https://vnexpress.net/giao-duc/chan-dung" data-medium="Menu-ChanDung" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ChanDung&amp;vn_term=Desktop" data-itm-added="1">Chân dung</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Du học" href="https://vnexpress.net/giao-duc/du-hoc" data-medium="Menu-DuHoc" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DuHoc&amp;vn_term=Desktop" data-itm-added="1">Du học</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Thảo luận" href="https://vnexpress.net/giao-duc/thao-luan" data-medium="Menu-ThaoLuan" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ThaoLuan&amp;vn_term=Desktop" data-itm-added="1">Thảo luận</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Học tiếng Anh" href="https://vnexpress.net/giao-duc/hoc-tieng-anh" data-medium="Menu-HocTiengAnh" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-HocTiengAnh&amp;vn_term=Desktop" data-itm-added="1">Học tiếng Anh</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Giáo dục 4.0" href="https://vnexpress.net/giao-duc/giao-duc-40" data-medium="Menu-GiaoDuc40" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-GiaoDuc40&amp;vn_term=Desktop" data-itm-added="1">Giáo dục 4.0</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Sức khỏe</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Tin tức" href="https://vnexpress.net/suc-khoe/tin-tuc" data-medium="Menu-TinTuc" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TinTuc&amp;vn_term=Desktop" data-itm-added="1">Tin tức</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Tư vấn" href="https://vnexpress.net/suc-khoe/tu-van" data-medium="Menu-TuVan" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TuVan&amp;vn_term=Desktop" data-itm-added="1">Tư vấn</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Dinh dưỡng" href="https://vnexpress.net/suc-khoe/dinh-duong" data-medium="Menu-DinhDuong" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DinhDuong&amp;vn_term=Desktop" data-itm-added="1">Dinh dưỡng</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Khỏe đẹp" href="https://vnexpress.net/suc-khoe/khoe-dep" data-medium="Menu-KhoeDep" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-KhoeDep&amp;vn_term=Desktop" data-itm-added="1">Khỏe đẹp</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Đàn ông" href="https://vnexpress.net/suc-khoe/dan-ong" data-medium="Menu-DanOng" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DanOng&amp;vn_term=Desktop" data-itm-added="1">Đàn ông</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Các bệnh" href="https://vnexpress.net/suc-khoe/cac-benh" data-medium="Menu-CacBenh" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-CacBenh&amp;vn_term=Desktop" data-itm-added="1">Các bệnh</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Vaccine" href="https://vnexpress.net/suc-khoe/vaccine" data-medium="Menu-Vaccine" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Vaccine&amp;vn_term=Desktop" data-itm-added="1">Vaccine</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Đời sống</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Nhịp sống" href="https://vnexpress.net/doi-song/nhip-song" data-medium="Menu-NhipSong" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-NhipSong&amp;vn_term=Desktop" data-itm-added="1">Nhịp sống</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Tổ ấm" href="https://vnexpress.net/doi-song/to-am" data-medium="Menu-ToAm" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ToAm&amp;vn_term=Desktop" data-itm-added="1">Tổ ấm</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Bài học sống" href="https://vnexpress.net/doi-song/bai-hoc-song" data-medium="Menu-BaiHocSong" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-BaiHocSong&amp;vn_term=Desktop" data-itm-added="1">Bài học sống</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Cooking" href="https://vnexpress.net/doi-song/cooking" data-medium="Menu-Cooking" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Cooking&amp;vn_term=Desktop" data-itm-added="1">Cooking</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Tiêu dùng" href="https://vnexpress.net/doi-song/tieu-dung" data-medium="Menu-TieuDung" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TieuDung&amp;vn_term=Desktop" data-itm-added="1">Tiêu dùng</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Du lịch</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Điểm đến" href="https://vnexpress.net/du-lich/diem-den" data-medium="Menu-DiemDen" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DiemDen&amp;vn_term=Desktop" data-itm-added="1">Điểm đến</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Ẩm thực" href="https://vnexpress.net/du-lich/am-thuc" data-medium="Menu-AmThuc" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-AmThuc&amp;vn_term=Desktop" data-itm-added="1">Ẩm thực</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Dấu chân" href="https://vnexpress.net/du-lich/dau-chan" data-medium="Menu-DauChan" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DauChan&amp;vn_term=Desktop" data-itm-added="1">Dấu chân</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Tư vấn" href="https://vnexpress.net/du-lich/tu-van" data-medium="Menu-TuVan" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-TuVan&amp;vn_term=Desktop" data-itm-added="1">Tư vấn</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Cẩm nang" href="https://vnexpress.net/du-lich/cam-nang" data-medium="Menu-CamNang" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-CamNang&amp;vn_term=Desktop" data-itm-added="1">Cẩm nang</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Ảnh" href="https://vnexpress.net/du-lich/anh-video" data-medium="Menu-Anh" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Anh&amp;vn_term=Desktop" data-itm-added="1">Ảnh</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Số hóa</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Công nghệ" href="https://vnexpress.net/so-hoa/cong-nghe" data-medium="Menu-CongNghe" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-CongNghe&amp;vn_term=Desktop" data-itm-added="1">Công nghệ</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Sản phẩm" href="https://vnexpress.net/so-hoa/san-pham" data-medium="Menu-SanPham" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-SanPham&amp;vn_term=Desktop" data-itm-added="1">Sản phẩm</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Blockchain" href="https://vnexpress.net/so-hoa/blockchain" data-medium="Menu-Blockchain" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Blockchain&amp;vn_term=Desktop" data-itm-added="1">Blockchain</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Kinh nghiệm" href="https://vnexpress.net/so-hoa/kinh-nghiem" data-medium="Menu-KinhNghiem" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-KinhNghiem&amp;vn_term=Desktop" data-itm-added="1">Kinh nghiệm</a>
+                    </li>
+                    
+                    <li>
+                        <a title="GameVerse 2024" href="https://vnexpress.net/so-hoa/vgv-2024" data-medium="Menu-Gameverse2024" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Gameverse2024&amp;vn_term=Desktop" data-itm-added="1">GameVerse 2024</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Xe</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Thị trường" href="https://vnexpress.net/oto-xe-may/thi-truong" data-medium="Menu-ThiTruong" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ThiTruong&amp;vn_term=Desktop" data-itm-added="1">Thị trường</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Car Awards 2023" href="https://vnexpress.net/oto-xe-may/car-awards-2023" data-medium="Menu-CarAwards2023" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-CarAwards2023&amp;vn_term=Desktop" data-itm-added="1">Car Awards 2023</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Diễn đàn" href="https://vnexpress.net/oto-xe-may/dien-dan" data-medium="Menu-DienDan" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DienDan&amp;vn_term=Desktop" data-itm-added="1">Diễn đàn</a>
+                    </li>
+                    
+                    <li>
+                        <a title="V-Car" href="https://vnexpress.net/oto-xe-may/v-car" data-medium="Menu-VCar" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-VCar&amp;vn_term=Desktop" data-itm-added="1">V-Car</a>
+                    </li>
+                    
+                    <li>
+                        <a title="V-Bike" href="https://vnexpress.net/oto-xe-may/v-bike" data-medium="Menu-VBike" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-VBike&amp;vn_term=Desktop" data-itm-added="1">V-Bike</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Cầm lái" href="https://vnexpress.net/oto-xe-may/cam-lai" data-medium="Menu-CamLai" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-CamLai&amp;vn_term=Desktop" data-itm-added="1">Cầm lái</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Thi bằng lái" href="https://vnexpress.net/interactive/2016/thi-sat-hach-lai-xe" data-medium="Menu-ThiBangLai" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ThiBangLai&amp;vn_term=Desktop" data-itm-added="1">Thi bằng lái</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Mua bán" href="https://raovat.vnexpress.net/o-to-xe" data-medium="Menu-MuaBan" target="_blank" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-MuaBan&amp;vn_term=Desktop" data-itm-added="1">Mua bán</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Y kiến</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Thời sự" href="https://vnexpress.net/y-kien/thoi-su" data-medium="Menu-ThoiSu" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ThoiSu&amp;vn_term=Desktop" data-itm-added="1">Thời sự</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Đời sống" href="https://vnexpress.net/y-kien/doi-song" data-medium="Menu-DoiSong" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DoiSong&amp;vn_term=Desktop" data-itm-added="1">Đời sống</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Tâm sự</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Hẹn hò" href="https://vnexpress.net/tam-su/hen-ho" data-medium="Menu-HenHo" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-HenHo&amp;vn_term=Desktop" data-itm-added="1">Hẹn hò</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">Thư giản</a>
+                <ul class="sub">
+                    <li>
+                        <a title="Cười" href="https://vnexpress.net/thu-gian/cuoi" data-medium="Menu-Cuoi" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Cuoi&amp;vn_term=Desktop" data-itm-added="1">Cười</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Đố vui" href="https://vnexpress.net/thu-gian/do-vui" data-medium="Menu-DoVui" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-DoVui&amp;vn_term=Desktop" data-itm-added="1">Đố vui</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Chuyện lạ" href="https://vnexpress.net/thu-gian/chuyen-la" data-medium="Menu-ChuyenLa" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ChuyenLa&amp;vn_term=Desktop" data-itm-added="1">Chuyện lạ</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Crossword" href="https://vnexpress.net/thu-gian/crossword" data-medium="Menu-Crossword" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-Crossword&amp;vn_term=Desktop" data-itm-added="1">Crossword</a>
+                    </li>
+                    
+                    <li>
+                        <a title="Thú cưng" href="https://vnexpress.net/thu-gian/thu-cung" data-medium="Menu-ThuCung" data-itm-source="#vn_source=Home&amp;vn_campaign=Header&amp;vn_medium=Menu-ThuCung&amp;vn_term=Desktop" data-itm-added="1">Thú cưng</a>
+                    </li>
+                </ul>
+            </li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="info-important">
+            <div class="info-impor-text">
+                <div class="impor-text-top">
+                    <div class="impor-text-top-img">
+                        <img src="https://i1-vnexpress.vnecdn.net/2024/03/17/CHAY-BAI-XE-1800-1710016903-jp-6883-7707-1710651575.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=cUMwAzxqod_Z_-5OEESgLA" alt="">
+                    </div>
+                    <div class="impor-text-top-content">
+                        <h3>Ai phải bồi thường hơn 200 xe tang vật bị cháy ở Bình Thuận?</h3>
+                        <p>Theo các chuyên gia luật, cơ quan nhà nước có trách nhiệm quản lý, bảo quản tang vật, phương tiện vi phạm hành chính bị tạm giữ, nên xe bị cháy thì phải chịu trách nhiệm bồi thường.
+                            <br><br>
+                            Kho tạm giữ xe vi phạm trong khuôn viên trụ sở Công an huyện Tánh Linh
+                            <br>...
+                        </p>
+                    </div>
+                </div>
+                <div class="info-text-bottom">
+                    <div class="info-bottom text-bottom-1">
+                        <div class="info-text">Ông Nguyễn Thái Học làm quyền Bí thư Tỉnh ủy Lâm Đồng</div>
+                        <img src="https://i1-vnexpress.vnecdn.net/2024/03/17/Quyen-Bi-thu-Lam-Dong-Nguyen-T-1183-7786-1710645854.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=a2_s4KK3D-yCGMe18DMDVw" alt="">
+                    </div>
+                    <div class="info-bottom text-bottom-2">
+                        <div class="info-text">Người dân than phiền vì đàn chim én kéo về trung tâm TP Rạch Giá</div>
+                        <img src="https://i1-vnexpress.vnecdn.net/2024/03/12/the-house-under-the-ground-willemsenu-12-1710216410.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=lP8zyfitBmbus7EWZ4aXeg" alt="">
+                    </div>
+                    <div class="info-bottom text-bottom-3">
+                        <div class="info-text">Antony - vấn đề trị giá 103 triệu USD của Man Utd</div>
+                        <img src="https://i1-thethao.vnecdn.net/2024/03/16/tenhag-5801-1710601432.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=06PoIEiOaUtFw8uORWYGsw" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="info-impor-adver">
+                <img src="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsvWDxaqFN2-AUCADF0X-K-g8fkqn0NvOjpHUh6L94ieI6C9VWsz9_lUKOttyG-UKhYRk0vbKgYi0WppTOBRmDHvaDnMDo1HWx8QLirjYk6DAFfQEANZiQ9oeS2_YMPkX1aBog-LDqzDGQYZm6THMsSnqFtg1JkoT4itza6SGA6PmKbSdZ2FfzYoVksAbFQIWxHWuI3NYAKkVKVZff7fg9iJ3uQP7G5v5tJUxa0iRS4Ra7yUkl4yY4vVUcSA0-9qerygQSqGu2l0E9eK5Q-1ZNctl0ih6YRAr4hpJeVdNNvj17xWTcYYnKD9XA8ZfPoT2E4u1yYyuBOpXC3vDz8dJq_WlIGBh6tcE6VkZplOwMjNu1BJ9mk4fyw&sai=AMfl-YQ3iGYcw__1DvbYyoU9rsDW7oCkmCpQlsLvtnuhzgURPNitytyXwDaicdgB5IQk3DTrp_6is3013_Lem8Lf0wWPnLfk80YAOH8Fzts0rW8XN00HrHkpfuzWp4fzVkFi_f3CdNPwPXg4IbZuDYSXF_gL&sig=Cg0ArKJSzKElYyG-A28pEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https%3A%2F%2Febox.vnexpress.net%2F%3Futm_source%3DVnExpress%26utm_medium%3DDisplay_ads%26utm_campaign%3DDefault_fullyear_300x600_Web_28103112%26utm_content%3DeBox%26size%3D300x600" alt="">
+            </div>
+        </div>
+        <div class="main-right"></div>
+    </main>
+</body>
+</html>

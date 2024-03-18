@@ -15,7 +15,7 @@ a {
     font-weight: 500;
 }
 #header-wrap-icon {
-    float: inline-end;
+    float: inline-end; 
     display: flex;
     position: absolute;
     right: 0;

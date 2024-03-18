@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+.header-item {
+    margin: 7px 0px;
+}
+.header-left {
+    flex-basis: 50%;
+}
+
+.header-right {
+    flex-basis: 50%;
+    position: relative;
+}
+/* header info-item */
+.header-left {
+    display: flex;
+    padding-left: 11.5%;
+}
+.header-right {
+    display: flex;
+    padding-left: 5%;
+}
+.info-item {
+    padding: 10px;
+    text-align: center;
+}
+.info-item p, .info-item img {
+    padding-right: 20px;
+    border-right: 1px solid rgb(182, 169, 169);
+}
+.info-item:nth-child(3) p {
+    border-right: none;
+}
+.info-item p {
+    padding-top: 5px;
+    font-size: 18px;
+}
+.header-right-login {
+    display: flex;
+}
+.header-right-login > div {
+    padding: 5px 10px 0px 10px;
+}
+.header-right-login > div > span {
+    font-size: 18px;
+    padding-left: 10px;
+    position: absolute;
+}
+.header-right-login .notifi {
+    padding-left: 5.5em;
+}
+/* nav */
+nav {
+    border-top: 0.1px solid rgb(87, 86, 86);
+    border-bottom: 0.1px solid rgb(87, 86, 86);
+    background-color: white;
+    padding: 0px 3.5%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav li {
+    padding: 10px 5px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+/* nav position */
+nav .sub {
+    display: none;
+    top: 44px;
+    border-top: 1px solid red;
+    background-color: rgb(241, 227, 227);
+    
+}
+nav .menu li {
+    padding: 7px 5px;
+    width: 180px;
+}
+nav .menu li a:hover {
+    text-decoration: underline;
+}
+nav .menu:hover .sub {
+    position: absolute;
+    display: block;
+}
+.menu {
+    position: relative;
+}
+
+/* main */
+main {
+    margin: 0px 15em 0px;
+}
+.info-important {
+    display: flex;
+}
+
+.info-impor-text {
+    flex-basis: 60%;
+    
+}
+.info-impor-adver {
+    flex-basis: 40%;
+    background-color: beige;
+}
+.impor-text-top {
+    display: flex;
+    padding: 20px 0px;
+    border-bottom: 0.1px solid rgb(87, 86, 86);
+}
+.impor-text-top-img {
+    flex-basis: 70%;
+}
+.impor-text-top-content {
+    flex-basis: 30%;
+    padding: 10px;
+
+}
+.impor-text-top-content p {
+    padding: 10px 0px;
+    font-size: 15px;
+    
+}
+.impor-text-top-img img {
+    width: 100%;
+}
+
+/* bottom */
+.info-text-bottom {
+    display: flex;
+    padding: 20px 0px;
+}
+.info-text-bottom h3 {
+    padding: 0px 10px 20px 0px;
+    font-size: 22px;
+}
+.info-bottom {
+    flex-basis: 33.33%;
+    min-height: none;
+
+}
+.info-bottom img {
+    width: 100%;
+}
+.info-bottom .info-text {
+    padding: 0px 10px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.info-text-bottom > div {
+    margin-right: 10px;
+}
+svg {
+    width: 20px;
+    height: 20px;
+}

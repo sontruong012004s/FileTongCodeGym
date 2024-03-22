@@ -1,0 +1,11 @@
+.container-border {
+    border: 1px solid red;
+}
+.features-number {
+    /* width: 50px; */
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: brown inset;
+    border: 1px solid rgb(184, 169, 169);
+    
+}

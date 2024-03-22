@@ -14,13 +14,15 @@
 .banner-text {
     text-align: center;
     color: #fff;
-    padding-top: 180px;
+    padding-top: 250px;
 }
 .banner-text .banner-name {
     font-size: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
-    
+}
+.banner-btn {
+    padding: 30px;
 }
 .banner-text p {
     font-size: 20px;

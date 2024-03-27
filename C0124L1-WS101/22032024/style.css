@@ -1,3 +1,7 @@
+.primary-btn {
+    border-radius: 30px;
+    font-weight: bold;
+}
 .container-border {
     border: 1px solid red;
 }
@@ -22,3 +26,84 @@ svg {
     width: 50px;
     height: 50px;
 }
+/* section-2 */
+.cover {
+    width: 100%;
+    height: 55vmin;
+    background: url('./assets//pexels-photo-452738.jpeg');
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    position: relative;
+}
+.cover .content {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    padding-top: 19vmin;
+    background: rgba(0, 0, 0, 0.7);
+}
+.cover .content h1 {
+    font-size: 6vmin;
+    color: white;
+}
+.cover .content p {
+    font-size: 6vmin;
+    color: white;
+}
+.numbers {
+    margin-top: -15vmin;
+}
+.numbers .rect {
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 2px 50px 0 rgba(255, 0, 0, 0.349);
+}
+.numbers .rect h1 {
+    font-size: 5rem;
+    color: tomato;
+}
+
+.purchase .cards .card {
+    width: 22rem;
+    margin: 3vmin 3vmin;
+
+}
+.purchase h1 {
+    padding-top: 15vmin;
+    padding-bottom: 0.1rem;
+}
+.purchase p {
+    font-size: 3vmin;
+    padding-bottom: 10vmin;
+}
+
+.cards div {
+    padding: 0;
+    margin: 0;
+}
+.cards .title {
+    background-color: rgba(208, 241, 241, 0.119);
+    padding: 1.4rem 2.5em;
+    font-size: 2vmin;
+}
+.card .card-text {
+    padding: 2.5rem 3rem;
+    font-size: 1rem;
+}
+.card-body .pricing {
+    background-color: rgba(208, 241, 241, 0.119);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+.card-body .pricing h1 {
+    font-size: 10vmin;
+    padding: 1em 0.5em;
+}
+
+/* section-3 */

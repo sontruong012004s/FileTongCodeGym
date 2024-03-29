@@ -1,30 +1,93 @@
-.primary-btn {
+@import url("https://fonts.googleapis.com/css?family=Axme|Lobster|Patua+One|Rubik|Sniglet");
+* {
+    box-sizing: border-box;
+}
+:root {
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+    --sniglet-font: "siglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "Lobster", cursive;
+}
+body {
+    overflow-x: hidden;
+}
+header {
+    background: var(--bggradient);
+}
+header a, .nav-item a {
+    font-family: var(--sniglet-font);
+    color: white;
+    font-size: 0.9em;
+}
+.navbar-brand {
+    padding-left: 8rem;
+}
+.nav-item:last-child {
+    padding-right: 10rem;
+}
+.nav-item {
+    padding: 0.9rem;
+}
+.nav-link:hover {
+    color: black;
+}
+
+header .row .col-md-7 {
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+}
+header .row .col-md-5 {
+    padding: 4.2vmin 1vmin;
+}
+header .row .col-md-5 img {
+    width: 90%;
+}
+header .container .col-md-7 {
+    font-family: "Rubik", sans-serif;
+}
+header .container .col-md-7 h6 {
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+header .container .col-md-7 h1 {
+    font-size: 8.5vmin;
+    padding: 0.1em 0em;
+    font-weight: bold;
+}
+header .container .col-md-7 p {
+    padding: 1vmin 5vmin;
+}
+
+.row .primary-btn, .pricing .primary-btn {
     border-radius: 30px;
     font-weight: bold;
 }
-.container-border {
-    border: 1px solid red;
+/* Secyion-1 */
+.section-1 {
+    padding: 20vmin 0vmin;
 }
-.features-number {
-    /* width: 50px; */
-    height: 50px;
-    border-radius: 5px;
-    box-shadow: brown inset;
-    border: 1px solid rgb(184, 169, 169);
-    
+.section-1 .row .col-md-6 img {
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2em;
 }
-
-.author-info {
-    width: 500px;
-    height: 500px;
+.section-1 .row .col-md-6:last-child {
+    position: relative;
 }
-.flex-item {
-    color: red;
-    font-size: xx-large;
+.section-1 .row .col-md-6 .panel {
+    position: absolute;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    box-shadow: 0px 25px 42px #00000073;
+    z-index: 1;
+    top: 7vmin;
+    left: -18vmin;
+    padding: 13vmin 5vmin 20vmin 10vmin;
 }
-svg {
-    width: 50px;
-    height: 50px;
+.section-1 .row .col-md-6 .panel p {
+    opacity: 0.5;
 }
 /* section-2 */
 .cover {
@@ -38,16 +101,16 @@ svg {
 .cover .content {
     width: 100%;
     height: 100%;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     padding-top: 19vmin;
     background: rgba(0, 0, 0, 0.7);
 }
-.cover .content h1 {
+.cover .content > h1 {
     font-size: 6vmin;
     color: white;
 }
 .cover .content p {
-    font-size: 6vmin;
+    font-size: 2vmin;
     color: white;
 }
 .numbers {
@@ -107,3 +170,80 @@ svg {
 }
 
 /* section-3 */
+.section-3 {
+    margin-top: 15vmin;
+    height: 70vmin;
+    background: var(--bggradient);
+}
+.section-3 .desktop {
+    background: white;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+.section-3 .col-md-12 h1 {
+    padding: 2em 0 0.5em 0;
+    color: white;
+    font-size: 6vmin;
+}
+
+.section-3 .col-md-12 p {
+    padding: 0 4em;
+    color: white;
+    font-size: 3vmin;
+    padding-bottom: 2em;
+}
+.section-3 .desktop h3 {
+    font-size: 4vmin;
+}
+.section-3 .desktop p {
+    font-size: 2vmin;
+}
+/* section-4 */
+.section-4 .container h1 {
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+.section-4 .team {
+    padding: 10vmin 4vmin;
+}
+.section-4 .card {
+    width: 22em;
+    margin-top: 10vmin;
+}
+.section-4 .card .card-text {
+    padding: 0.5em;
+}
+.section-4 .card-body a {
+    font-size: 1.5em;
+}
+.section-4 .carousel {
+    padding-left: 3rem;
+}
+.section-4 .border-radius {
+    border-radius: 340px;
+    width: 60%;
+}
+/* footer */
+footer {
+    background: rgb(0, 0, 0, 0.815);
+    padding: 14vmin 18vmin;
+}
+footer p span {
+    color: #ff512f;
+}
+footer input {
+    border: none !important;
+}
+footer input::placeholder {
+    color: white;
+}
+footer .input-group .input-group-text {
+    background: var(--bggradient);
+
+}
+footer .column i {
+    color: #dd2476;
+    padding: 0 0.5em;
+}

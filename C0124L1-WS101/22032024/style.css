@@ -20,6 +20,7 @@ header a, .nav-item a {
     color: white;
     font-size: 0.9em;
 }
+
 .navbar-brand {
     padding-left: 8rem;
 }
@@ -230,7 +231,7 @@ footer {
     background: rgb(0, 0, 0, 0.815);
     padding: 14vmin 18vmin;
 }
-footer p span {
+footer p span, .fab {
     color: #ff512f;
 }
 footer input {
@@ -246,4 +247,13 @@ footer .input-group .input-group-text {
 footer .column i {
     color: #dd2476;
     padding: 0 0.5em;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
 }

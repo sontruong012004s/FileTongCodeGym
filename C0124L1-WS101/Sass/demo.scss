@@ -1,0 +1,29 @@
+$color: #ffff00; 
+.demo {
+    background-color: $color;
+}
+
+
+@mixin navbar-demo {
+    width: 100%;
+    height: auto;
+    background-color: $color;
+}
+
+.heading {
+    background-color: $color;
+    border: 1px solid $color;
+    ul {
+        width: 20px;
+        height: 50px;
+        li {
+            padding: 2px;
+            background-color: $color;
+        }
+    }
+}
+
+main {
+    @include navbar-demo;
+    margin: 20px;
+}

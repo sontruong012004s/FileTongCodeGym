@@ -1,0 +1,25 @@
+.demo {
+  background-color: #ffff00;
+}
+
+.heading {
+  background-color: #ffff00;
+  border: 1px solid #ffff00;
+}
+.heading ul {
+  width: 20px;
+  height: 50px;
+}
+.heading ul li {
+  padding: 2px;
+  background-color: #ffff00;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: #ffff00;
+  margin: 20px;
+}
+
+/*# sourceMappingURL=demo1.css.map */

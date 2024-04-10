@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sơn</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="./Image/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/466513172f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container-fluid d-flex header">
+        <div class="header-left">
+            <ul class="d-flex flex-wrap header-menu">
+                <li class="header-item nav"><i class="fa-solid fa-bars"></i></li>
+                <li class="header-item home_page" title="Trang chủ"><a href="">Trang chủ</a></li>
+                <li class="header-item product" title="Sản phẩm">Sản phẩm 
+                    <i class="info-item-down fas fa-angle-down"></i>
+                    <i class="info-item-up fas fa-angle-up"></i>
+                    <ul class="product_menu">
+                        <li class="new_products" title="Sản phẩm mới"><a href="">Sản phẩm mới</a></li>
+                        <li class="top_sell_products" title="Sản phẩm bán chạy"><a href="">Sản phẩm bán chạy</a></li>
+                        <li class="austria" title="Áo">Áo</li>
+                        <li class="pants" title="Quần">Quần</li>
+                        <li class="shoes" title="Giày">Giày</li>
+                        <li class="belt" title="Thắt lưng">Thắt lưng</li>
+                        <li class="wallet" title="Ví">Ví</li>
+                    </ul>
+                </li>
+                <li class="header-item product_Sale" title="Sản phẩm Sale" >Sản phẩm Sale 
+                    <i class="info-item-down fas fa-angle-down"></i>
+                    <i class="info-item-up fas fa-angle-up"></i>
+                    <ul class="product_menu">
+                        <li class="austria" title="Áo">Áo</li>
+                        <li class="pants" title="Quần">Quần</li>
+                    </ul>
+                </li>
+                <li class="header-item collection"  title="Bộ sưu tập">Bộ sưu tập 
+                    <i class="info-item-down fas fa-angle-down"></i>
+                    <i class="info-item-up fas fa-angle-up"></i>
+                    <ul class="product_menu">
+                        <li class="austria" title="JEANS"><a href="">JEANS</a></li>
+                        <li class="pants" title="Áo Thun Lạnh - Cool"><a href="">Áo Thun Lạnh - Cool</a></li>
+                    </ul>
+                </li>
+                <li class="header-item shop_system" title="Hệ thống cửa hàng"><a href="">Hệ thống cửa hàng</a></li>
+                <li class="header-item policy" title="Chính sách"><a href="/chinhsach.html">Chính sách</a></li>
+                <li class="header-item fanpage" title="Fanpage"><a href="https://www.facebook.com/">Fanpage</a></li>
+            </ul>
+        </div>
+        <div class="d-flex flex-wrap header-right">
+            <div class="d-flex flex-wrap search">
+                <input type="text" placeholder="Tìm kiếm" title="Tìm kiếm">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap header-item header_login" title="Đăng nhập">
+                <div><i class="fa-regular fa-user"></i></div>
+                <button class="" type="submit" >Đăng Nhập</button>
+            </div>
+            <div class="d-flex flex-wrap header-item header_cart" title="Giỏ hàng">
+                <div><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;" xml:space="preserve"><g><path d="M0,6v21h24V6H0z M22,25H2V8h20V25z"></path></g><g><path d="M12,2c3,0,3,2.3,3,4h2c0-2.8-1-6-5-6S7,3.2,7,6h2C9,4.3,9,2,12,2z"></path></g></svg>
+                <span class="count">0</span></div>
+            </div>
+        </div>
+    </div>
+    <main class="container-fluid pr-0 pl-0 carousel-image-info">
+        <!-- carousel -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://lunacy.vn/1428355432291766272/images/vi/desk/banner/lunacy-banner-home_1749751306181939200.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://lunacy.vn/1428355432291766272/images/vi/desk/banner/lunacy-banner-home_1749751465859092480.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" ata-bs-interval="2000">
+                    <img src="https://lunacy.vn/1428355432291766272/images/vi/desk/banner/lunacy-banner-home_1749751423538565120.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://lunacy.vn/1428355432291766272/images/vi/desk/banner/lunacy-banner-home_1749751524793257984.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon background" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon background" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="box-shadow"></div>
+        </div>
+        <!-- voucher-2024 -->
+        <div class="container section-1 ">
+            <div class="col-md-12 voucher">
+                <div class="title-voucher">
+                    <p style="color: red; font-size: 35px;">
+                        *
+                        <span>VOUCHER - 2024</span>
+                    </p>
+                </div>
+                <div class="marquee">
+                    <marquee >Chào mừng bạn đến với Shop của chúng tôi. Cơ hội tiết kiệm cực lớn với ưu đãi giảm thêm <ins>20k</ins> cho
+                        đơn hàng đầu tiên - Chương trình khuyến mãi hấp dẫn: - Giảm <ins>5%</ins> cho đơn từ <ins>250k</ins> - Giảm <ins>10%</ins> cho đơn từ <ins>450k</ins> + đóng gói hộp. Nhanh tay sao chép mã và áp dụng khi thanh toán. Chúc bạn có trải nghiệm mua sắm vui vẻ!
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex flex-wrap section-2">
+            <div class="col-md-4 discount-code">
+                <div class="d-flex info-code">
+                    <div class="col-md-2 code_price my-2">NEW20</div>
+                    <ul class="col-md-6 code_text my-2">
+                        <li class="fw-bold">GIẢM THÊM 20k</li>
+                        <li>Cho đơn hàng trên 199k</li>
+                        <li>- HSD: 29/04/2024</li>
+                    </ul>
+                    <div class="col-md-4 code_copy " value="NEW20" onclick="copyVoucher(this)">
+                        <p class="my-2 ">SAO CHÉP MÃ</p>
+                    </div>
+                </div>
+                <span class="round-left"></span>
+                <span class="round-right"></span>
+            </div>
+            <div class="col-md-4 discount-code">
+                <div class="d-flex info-code">
+                    <div class="col-md-2 code_price my-2">SALE5</div>
+                    <ul class="col-md-6 code_text my-2">
+                        <li class="fw-bold">GIẢM THÊM 5%</li>
+                        <li>Cho đơn hàng trên 299k</li>
+                        <li>- HSD: 29/04/2024</li>
+                    </ul>
+                    <div class="col-md-4 code_copy" value="SALE5" onclick="copyVoucher(this)">
+                        <p class="my-2 ">SAO CHÉP MÃ</p>
+                    </div>
+                </div>
+                <span class="round-left"></span>
+                <span class="round-right"></span>
+            </div>
+            <div class="col-md-4 discount-code">
+                <div class="d-flex info-code">
+                    <div class="col-md-2 code_price my-2">SALE10</div>
+                    <ul class="col-md-6 code_text my-2">
+                        <li class="fw-bold">GIẢM THÊM 10%</li>
+                        <li>Cho đơn hàng trên 499k</li>
+                        <li>- HSD: 29/04/2024</li>
+                    </ul>
+                    <div class="col-md-4 code_copy" value="SALE10" onclick="copyVoucher(this)">
+                        <p class="my-2 ">SAO CHÉP MÃ</p>
+                    </div>
+                </div>
+                <span class="round-left"></span>
+                <span class="round-right"></span>
+            </div>
+        </div>
+        <!--BEST SELLER-->
+        <div class="container section-3 pb-1">
+            <div class="col-md-12 title_seller text-center pb-3">
+                <h2 class="text-uppercase fw-normal">NGƯỜI BÁN HÀNG GIỎI NHẤT</h2>
+            </div>
+            <div class="container-fluid d-flex flex-wrap p-0 m-0 dec">
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info">
+                        <div class="product_sale">
+                            <div class="sale_percent">49%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image05.jpeg" alt="UNCLE M® | Sporty Polo">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Sporty Polo</div>
+                            <div class="price">
+                                <span class="price_sale">224,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Normal Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">53%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image06.jpeg" alt="UNCLE M® | Normal Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Normal Tee</div>
+                            <div class="price">
+                                <span class="price_sale">199,000₫</span>
+                                <span class="price_cost"><s>420,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Basic Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">49%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image07.jpg" alt="UNCLE M® | Basic Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Basic Tee</div>
+                            <div class="price">
+                                <span class="price_sale">199,000₫</span>
+                                <span class="price_cost"><s>420,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Harley Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">50%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image08.jpg" alt="UNCLE M® | Harley Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Harley Tee</div>
+                            <div class="price">
+                                <span class="price_sale">225,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Speed Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">50%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image09.jpg" alt="UNCLE M® | Speed Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Speed Tee</div>
+                            <div class="price">
+                                <span class="price_sale">225,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Sheep Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">50%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image10.jpeg" alt="UNCLE M® | Sheep Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Sheep Tee</div>
+                            <div class="price">
+                                <span class="price_sale">225,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Classic Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">50%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image11.jpeg" alt="UNCLE M® | Classic Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Classic Tee</div>
+                            <div class="price">
+                                <span class="price_sale">225,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Graffiti Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">50%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image12.jpeg" alt="UNCLE M® | Graffiti Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Graffiti Tee</div>
+                            <div class="price">
+                                <span class="price_sale">225,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Texas Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">50%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image13.jpeg" alt="UNCLE M® | Texas Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Texas Tee</div>
+                            <div class="price">
+                                <span class="price_sale">225,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Lux Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">40%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image14.jpeg" alt="UNCLE M® | Lux Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Lux Tee</div>
+                            <div class="price">
+                                <span class="price_sale">270,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Fighting Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">50%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image15.jpeg" alt="UNCLE M® | Fighting Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Fighting Tee</div>
+                            <div class="price">
+                                <span class="price_sale">225,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Minimal Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">50%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image17.jpeg" alt="UNCLE M® | Minimal Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Minimal Tee</div>
+                            <div class="price">
+                                <span class="price_sale">190,000₫</span>
+                                <span class="price_cost"><s>380,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Dalat Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">40%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image18.jpeg" alt="UNCLE M® | Dalat Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Dalat Tee</div>
+                            <div class="price">
+                                <span class="price_sale">270,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Meow Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">40%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image19.jpeg" alt="UNCLE M® | Meow Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Meow Tee</div>
+                            <div class="price">
+                                <span class="price_sale">270,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Minimal Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">40%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image20.jpg" alt="UNCLE M® | Minimal Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Minimal Tee</div>
+                            <div class="price">
+                                <span class="price_sale">225,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Lips Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">40%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/image21.jpg" alt="UNCLE M® | Lips Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Lips Teefgergfr</div>
+                            <div class="price">
+                                <span class="price_sale">270,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product see-more-product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Delus Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">40%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/lucacy6.jpeg" alt="UNCLE M® | Delus Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Delus Tee</div>
+                            <div class="price">
+                                <span class="price_sale">270,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product see-more-product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Xluncacy Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">50%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/lucacy3.jpeg" alt="UNCLE M® | Xluncacy Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Xluncacy Tee</div>
+                            <div class="price">
+                                <span class="price_sale">200,000₫</span>
+                                <span class="price_cost"><s>400,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product see-more-product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Futuristic Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">40%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/lucacy4.jpeg" alt="UNCLE M® | Futuristic Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Futuristic Tee</div>
+                            <div class="price">
+                                <span class="price_sale">270,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product see-more-product mx-1">
+                    <div class="col-md-12 product_info" title="UNCLE M® | Restraint Tee">
+                        <div class="product_sale">
+                            <div class="sale_percent">50%</div>
+                            <div class="favourite">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product_image">
+                            <a href="">
+                                <img src="./image/lucacy5.jpeg" alt="UNCLE M® | Restraint Tee">
+                            </a>
+                        </div>
+                        <div class="product_text">
+                            <div class="title">UNCLE M® | Restraint Tee</div>
+                            <div class="price">
+                                <span class="price_sale">225,000₫</span>
+                                <span class="price_cost"><s>450,000₫</s></span>
+                            </div>
+                            <div class="market">
+                                <img src="./image/image1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid d-flex justify-content-center see-more pb-3">
+                <div class="text" onclick="toggleProducts()">
+                    <p>Xem thêm »</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-4 py-5">
+            <div class="container d-flex justify-content-center">
+                <div class="col-md-4 assured">
+                    <div class="assured-list-item">
+                        <img width="100%" height="100%" src="https://lunacy.vn/1111111111111111111/file/desk/1610841566933422080.jpeg" alt="">
+                    </div>
+                    <div class="assured-list-content text-center p-3 bg-light">
+                        <i class="fa-solid fa-gift"></i>
+                        <h3 class="fs-4 fww-bold">Yên tâm tặng quà</h3>
+                        <p class="fs-6 fw-light">100% đơn hàng <br> được đóng gói hộp chỉnh chu</p>
+                    </div>
+                </div>
+                <div class="col-md-4 assured mx-3">
+                    <div class="assured-list-item">
+                        <img width="100%" height="100%" src="https://lunacy.vn/1111111111111111111/file/desk/1610842182116184064.jpeg" alt="">
+                    </div>
+                    <div class="assured-list-content text-center p-3 bg-light">
+                        <i class="fa-solid fa-arrows-rotate"></i>  
+                        <h3 class="fs-4 fww-bold">Yên tâm đổi trả</h3>
+                        <p class="fs-6 fw-light">Miễn phí đổi trả trong 30 ngày<br> nếu bạn không hài lòng</p>
+                    </div>
+                </div>
+                <div class="col-md-4 assured">
+                    <div class="assured-list-item">
+                        <img width="100%" height="100%" src="https://lunacy.vn/1111111111111111111/file/desk/1610842020463513600.jpeg" alt="">
+                    </div>
+                    <div class="assured-list-content text-center p-3 bg-light">
+                        <i class="fa-solid fa-truck"></i>
+                        <h3 class="fs-4 fww-bold">Yên tâm nhận liền</h3>
+                        <p class="fs-6 fw-light">Dịch vụ giao nhanh dành riêng cho những<br> trường hợp "cấp bách"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-5 container-fluid">
+            <div class="container d-flex p-0 py-4 ">
+                <div class="col-md-4 branch-content-1">
+                    <h2 class="text-uppercase branch_title">Câu chuyện <div></div> thương hiệu</h2>
+                    <div class="mt-3 branch_image-1">
+                        <img width="100%" height="100%" src="./image/1.jpg" alt="">
+                    </div>
+                    <div class="pt-4 branch_text">
+                        <p>Được thành lập vào những năm 2024, Lunacy từng bước hoàn thiện sản phẩm và dịch vụ. <br>
+                        Với sự đa dạng về phong cách, trải nghiệm Lunacy tin rằng có thể chinh phục được những vị khách khó tính nhất.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 branch-content-2">
+                    <div class="branch_info px-5">
+                        <h2 class="text-uppercase branch_title">LUCACY</h2>
+                        <div class="pt-2 branch_text">
+                            <p>Sau một khoảng thời gian đủ dài để phát triển, không chỉ về chất lượng mà còn là những giá trị tinh thần Luncacy đem lại. <br>
+                            Chúng tôi sẽ không ngừng phát triển để tiếp tục chứng minh vị trí của mình.</p>
+                        </div>
+                    </div>
+                    <div class="mt-3 branch_image-2">
+                    </div>
+                    <div class="fefev"></div>
+                </div>
+                <div class="col-md-4 branch-content-2">
+                    <div class="branch_info">
+                        <div class="branch_image-3">
+                            <img width="100%" height="100%" src="./image/branch_3.jpg" alt="">
+                        </div>
+                        <div class="pt-4 branch_text">
+                            <p>Lunacy với tinh thần sẵn sàng phá cách pha một chút nỗi loạn không thiếu phần chỉnh chu trong từng bộ outfit mang đến cho khách hàng. 
+                            Chúng tôi tự tin giúp bạn khẳng định được chất riêng của mình thông qua từng items.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="container footer d-flex mb-4">
+        <div class="col-md-4 py-2 content-1">
+            <div class="footer-title">
+                <p>Giới thiệu</p>
+            </div>
+            <div class="footer-content">
+                <p>
+                    Gọi đơn giản là nơi những ý tưởng, những sự sáng tạo bay bỏng đã được /Chú Em/ ấp ủ từ lâu. Bây giờ đã và đang thực hiện hoá bằng cách truyền tải các thông điệp lên từng sản phẩm. Đó sẽ là cầu nối để truyền đạt ý nghĩa một cách tốt nhất tới tất cả các bạn. 
+                    /Chú Em/ ở hiện tại và sau này rất mong muốn đồng hành cùng với các bạn và cùng nhau xây dựng một cộng đồng thời trang Streetwear văn minh, lành mạnh, đầy nhiệt huyết của tuổi trẻ. 
+                </p>
+                <div class="d-flex footer-social-network ">
+                    <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
+                        <div class="tiktok d-flex justify-content-center align-items-center">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
+                        <div class="facebook d-flex justify-content-center align-items-center ">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
+                        <div class="instagram d-flex justify-content-center align-items-center ">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-2 content-2">
+            <div class="footer-title">
+                <p>Thông tin liên hệ</p>
+            </div>
+            <div class="footer-contact">
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Tô Hiệu, Phường Hiệp Tân, Quận Tân Phú, TP.HCM</span>
+                </div>
+                <div class="number">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0968758488</span>
+                </div>
+                <div class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>sontruong.vn@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 py-2 content-3 p-0">
+            <div class="footer-title">
+                <p>Liên kết</p>
+            </div>
+            <div class="footer-content-item">
+                <ul class="list-unstyled" >
+                    <li class="item"><a class="text-decoration-none text-dark" href="" title="Giới thiệu">Giới thiệu</a></li>
+                    <li class="item py-2"><a class="text-decoration-none text-dark" href="" title="Chính sách đổi trả">Chính sách đổi trả</a></li>
+                    <li class="item"><a class="text-decoration-none text-dark" href="" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+                    <li class="item py-2"><a class="text-decoration-none text-dark" href="" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a></li>
+                    <li class="item"><a class="text-decoration-none text-dark" href="" title="Liên hệ">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 content-4  py-2 px-0">
+            <div class="footer-title">
+                <p>Phương thức thanh toán</p>
+            </div>
+            <div class="footer-bank">
+                <ul class="list-unstyled">
+                    <li class="d-flex">
+                        <img width="35" height="35" src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-MoMo-Square.png" alt="">
+                        <p class="pl-2">Momo</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <p>Tiền mặt</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <p>Ngân hàng</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <p>Thẻ tín dụng Visa / Mastercard</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/index.js"></script>
+</html>

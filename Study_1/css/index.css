@@ -167,7 +167,7 @@ svg {
 .carousel-image-info {
     width: 100%;
     height: max-content;
-    padding-top: 3.8em;
+    padding-top: 3em;
 }
 .carousel-control-prev {
     left: -7em !important;
@@ -202,7 +202,6 @@ svg {
 /* section-1 */
 .section-1 {
     margin-top: 20px;
-    max-width: 1550px;
     height: auto;
 }
 .voucher {
@@ -228,30 +227,28 @@ svg {
 }
 /* section-2 */
 .section-2 {
-    max-width: 1550px;
     height: max-content;
     margin-bottom: 20px;
 }
 .col-md-4 {
-    padding: 0 8px;
+    padding: 0 10px;
 }
 .discount-code {
     border-top: 3px solid black;
     background: rgb(255, 153, 0);
     height: max-content;
     overflow: hidden;
-    width: 31.5em;
+    width: 26.6em;
     position: relative; 
     max-height: 95px;
     margin-bottom: 5px;
 }
 .discount-code:nth-child(2) {
-    margin: 0 0.4rem;
+    margin: 0 0.6rem;
 }
 .info-code {
     height: max-content;
     max-height: 95px;
-
 }
 .code_price {
     display: flex;
@@ -262,13 +259,10 @@ svg {
 }
 .code_text {
     max-width: fit-content;
-
 }
 .code_text > li {
     list-style: none;
-    letter-spacing: 1px;
     max-width: fit-content;
-
 }
 .code_copy {
     display: flex;
@@ -278,12 +272,13 @@ svg {
 .code_copy > p {
     background: black;
     color: white;
-    padding: 5px 20px;
+    padding: 5px 15px;
     border-radius: 20px;
     border: 1px solid black;
     background-image: linear-gradient(to right, white 50%, black 50%);
     background-size: 200% 100%;
     background-position: right;
+    font-size: 12px;
 }
 .code_copy > p:hover {
     background-color: white;
@@ -309,11 +304,10 @@ svg {
 }
 /* section-3 */
 .section-3 {
-    max-width: 1550px;
     margin-bottom: 20px;
 }
 /* .dec {
-    max-width: 1550px;
+    
     display: flex;
     flex-wrap: wrap;
     padding: 0 !important;
@@ -323,13 +317,18 @@ svg {
 .section-3 .product {
     width: 366px;
     height: max-content;
-    margin-right: 20px;
     margin-bottom: 20px;
     padding: 0 !important;
     overflow: hidden;
     background: white;
-    /* border: 2px solid black; */
+    border: 1px solid white;
 }
+.section-3 .product:nth-child(1n+1) {
+    margin-left: 0 !important;
+}
+/* .section-3 .product:last-child {
+    margin-left: 3px !important
+} */
 .section-3 .product:nth-child(1) {
     margin-left: 0 !important;
 }
@@ -357,8 +356,11 @@ svg {
     position: relative;
 }
 .section-3 .product_text .title {
-    letter-spacing: 1.5px;
+    letter-spacing: 0.5px;
     font-family: var(--Rubik);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 }
 .section-3 .product_text .price {
     font-size: 25px;
@@ -377,6 +379,9 @@ svg {
 .section-3 .product:hover .product_image {
     opacity: 0.9;
     transform: scale(1.1);
+}
+.section-3 .col-md-3 {
+    width: 24.7%;
 }
 /* sale-favourite */
 .section-3 .sale_percent {
@@ -436,7 +441,7 @@ svg {
 }
 .section-3 .see-more .text > p {
     margin-bottom: 0 !important;
-    padding: 10px 20px;
+    padding: 8px 23px;
 }
 .section-3 .see-more .text:hover {
     color: black;
@@ -454,21 +459,34 @@ svg {
     padding: 0 !important;
 }
 /* section-4 */
+/* .section-4 > div {
+    width: 370px;
+} */
 .section-4 {
+    height: 666px;
+}
+.section-4 .assured {
+    max-width: 370px;
+    max-height: 370px;
+}
+.section-4 .assured-list-item {
+    width: 100%;
+    height: 370px;
+}
+.section-4 .assured-list-content {
+
+}
+/* .section-4 {
     height: max-content;
     background: #fff;
 }
-.section-4 > div {
-    width: 370px;
-}
+
 .section-4 .assured {
     height: max-content;
     position: relative;
 }
-.section-4 .assured-list-item {
-    width: 370px;
-    height: 370px;
-}
+
+
 .section-4 i {
     position: absolute;
     width: 35px;
@@ -481,7 +499,7 @@ svg {
     top: 70%; 
     right: 41.5%;
     transform: translateX(-50%); 
-}
+} */
 
 
 
@@ -492,10 +510,8 @@ svg {
     background-color: white;
 }
 .section-5 .container {
-    max-width: 1600px;
     position: relative;
 }
-/* branch_title-1 */
 .branch_title {
     letter-spacing: 1.5px;
     padding-right: 5em;
@@ -503,28 +519,11 @@ svg {
 .branch_title > div {
     padding-bottom: 20px;
 }
-.branch_image-1 {
+.branch_image-1,
+.branch_image-3 {
     width: 100%;
-    height: 370px;
-    background: blue;
+    height: 400px;
     overflow: hidden;
-}
-.branch_text {
-    font-size: 18px;
-}
-/* branch_title-2 */
-.branch-content-2 {
-    margin-right: 10px;
-    
-}
-.branch-content-2 .branch_info {
-    position: absolute;
-    top: 5em;
-}
-.branch-content-2 .branch_title {
-    text-align: center;
-    padding-left: 5em;
-
 }
 .branch_image-2 {
     width: 100%;
@@ -536,44 +535,42 @@ svg {
     width: 100%;
     height: 100%;
 }
-
+.branch-content-2 .branch_info {
+    position: absolute;
+    top: 5em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.branch-content-2 .branch_title {
+    text-align: center !important;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+/* Thiết lập định dạng cho phần fefev */
 .fefev {
     position: absolute;
     top: 46px;
     right: 41%;
     width: 50px;
     height: 35px;
-    background: linear-gradient(#78AB46,#fff);
+    background: linear-gradient(#78AB46, #fff);
     border-top-left-radius: 35px;
     border-bottom-right-radius: 35px;
     transform: rotate(10deg);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-
-
 }
-/* branch_title-3 */
-.branch_image-3 {
-    width: 100%;
-    height: 400px;
-    background: blue;
-    overflow: hidden;
+.branch_text {
+    font-size: 18px;
 }
-
-.branch_image-3 img {
-    height: 500px;
-}
-
-.branch {
-    background-color: #ff512f;
-}
-
 
 
 
 /* footer */
 
 footer.container {
-    max-width: 1550px;
+    
     padding: 0 !important;
 
 }
@@ -640,4 +637,128 @@ footer .col-md-4 {
 }
 footer .col-md-2 {
     width: 15.666667%;
+}
+
+@media only screen and (min-width: 1650px) {
+    .header .header-left .nav {
+        display: none;
+    }
+    .header .header-left .header-item {
+        padding: 0.8rem;
+        font-size: 20px !important;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    /* voucher */
+    .section-2 .discount-code {
+        width: 32.8% !important;
+        font-size: 16px !important;
+    }
+    .section-2 .code_copy > p {
+        padding: 5px 17px !important;
+        font-size: 12px !important;
+    }
+    .round-left, .round-right {
+        width: 28px !important;
+        height: 28px !important;
+    }
+}
+@media only screen and (min-width: 1368px) {
+    .header .header-left .nav {
+        display: none;
+    }
+    .header .header-left .header-menu .header-item {
+        display: block !important;
+    }
+    .header .header-left .header-item {
+        padding: 0.8rem;
+        font-size: 15px;
+    }
+    .search {
+        top: 5px;
+    }
+    .header-menu .header-item, .header-right .header-item {
+        padding: 0.4rem;
+    }
+    .count {
+        right: 1.25em;
+        top: 1em;
+    }
+    /* voucher */
+    .section-2 .discount-code {
+        width: 28.1em;
+        font-size: 13px ;
+    }
+    .section-2 .code_copy > p {
+        padding: 5px 15.5px;
+        font-size: 9px;
+    }
+    .round-left, .round-right {
+        width: 25px;
+        height: 25px;
+    }
+    .section-5 .branch_title {
+        font-size: 22px;
+    }
+    .branch-content-2 .branch_title {
+        text-align: center !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .header .header-left .header-menu .header-item:first-child,
+    .header .header-left .header-menu .header-item:nth-child(2),
+    .header .header-left .header-menu .header-item:nth-child(4) {
+        display: block;
+    }
+    .header .header-left .header-menu .header-item {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header .header-left .header-menu .header-item:first-child,
+    .header .header-left .header-menu .header-item:nth-child(2) {
+        display: block;
+    }
+    .header .header-left .header-menu .header-item {
+        display: none;
+    }
+    .section-2 .discount-code {
+        width: 32.2em;
+        font-size: 7px ;
+    }
+    .section-2 .code_copy > p {
+        padding: 5px 15.5px;
+        font-size: 4px;
+    }
+    .section-2 .col-md-4 {
+        padding: 0px 6px;
+    }
+    .section-2 .code_price {
+        border-right: 1px solid black;
+    }
+    .section-2 .discount-code {
+        border-top: 2px solid black;
+    }
+    .round-left, .round-right {
+        width: 23px;
+        height: 20px;
+    }
+    .section-3 .col-md-3 {
+        width: 24.5%;
+    }
+    .section-3 .product_text {
+        padding: 10px;
+        font-size: 11px;
+    }
+    .section-3 .product_text .price {
+        font-size: 17px;
+
+    }
+    .section-3 .market img {
+        margin: 5px;
+        width: 15px;
+        height: 15px;
+    }
 }

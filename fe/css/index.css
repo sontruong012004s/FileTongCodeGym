@@ -167,16 +167,16 @@ svg {
     height: 28px;
 } 
 /* main */
-.carousel-control-next-icon, 
-.carousel-control-prev-icon {
+main.container-fluid .carousel-control-next-icon, 
+main.container-fluid .carousel-control-prev-icon {
     background-size: 20px;
 }
-.background:hover {
+main.container-fluid .background:hover {
     padding: 25px;
     background-color: rgb(3, 3, 3);
     border-radius: 50%;
 }
-.box-shadow {
+main.container-fluid .box-shadow {
     position: absolute;
     width: 100%;
     min-height: 15%;
@@ -190,7 +190,7 @@ svg {
         left: 0;
         bottom: 0;
 }
-.carousel-dark .carousel-indicators [data-bs-target] {
+main.container-fluid .carousel-dark .carousel-indicators [data-bs-target] {
     background-color: rgb(255, 255, 255) !important;
 }
 /* section-1 */
@@ -552,30 +552,72 @@ svg {
 } */
 
 
+/* section-4 carousel */
+.carousel-inner {
+    display: flex !important; /* Use flexbox for carousel items */
+}
+
+.carousel-item {
+    flex: 0 0 auto !important; /* Ensure carousel items don't grow or shrink */
+    width: 100% !important; /* Ensure carousel items take up full width */
+}
+
 .section-4 .container {
-    overflow-x: auto;
-    white-space: nowrap;
+    display: none;
+}
+.section-4 .container .carousel .carousel-indicators [data-bs-target] {
+    background-color: black;
+}
+.section-4 .assured-list-item {
+    position: relative;
+}
+.section-4 .container .carousel i {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 204, 204);
+    border-radius: 50%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section-4 .container #carouselExampleIndicators {
+    margin: 0 200px;
+}
+.section-4 .container .carousel .background {
+    position: absolute;
+    transform: translateY(-4em);
 }
 
-.section-4 .assured {
-    flex: 0 0 calc(33.333% - 20px);
-    margin-right: 20px;
+/* main.container-fluid .carousel-control-next-icon, 
+main.container-fluid .carousel-control-prev-icon {
+    background-size: 20px;
 }
-
-@media (max-width: 768px) {
-    .section-4 .container {
-        overflow-x: auto;
-        flex-wrap: nowrap;
-    }
-
-    .section-4 .assured {
-        flex: 0 0 80%;
-        margin-right: 0;
-    }
+main.container-fluid .background:hover {
+    padding: 25px;
+    background-color: rgb(3, 3, 3);
+    border-radius: 50%;
 }
-
-
-
+main.container-fluid .box-shadow {
+    position: absolute;
+    width: 100%;
+    min-height: 15%;
+    background-image: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0.5) 30%,
+		#fff
+        );
+        z-index: 2;
+        left: 0;
+        bottom: 0;
+}
+main.container-fluid .carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: rgb(255, 255, 255) !important;
+} */
 /* section-5 */
 .section-5 {
     background-color: white;
@@ -768,6 +810,10 @@ footer .content-4 i {
     .code_copy > p {
         padding: 5px 10px;
         font-size: 13px;
+    }
+    /* section-4 carousel */
+    .section-4 .container {
+        display: block;
     }
     /* section-5 */
     .section-5 .leaves {

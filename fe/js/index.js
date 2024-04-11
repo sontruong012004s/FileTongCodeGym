@@ -38,19 +38,42 @@
 // });
 
 // see more 
+// function toggleProducts() {
+//     let products = document.querySelectorAll('.see-more-product');
+//     let seeMore = document.querySelector('.see-more');
+//     let seeMoretext = document.querySelector('.text');
+//     products.forEach(function(product) {
+//         if (product.style.display === 'none' || product.style.display === '') {
+//             product.style.display = 'block';
+//             seeMore.style.display = 'none';
+//             seeMore.style.padding = '0';
+//             seeMoretext.style.display = 'none';
+//         } else {
+//             product.style.display = 'none';
+
+//         }
+//     });
+// }
 function toggleProducts() {
-    let products = document.querySelectorAll('.see-more-product');
-    let seeMore = document.querySelector('.see-more');
-    let seeMoretext = document.querySelector('.text');
+    // Toggle display of products
+    let products = document.querySelectorAll('.section-3 .product:nth-child(n+11)');
     products.forEach(function(product) {
         if (product.style.display === 'none' || product.style.display === '') {
             product.style.display = 'block';
-            seeMore.style.display = 'none';
-            seeMore.style.padding = '0';
-            seeMoretext.style.display = 'none';
         } else {
             product.style.display = 'none';
-
         }
     });
+
+    // Hide or show "See more" button and text
+    let seeMore = document.querySelector('.see-more');
+    let seeMoreText = document.querySelector('.text');
+    if (seeMore.style.display === 'none' || seeMore.style.display === '') {
+        seeMore.style.display = 'block';
+        seeMore.style.padding = '0';
+        seeMoreText.style.display = 'none';
+    } else {
+        seeMore.style.display = 'none';
+    }
 }
+

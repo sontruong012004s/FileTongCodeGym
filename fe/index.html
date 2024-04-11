@@ -17,7 +17,7 @@
         <div class="col-xl-8 col-lg-7 col-md-7 col-sm-2 col-4 d-flex header-left p-0 m-0">
             <ul class="d-flex flex-wrap header-menu p-0">
                 <li class="header-item nav"><i class="fa-solid fa-bars"></i></li>
-                <li class="header-item home_page" title="Trang chủ"><a href="">Trang chủ</a></li>
+                <li class="header-item home_page" title="Trang chủ"><a href="/index.html">Trang chủ</a></li>
                 <li class="header-item product" title="Sản phẩm">Sản phẩm 
                     <i class="info-item-down fas fa-angle-down"></i>
                     <i class="info-item-up fas fa-angle-up"></i>
@@ -70,6 +70,17 @@
                 </div>
             </div>
         </div>
+        <div class="notification">
+            <div class=" icon-erro">
+                <span class="notification-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+                    <span class="fs-2">Thông báo!</span>
+                </span>
+            </div>
+            <div class=" copy-voucher">
+                <p class="m-0">Bạn đã sao chép mã giảm giá: <span id="value-voucher"></span></p>
+            </div>
+        </div>
     </div>
     <main class=" container-fluid pr-0 pl-0">
         <!-- carousel -->
@@ -102,6 +113,7 @@
                 <span class="carousel-control-next-icon background" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+            <div class="box-shadow"></div>
         </div>
         <!-- section-1 -->
         <div class="container section-1 px-2 pt-2">

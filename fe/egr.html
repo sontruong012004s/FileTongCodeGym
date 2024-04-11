@@ -675,91 +675,72 @@ function showTab(contentId) {
     </div>
 
 </main>
-<footer class="container footer d-flex mb-4">
-    <div class="col-md-4 py-2 content-1">
-        <div class="footer-title">
-            <p>Giới thiệu</p>
-        </div>
-        <div class="footer-content">
-            <p>
-                Gọi đơn giản là nơi những ý tưởng, những sự sáng tạo bay bỏng đã được /Chú Em/ ấp ủ từ lâu. Bây giờ đã và đang thực hiện hoá bằng cách truyền tải các thông điệp lên từng sản phẩm. Đó sẽ là cầu nối để truyền đạt ý nghĩa một cách tốt nhất tới tất cả các bạn. 
-                /Chú Em/ ở hiện tại và sau này rất mong muốn đồng hành cùng với các bạn và cùng nhau xây dựng một cộng đồng thời trang Streetwear văn minh, lành mạnh, đầy nhiệt huyết của tuổi trẻ. 
-            </p>
-            <div class="d-flex footer-social-network ">
-                <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
-                    <div class="tiktok d-flex justify-content-center align-items-center">
-                        <i class="fab fa-tiktok"></i>
-                    </div>
-                </a>
-                <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
-                    <div class="facebook d-flex justify-content-center align-items-center ">
-                        <i class="fa fa-facebook"></i>
-                    </div>
-                </a>
-                <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
-                    <div class="instagram d-flex justify-content-center align-items-center ">
-                        <i class="fa fa-instagram"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 py-2 content-2">
-        <div class="footer-title">
-            <p>Thông tin liên hệ</p>
-        </div>
-        <div class="footer-contact">
-            <div class="address">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Tô Hiệu, Phường Hiệp Tân, Quận Tân Phú, TP.HCM</span>
-            </div>
-            <div class="number">
-                <i class="fa-solid fa-phone"></i>
-                <span>0968758488</span>
-            </div>
-            <div class="email">
-                <i class="fa-regular fa-envelope"></i>
-                <span>sontruong.vn@gmail.com</span>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-2 py-2 content-3 p-0">
-        <div class="footer-title">
-            <p>Liên kết</p>
-        </div>
-        <div class="footer-content-item">
-            <ul class="list-unstyled" >
-                <li class="item"><a class="text-decoration-none text-dark" href="" title="Giới thiệu">Giới thiệu</a></li>
-                <li class="item py-2"><a class="text-decoration-none text-dark" href="" title="Chính sách đổi trả">Chính sách đổi trả</a></li>
-                <li class="item"><a class="text-decoration-none text-dark" href="" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
-                <li class="item py-2"><a class="text-decoration-none text-dark" href="" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a></li>
-                <li class="item"><a class="text-decoration-none text-dark" href="" title="Liên hệ">Liên hệ</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-md-3 col-sm-6 content-4  py-2 px-0">
-        <div class="footer-title">
-            <p>Phương thức thanh toán</p>
-        </div>
-        <div class="footer-bank">
-            <ul class="list-unstyled">
-                <li class="d-flex">
-                    <img width="35" height="35" src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-MoMo-Square.png" alt="">
-                    <p class="pl-2">Momo</p>
-                </li>
-                <li class="d-flex">
-                    <i class="fa-solid fa-money-check-dollar"></i>
-                    <p>Tiền mặt</p>
-                </li>
-                <li class="d-flex">
-                    <i class="fa-solid fa-building-columns"></i>
-                    <p>Ngân hàng</p>
-                </li>
-                <li class="d-flex">
-                    <i class="fa-brands fa-cc-visa"></i>
-                    <p>Thẻ tín dụng Visa / Mastercard</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-</footer>
+footer.container {
+    
+    padding: 0 !important;
+
+}
+footer .col-md-3 {
+    height: auto;
+}
+footer .footer-title {
+    font-size: 25px;
+    letter-spacing: 0.02em;
+    padding: 15px 0px;
+    line-height: 30px;
+}
+footer .footer-content {
+    font-size: 15px;
+}
+footer .footer-content-item, 
+footer .footer-bank {
+    font-size: 19px;
+}
+/* content-1 */
+footer .content-1 .footer-social-network i {
+    color: black;
+}
+footer .content-1 .footer-social-network .facebook,
+footer .content-1 .footer-social-network .instagram,
+footer .content-1 .footer-social-network .tiktok {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a19c9c;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+footer .content-1 .footer-social-network .facebook:hover,
+footer .content-1 .footer-social-network .instagram:hover,
+footer .content-1 .footer-social-network .tiktok:hover {
+    border: 1px solid black;
+}
+/* content-2 */
+footer .content-2 .footer-contact {
+    font-size: 19px;
+}
+footer .content-2 i,
+footer .content-4 i {
+    font-size: 30px;
+}
+footer .content-2 .footer-contact .number {
+    padding: 1rem 0;
+}
+footer .content-2 .footer-contact > div {
+    position: relative;
+}
+footer .content-2 span {
+    padding-left: 7px;
+    position: absolute;
+}
+/* content-4 */
+footer .content-4 i {
+    color: rgb(173 10 81);
+    width: 45px;
+    height: 35px;
+}
+footer .col-md-4 {
+    width: 31.333333%;
+}
+footer .col-md-2 {
+    width: 15.666667%;
+}

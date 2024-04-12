@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sơn</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="./Image/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/466513172f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/hethongcuahang.css">
+</head>
+<body>
+    <div class="container-fluid d-flex header m-0">
+        <div class="col-xl-8 col-lg-7 col-md-7 col-sm-2 col-4 d-flex header-left p-0 m-0">
+            <ul class="d-flex flex-wrap header-menu p-0">
+                <li class="header-item nav"><i class="fa-solid fa-bars"></i></li>
+                <li class="header-item home_page" title="Trang chủ"><a href="./index.html">Trang chủ</a></li>
+                <li class="header-item product" title="Sản phẩm">Sản phẩm 
+                    <i class="info-item-down fas fa-angle-down"></i>
+                    <i class="info-item-up fas fa-angle-up"></i>
+                    <ul class="product_menu">
+                        <li class="new_products" title="Sản phẩm mới"><a href="">Sản phẩm mới</a></li>
+                        <li class="top_sell_products" title="Sản phẩm bán chạy"><a href="">Sản phẩm bán chạy</a></li>
+                        <li class="austria" title="Áo">Áo</li>
+                        <li class="pants" title="Quần">Quần</li>
+                        <li class="shoes" title="Giày">Giày</li>
+                        <li class="belt" title="Thắt lưng">Thắt lưng</li>
+                        <li class="wallet" title="Ví">Ví</li>
+                    </ul>
+                </li>
+                <li class="header-item product_Sale" title="Sản phẩm Sale" >Sản phẩm Sale 
+                    <i class="info-item-down fas fa-angle-down"></i>
+                    <i class="info-item-up fas fa-angle-up"></i>
+                    <ul class="product_menu">
+                        <li class="austria" title="Áo">Áo</li>
+                        <li class="pants" title="Quần">Quần</li>
+                    </ul>
+                </li>
+                <li class="header-item collection"  title="Bộ sưu tập">Bộ sưu tập 
+                    <i class="info-item-down fas fa-angle-down"></i>
+                    <i class="info-item-up fas fa-angle-up"></i>
+                    <ul class="product_menu">
+                        <li class="austria" title="JEANS"><a href="">JEANS</a></li>
+                        <li class="pants" title="Áo Thun Lạnh - Cool"><a href="">Áo Thun Lạnh - Cool</a></li>
+                    </ul>
+                </li>
+                <li class="header-item shop_system" title="Hệ thống cửa hàng"><a href="./hethongcuahang.html">Hệ thống cửa hàng</a></li>
+                <li class="header-item policy" title="Chính sách"><a href="./chinhsach.html">Chính sách</a></li>
+                <li class="header-item fanpage" title="Fanpage"><a href="https://www.facebook.com/">Fanpage</a></li>
+            </ul>
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-8 d-flex header-right p-0">
+            <div class="d-flex ">
+                <div class="header-item search m-0" id="search">
+                    <input type="text" placeholder="Tìm kiếm" title="Tìm kiếm">
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <div class="header-item header_login" title="Đăng nhập">
+                    <div><i class="fa-regular fa-user"></i></div>
+                    <button class="" type="submit" ><span>Đăng Nhập</span></button>
+                </div>
+                <div class="header-item header_cart" title="Giỏ hàng">
+                    <div>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;" xml:space="preserve"><g><path d="M0,6v21h24V6H0z M22,25H2V8h20V25z"></path></g><g><path d="M12,2c3,0,3,2.3,3,4h2c0-2.8-1-6-5-6S7,3.2,7,6h2C9,4.3,9,2,12,2z"></path></g></svg>
+                        <span class="count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notification">
+            <div class=" icon-erro">
+                <span class="notification-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+                    <span class="fs-2">Thông báo!</span>
+                </span>
+            </div>
+            <div class=" copy-voucher">
+                <p class="m-0">Bạn đã sao chép mã giảm giá: <span id="value-voucher"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="main container">
+        <h2 class="d-flex fs-4 fw-bold text-uppercase pl-2">Hệ thống cửa hàng</h2>
+        <div class="d-flex infor-shop pt-4">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 item-shop p-0">
+                <div class="image-shop">
+                    <img src="https://theme.hstatic.net/1000210298/1001014170/14/maps_maker_shop_1.image_cua_hang_1.jpg?v=667" alt="">
+                </div>
+                <div class="address-shop">
+                    <p>Head Office: Số 173, Nguyễn Văn Trỗi, Mỗ Lao, Hà Đông, Hà Nội Phone: 0985674818</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 item-shop p-0">
+                <div class="image-shop">
+                    <img src="https://theme.hstatic.net/1000210298/1001014170/14/maps_maker_shop_1.image_cua_hang_2.jpg?v=667" alt="">
+                </div>
+                <div class="address-shop">
+                    <p>Store 23: Số 214 Bà Triệu, Hai Bà Trưng, Hà Nội Phone: 0396058447</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 item-shop p-0">
+                <div class="image-shop">
+                    <img src="https://theme.hstatic.net/1000210298/1001014170/14/maps_maker_shop_1.image_cua_hang_3.jpg?v=667" alt="">
+                </div>
+                <div class="address-shop">
+                    <p>Store 08: Số 620 Nguyễn Trãi, Thanh Xuân Phone: 0966601196</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 item-shop p-0">
+                <div class="image-shop">
+                    <img src="https://theme.hstatic.net/1000210298/1001014170/14/maps_maker_shop_1.image_cua_hang_4.jpg?v=667" alt="">
+                </div>
+                <div class="address-shop">
+                    <p>Store 24 : Số 51 Thái Hà, Hà Nội Phone: 0325469747</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 item-shop p-0">
+                <div class="image-shop">
+                    <img src="https://theme.hstatic.net/1000210298/1001014170/14/maps_maker_shop_1.image_cua_hang_5.jpg?v=667" alt="">
+                </div>
+                <div class="address-shop">
+                    <p>Store 16: Số 84 Trần Duy Hưng, Trung Hòa, Cầu giấy Phone: 0977196109</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 item-shop p-0">
+                <div class="image-shop">
+                    <img src="https://theme.hstatic.net/1000210298/1001014170/14/maps_maker_shop_1.image_cua_hang_6.jpg?v=667" alt="">
+                </div>
+                <div class="address-shop">
+                    <p>Store 13: Số 13, BT8, KĐT Xala, Phúc La, Hà Đông Phone: 0973734862</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 item-shop p-0">
+                <div class="image-shop">
+                    <img src="https://hptvietnam.vn/wp-content/uploads/2023/11/he-thong-cua-hang-pnj.jpg.webp" alt="">
+                </div>
+                <div class="address-shop">
+                    <p>Số 36 - 38 Hồ Sen, P. Hàng Kênh, Quận Lê Chân, Hải Phòng</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 item-shop p-0">
+                <div class="image-shop">
+                    <img src="https://sjc.com.vn/upload/sjcminhkhai_1690943395.jpg" alt="">
+                </div>
+                <div class="address-shop">
+                    <p>Số 182 Đà Nẵng, P. Lạc Viên, Quận Ngô Quyền, Hải Phòng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid section-1 d-flex justify-content-center align-items-center my-5 text-white">
+        <div class="section_showroom">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
+                    <h2 class="title m-0">
+                        <a href="/pages/he-thong-cua-hang" class="text-white text-decoration-none ">HỆ THỐNG LUNACY STORE TOÀN QUỐC</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section-2 pt-5 pb-4">
+        <div class="col-md-3 col-sm-6 col-12 p-0 m-0 mb-3">
+            <div class="d-flex flex-wrap support-item">				
+                <span class="title-support fw-bold py-2">- GỌI MUA HÀNG (08:00 - 22:00)</span>
+                <span class="hotline fw-bold"><i class="fa fa-phone"></i> <a class="text-decoration-none text-dark" href="tel:0963382338 (Nhanh 101)">0963382338 (Nhánh 101)</a></span>
+                <span class="text">Tất cả các ngày trong tuần</span>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 p-0 m-0 mb-3">
+            <div class="d-flex flex-wrap support-item">				
+                <span class="title-support fw-bold py-2">- GÓP Ý - KHIẾU NẠI (08:00 - 22:00)</span>
+                <span class="hotline fw-bold"><i class="fa fa-phone"></i> <a class="text-decoration-none text-dark" href="tel:0963382338 (Nhánh 102)">0963382338 (Nhánh 102)</a></span>
+                <span class="text">Các ngày trong tuần (Trừ ngày lễ)</span>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 p-0 m-0 mb-3">
+            <div class="d-flex flex-wrap support-item">
+                <span class="title-support fw-bold py-2">- ĐĂNG KÝ NHẬN THÔNG TIN MỚI TỪ WHITE ANT</span>
+                <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                <div class=" input-group pt-2">
+                    <input type="email" name="" id="" placeholder="Nhập email của bạn">
+                    <span class="input-group-btn">
+                        <input type="submit" class="btn text-white px-3 py-2" name="subscribe" id="subscribe" value="Đăng ký">
+                    </span>
+                </div>
+                <input type="text">
+            </div>
+        </div>
+        <div class="col-md-3 p-0 m-0">
+            <div class=" support-item">
+                <span class="d-flex title-support fw-bold py-2">LIKE WHITE ANT QUA MẠNG XÃ HỘI</span>
+                <div class="social">
+                    <ul class="d-flex flex list-unstyled">
+                        <li><a href="/"><i class="fa fa-twitter m-2"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook m-2"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa fa-youtube m-2"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram m-2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container footer d-flex mb-4 p-0">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 py-2 content-1 pl-2">
+            <div class="footer-title">
+                <p>Giới thiệu</p>
+            </div>
+            <div class="footer-content">
+                <p>
+                    Gọi đơn giản là nơi những ý tưởng, những sự sáng tạo bay bỏng đã được /Chú Em/ ấp ủ từ lâu. Bây giờ đã và đang thực hiện hoá bằng cách truyền tải các thông điệp lên từng sản phẩm. Đó sẽ là cầu nối để truyền đạt ý nghĩa một cách tốt nhất tới tất cả các bạn. 
+                    /Chú Em/ ở hiện tại và sau này rất mong muốn đồng hành cùng với các bạn và cùng nhau xây dựng một cộng đồng thời trang Streetwear văn minh, lành mạnh, đầy nhiệt huyết của tuổi trẻ. 
+                </p>
+                <div class="d-flex footer-social-network ">
+                    <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
+                        <div class="tiktok d-flex justify-content-center align-items-center">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
+                        <div class="facebook d-flex justify-content-center align-items-center ">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
+                        <div class="instagram d-flex justify-content-center align-items-center ">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 py-2 content-2">
+            <div class="footer-title">
+                <p>Thông tin liên hệ</p>
+            </div>
+            <div class="footer-contact">
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Tô Hiệu, Phường Hiệp Tân, Quận Tân Phú, TP.HCM</span>
+                </div>
+                <div class="number">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0968758488</span>
+                </div>
+                <div class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>sontruong.vn@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 py-2 content-3">
+            <div class="footer-title">
+                <p>Liên kết</p>
+            </div>
+            <div class="footer-content-item">
+                <ul class="list-unstyled" >
+                    <li class="item"><a class="text-decoration-none text-dark" href="" title="Giới thiệu">Giới thiệu</a></li>
+                    <li class="item py-2"><a class="text-decoration-none text-dark" href="" title="Chính sách đổi trả">Chính sách đổi trả</a></li>
+                    <li class="item"><a class="text-decoration-none text-dark" href="" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+                    <li class="item py-2"><a class="text-decoration-none text-dark" href="" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a></li>
+                    <li class="item"><a class="text-decoration-none text-dark" href="" title="Liên hệ">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 content-4 pr-2">
+            <div class="footer-title">
+                <p>Phương thức thanh toán</p>
+            </div>
+            <div class="footer-bank">
+                <ul class="list-unstyled">
+                    <li class="d-flex">
+                        <img width="35" height="35" src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-MoMo-Square.png" alt="">
+                        <p class="pl-2">Momo</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <p>Tiền mặt</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <p>Ngân hàng</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <p>Thẻ tín dụng Visa / Mastercard</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

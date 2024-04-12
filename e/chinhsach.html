@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="./Image/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/466513172f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/chinhsach.css">
+</head>
+<body>
+    <div class="container-fluid d-flex header m-0">
+        <div class="col-xl-8 col-lg-7 col-md-7 col-sm-2 col-4 d-flex header-left p-0 m-0">
+            <ul class="d-flex flex-wrap header-menu p-0">
+                <li class="header-item nav"><i class="fa-solid fa-bars"></i></li>
+                <li class="header-item home_page" title="Trang chủ"><a href="./index.html">Trang chủ</a></li>
+                <li class="header-item product" title="Sản phẩm">Sản phẩm 
+                    <i class="info-item-down fas fa-angle-down"></i>
+                    <i class="info-item-up fas fa-angle-up"></i>
+                    <ul class="product_menu">
+                        <li class="new_products" title="Sản phẩm mới"><a href="">Sản phẩm mới</a></li>
+                        <li class="top_sell_products" title="Sản phẩm bán chạy"><a href="">Sản phẩm bán chạy</a></li>
+                        <li class="austria" title="Áo">Áo</li>
+                        <li class="pants" title="Quần">Quần</li>
+                        <li class="shoes" title="Giày">Giày</li>
+                        <li class="belt" title="Thắt lưng">Thắt lưng</li>
+                        <li class="wallet" title="Ví">Ví</li>
+                    </ul>
+                </li>
+                <li class="header-item product_Sale" title="Sản phẩm Sale" >Sản phẩm Sale 
+                    <i class="info-item-down fas fa-angle-down"></i>
+                    <i class="info-item-up fas fa-angle-up"></i>
+                    <ul class="product_menu">
+                        <li class="austria" title="Áo">Áo</li>
+                        <li class="pants" title="Quần">Quần</li>
+                    </ul>
+                </li>
+                <li class="header-item collection"  title="Bộ sưu tập">Bộ sưu tập 
+                    <i class="info-item-down fas fa-angle-down"></i>
+                    <i class="info-item-up fas fa-angle-up"></i>
+                    <ul class="product_menu">
+                        <li class="austria" title="JEANS"><a href="">JEANS</a></li>
+                        <li class="pants" title="Áo Thun Lạnh - Cool"><a href="">Áo Thun Lạnh - Cool</a></li>
+                    </ul>
+                </li>
+                <li class="header-item shop_system" title="Hệ thống cửa hàng"><a href="./hethongcuahang.html">Hệ thống cửa hàng</a></li>
+                <li class="header-item policy" title="Chính sách"><a href="./chinhsach.html">Chính sách</a></li>
+                <li class="header-item fanpage" title="Fanpage"><a href="https://www.facebook.com/">Fanpage</a></li>
+            </ul>
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-8 d-flex header-right p-0">
+            <div class="d-flex ">
+                <div class="header-item search m-0" id="search">
+                    <input type="text" placeholder="Tìm kiếm" title="Tìm kiếm">
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <div class="header-item header_login" title="Đăng nhập">
+                    <div><i class="fa-regular fa-user"></i></div>
+                    <button class="" type="submit" ><span>Đăng Nhập</span></button>
+                </div>
+                <div class="header-item header_cart" title="Giỏ hàng">
+                    <div>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;" xml:space="preserve"><g><path d="M0,6v21h24V6H0z M22,25H2V8h20V25z"></path></g><g><path d="M12,2c3,0,3,2.3,3,4h2c0-2.8-1-6-5-6S7,3.2,7,6h2C9,4.3,9,2,12,2z"></path></g></svg>
+                        <span class="count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notification">
+            <div class=" icon-erro">
+                <span class="notification-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+                    <span class="fs-2">Thông báo!</span>
+                </span>
+            </div>
+            <div class=" copy-voucher">
+                <p class="m-0">Bạn đã sao chép mã giảm giá: <span id="value-voucher"></span></p>
+            </div>
+        </div>
+    </div>
+    <main class="container pr-0 pl-0">
+        <div class="section">
+            <div class="d-flex account-wrap ">
+                <div class="col-xl-4 col-lg-12 col-md-4 col-sm-4 col-4 account-left ">
+                    <div class="user-box">
+                        <div class="user-box__title py-3 px-1 fs-4 fw-bold">CHÍNH SÁCH</div>
+                        <ul class="list-unstyled ">
+                            <li>
+                                <a class="nav-link active px-0 show" id="tab1" data-toggle="tab" href="#chinh-sach-doi-tra" onclick="showTab('chinh-sach-doi-tra')"><p>Chính sách đổi trả</p></a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" id="tab2" data-toggle="tab" href="#chinh-sach-bao-hanh" onclick="showTab('chinh-sach-bao-hanh')"><p>Chính sách bảo hành</p></a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" id="tab3" data-toggle="tab" href="#chinh-sach-bao-mat" onclick="showTab('chinh-sach-bao-mat')"><p>Chính sách bảo mật</p></a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" id="tab4" data-toggle="tab" href="#dieu-khoan-su-dung" onclick="showTab('dieu-khoan-su-dung')"><p>Điều khoản sử dụng</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="user-box mr-5">
+                        <hr>
+                        <div class="user-box__title py-3 px-1 fs-4 fw-bold">HƯỚNG DẪN</div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="nav-link px-0" id="tab5" data-toggle="tab" href="#huong-dan-chon-size" onclick="showTab('huong-dan-chon-size')"><p>Hướng dẫn chọn size</p></a>
+                            </li>
+                            <li>
+                                <a class="nav-link px-0" id="tab6" data-toggle="tab" href="#phan-biet-phom-ao" onclick="showTab('phan-biet-phom-ao')"><p>Phân biệt phom áo</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-12 col-md-8 col-sm-8 col-8 account-right">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="chinh-sach-doi-tra">
+                            <h2>CHÍNH SÁCH ĐỔI TRẢ</h2>
+                            <hr>
+                            <div class="accordion-body">
+                                <h5>A. CHÍNH SÁCH ĐỔI HÀNG ONLINE</h5><br>
+                                <h6>1. Dịch vụ đổi hàng tận nơi:</h6><br>
+                                <p> - Đổi hàng tận nơi, shipper sẽ đến tận nhà để đổi hàng cho bạn.
+                                    - Áp dụng 01 lần đổi/ 01 đơn hàng. <br>
+                                    - Áp dụng đổi hàng với tất cả các sản phẩm (bao gồm sản phẩm trong chương trình sale) thời gian đổi hàng trong vòng 7 ngày kể từ ngày khách hàng nhận bưu phẩm.<br>
+                                    - Trường hợp sản phẩm hết size bạn cần, tụi mình sẽ hỗ trợ bạn đổi sang sản phẩm khác bằng giá trị hoặc cao hơn, trường hợp khách hàng không đồng ý đổi sản phẩm khác, bên mình sẽ refund lại giá trị đơn hàng. <br>
+                                    - Chi phí vận chuyển khi đổi hàng được Levents hỗ trợ 1 chiều cho bạn (bạn chỉ cần thanh toán phí ship khi nhận sản phẩm đúng) và 2 chiều đối với sản phẩm do lỗi sản xuất.
+                                </p> 
+                                <h6>2. Điều kiện đổi hàng</h6><br>
+                                <p> - Chỉ nhận đổi sản phẩm khi có trường hợp khách yêu cầu đổi size, phát sinh lỗi từ nhà sản xuất (ố màu, phai màu, lỗi chất liệu, lỗi đường may,...) hoặc giao nhầm sản phẩm.<br>
+                                    - Sản phẩm đổi phải chưa qua sử dụng, chưa qua giặt tẩy, không bị vấy bẩn, ám mùi, còn giữ nguyên hóa đơn mua hàng và nhãn mác, sản phẩm đổi phải còn nguyên quà tặng kèm (nếu có).<br>
+                                    - Sản phẩm đổi phải có giá trị tương đương hoặc cao hơn sản phẩm được đổi. Vui lòng thanh toán chi phí chênh lệch giá trị sản phẩm nếu có.
+                                </p> 
+                                <h6>3. Quy trình đổi hàng:</h6><br>
+                                <p> Khách hàng vui lòng đọc kỹ Điều kiện đổi hàng, kiểm tra kỹ sản phẩm trước khi đổi và thực hiện các bước sau:<br>
+                                    + Bước 1: Nhắn tin cho các kênh facebook hoặc Shopee, Lazada chính thức của Lunacy.<br>
+                                    + Bước 2: Cung cấp cho nhân viên video unbox sản phẩm theo hướng dẫn bên dưới.<br>
+                                    + Bước 3: Cung cấp cho tụi mình thông tin địa chỉ của bạn gồm: Họ tên, số điện thoại, địa chỉ đồng thời quay video gói hàng có dán thông tin (Họ tên, số điện thoại, địa chỉ)<br>
+                                    + Bước 4: Sau khi xác nhận đổi hàng, tụi mình gửi hàng đúng size/ mẫu về địa chỉ của bạn đồng thời shipper sẽ nhận sản phẩm sai size về của Lunacy.<br>
+                                    Cách thức quay video unbox sản phẩm:<br>
+                                    - Quay toàn bộ quá trình mở và kiểm tra từng món hàng<br>
+                                    - Clip phải rõ nét, trung thực không cắt ghép hay chỉnh sửa
+                                </p> 
+                                <h5>B. CHÍNH SÁCH ĐỔI HÀNG MUA TẠI CỬA HÀNG:</h5><br>
+                                <h6>1. Chính sách áp dụng:</h6><br>
+                                    - Chỉ áp dụng đổi hàng với sản phẩm nguyên giá, không áp dụng cho sản phẩm giảm giá.<br>
+                                    - Áp dụng 01 lần đổi/ 01 đơn hàng.<br>
+                                    - Thời gian đổi hàng trong vòng 7 ngày kể từ ngày xuất hoá đơn.<br>
+                                    - Áp dụng đổi hàng tại tất cả các cửa hàng Lunacy.<br><br>
+                                <h6>2. Điều kiện đổi hàng:</h6><br>
+                                    - Chỉ nhận đổi sản phẩm khi có trường hợp phát sinh lỗi từ nhà sản xuất (ố màu, phai màu, lỗi chất liệu, lỗi đường may,...) hoặc giao nhầm sản phẩm.<br>
+                                    - Chỉ nhận đổi Size với những sản phẩm cùng loại, không áp dụng đổi Size sang sản phẩm khác.<br>
+                                    - Sản phẩm đổi phải chưa qua sử dụng, chưa qua giặt tẩy, không bị vấy bẩn, ám mùi, còn giữ nguyên hóa đơn mua hàng và nhãn mác, sản phẩm đổi phải còn nguyên quà tặng kèm (nếu có).<br>
+                                    - Sản phẩm đổi phải có giá trị tương đương hoặc cao hơn sản phẩm được đổi. Vui lòng thanh toán chi phí chênh lệch giá trị sản phẩm nếu có.<br>
+    
+                                    Mọi thắc mắc về Chính sách đổi hàng, khách hàng vui lòng gọi đến hotline 098 360 51 70 để được bộ phận bán hàng hướng dẫn và giải quyết.<br>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="chinh-sach-bao-hanh">
+                            <h2>CHÍNH SÁCH BẢO HÀNH</h2>
+                            <hr>
+                            <div class="accordion-body">
+                                <h5>1. ĐIỀU KIỆN BẢO HÀNH</h5>  <br>
+                                <h6>Lunacy bảo hành miễn phí với tấc cả sản phẩm trong các trường hợp sau:</h6><br>
+                                    - Bảo hành miễn phí trong vòng 07 ngày kể từ ngày mua hàng <br>
+                                    - Sản phẩm có các sự cố kỹ thuật như:Đứt chỉ,đứt cúc,xù lông,bạc màu...<br>
+                                    - Sản phẩm bị lỗi do quá trình vận chuyển<br>
+                                    - Thu hồi và đổi hàng mới hoàn toàn miễn phí<br><br>
+                                <h6>2. NHỮNG TRƯỜNG HỢP KHÔNG ĐƯỢC BẢO HÀNH</h6> <br>
+                                    - Sản phẩm bị bám màu khi giặt chung sản phẩm khác <br>
+                                    - Sử dụng hoá chất lên sản phẩm<br>
+                                    - Dùng bàn chải chà mạnh lên sản phẩm<br>
+                                    - Sản phẩm bị hư hỏng do tác động từ bên ngoài hoặc bị vật nhọn làm rách.<br>
+                                    - Ủi và sấy ở nhiệt độ cao.<br>
+                                    - Sản phẩm có dấu hiệu đã qua sửa chửa ở nơi khác.<br><br>
+                                <h6>3. CÁC TRƯỜNG HỢP KHÁC</h6><br>
+                                <p> Mọi thông tin chi tiết khác hoặc các thắc mắc cần giải đáp thêm quý khách hàng vui lòng liên hệ hotline 098 360 51 70</p> 
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="chinh-sach-bao-mat">
+                            <h2>CHÍNH SÁCH BẢO MẬT</h2>
+                            <hr>
+                            <div class="accordion-body">
+                                <h5>1. MỤC ĐÍCH THU THẬP THÔNG TIN NGƯỜI TIÊU DÙNG</h5>  <br>
+                                <p>Cung cấp dịch vụ cho Khách hàng và quản lý,sử dụng thông tin cá nhân của Người Tiêu Dùng nhằm mục đích quản lý cơ sở dữ liệu về Người Tiêu Dùng và kịp thời xử lý các tình huống phát sinh(Nếu có).</p>
+                                <h5>2. PHẠM VI SỬ DỤNG THÔNG TIN CÁ NHÂN</h5>  <br>
+                                    - Website lunacy.vn sử dụng thông tin của Người Tiêu Dùng cung cấp để:
+                                    Cung cấp dịch vụ,thông tin sản phẩm đến Người Tiêu Dùng và Lunacy.<br>
+                                    - Gửi các thông báo về các hoạt động trao đổi thông tin giữa Người Tiêu Dùng và Lunacy.
+                                    - Ngăn ngừa các hoạt động phá huỷ, chiếm đoạt tài khoản người dùng của Người Tiêu Dùng.
+                                    - Liên lạc và giải quyết khiếu nại với Người Tiêu Dùng.
+                                    - Xác nhận và trao đổi thông tin về giao dịch của Người Tiêu Dùng tại Lunacy.
+                                    - Trong trường hợp có yêu cầu của cơ quan quản lý nhà nước có thẩm quyền.<br><br>
+                                <h5>3. THỜI GIAN LƯU TRỮ THÔNG TIN CÁ NHÂN</h5>  <br>
+                                <p>Không có thời hạn hoặc ngoại trừ trường hợp Người Tiêu Dùng gửi có yêu cầu huỷ tới cho Ban quản trị hoặc Công ty bị giải thể bị phá sản.</p>
+                                <h5>3. NHỮNG NGƯỜI HOẶC TỔ CHỨC CÓ THỂ ĐƯỢC TIẾP CẬN VỚI THÔNG TIN CÁ NHÂN CỦA NGƯỜI TIÊU DÙNG</h5>  <br>
+                                <p>Người tiêu dùng đồng ý rằng ,trong trường hợp cần thiết,các cơ quan tổ chức cá nhân sau có quyền được tiếp cận và thu thập các thông tin cá nhân của mình,bao gồm:</p>
+                                    - Ban quản trị.<br>
+                                    - Bên thứ ba có dịch vụ tích hợp website lunacy.vn.<br>
+                                    - Theo yêu cầu của cơ quan nhà nước có thẩm quyền.
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="dieu-khoan-su-dung">
+                            <h2>ĐIỀU KHOẢN SỬ DỤNG</h2>
+                            <hr>
+                            <div class="accordion-body">
+                                <p>Chào mừng bạn ghé thăm website chính thức của Lunacy</p>
+                                <p>Chúng tôi mong bạn vui lòng dành thời gian đọc và tìm hiểu những điều khoản về thoả thuận pháp lý giữa bạn và Lunacy như dưới đây.<br>
+                                    Thông qua việc truy cập,duyệt nôi dung,hoặc sử dụng bất kỳ nội dung,hình ảnh nào của trang thông tin điện tử này,bạn(người sử dụng) công nhận răng bạn đã đọc,hiểu và nhất trí với việc tuân thủ các quy định của những điều khoản này.Nếu bạn không nhất trí với những điều khoản này,xin vui lòng không sử dụng trang thông tin điện tử này.
+                                    Lunacy chịu trách nhiệm đảm bảo tính hợp pháp của việc cung cấp nội dung trên website đến người sử dụng.Mọi thông tin hình ảnh và toàn bộ nội dung được đăng tải trên website tuẩn thủ các quy định của pháp luật, và phù hợp với thuần phong mỹ tục Việt Nam.
+                                </p>
+                                <h5>1. QUYỀN VÀ TRÁCH NHIỆM CỦA LUNACY</h5>  <br>
+                                <p>
+                                    Lunacy có quyền thay đổi và/hoặc chấm dứt các nội dung,tính năng của một phần hay toàn bộ website mà không cần thông báo trước với người dùng.<br>
+                                    Lunacy có quyền thực hiện các biện pháp an ninh để bảo vệ và chông các truy cập trái phép hoặc sửa đổi trái phép,tiết lộ hoặc phá huỷ thông tin trên website.<br>
+                                    Khi sử dụng website, thông tin sẽ được truyền qua một phương tiện/thiết bị nằm ngoài sự kiểm soát của Lunacy.Theo đó Lunacy không chịu trách nhiệm cho hoặc liên quan đến bất kỳ sự chậm trể,thất bại,bị giản đoạn của bất kỳ dữ liệu hoặc các thông tin khác được truyền trong kết nối với việc sử dụng của Website.
+                                    <br>
+                                    Thông tin cá nhân như địa chỉ, email, số điện thoại của người sử dụng website (do người sử dụng tự nguyện cung cấp bằng các hình thức khác nhau trên website) có thể được sử dụng nội bộ cho mục đích nâng cấp các sản phẩm, dịch vụ của Lunacy. Lunacy cam kết không chủ động tiết lộ bất kỳ thông tin nào của người sử dụng cho bên thứ ba, ngoại trừ trường hợp có yêu cầu bằng văn bản của các đơn vị điều tra theo đúng luật pháp hiện hành. Khi đó, Lunacy sẽ thông báo tới người sử dụng bằng văn bản. Tuy nhiên, mặc dù có các Công nghệ bảo mật và hệ thống cũng được trang bị rất nhiều tính năng bảo mật, nhưng không một dữ liệu nào được truyền trên đường truyền internet mà có thể được bảo mật 100%. Do vậy, Lunacy không thể đưa ra một cam kết chắc chắn rằng thông tin bạn cung cấp cho chúng tôi sẽ được bảo mật một cách tuyệt đối, và cũng sẽ không chịu trách nhiệm trong trường hợp có sự truy cập trái phép thông tin cá nhân của người sử dụng. Tất cả các thông tin, tài liệu không mang tính chất riêng tư được người sử dụng đưa lên website đều không được xem là thông tin mật, Lunacy được phép toàn quyền sử dụng hay chuyền tải cho bất kỳ mục đích nào.
+                                    Lunacy được phép sử dụng bất kỳ ý tưởng hay khái niệm nào mà bạn đã đưa lên Website cho tất cả các mục đích không giới hạn, bao gồm cả việc phát triển, sản xuất hay tiếp thị sản phẩm. Lunacy không có trách nhiệm phải bồi thường hay thưởng cho người cung cấp.<br>
+                                    Bạn phải ý thức và bảo đảm những thông tin, tài liệu mà bạn gửi phải nằm trong quyền hạn sử dụng của bạn, điều đó có nghĩa Lunacy sẽ không vi phạm bất cứ quyền lợi nào của bên thứ ba.<br>
+                                    Lunacy CÓ quyền từ chối một số tài liệu bạn gửi mà không bắt buộc phản hồi lý do.
+                                </p>
+                                <h5>2. QUYỀN VÀ TRÁCH NHIỆM CỦA NGƯỜI DỤNG</h5>  <br>
+                                <p>
+                                    Bạn đảm bảo tuân theo pháp luật và các quy định liên quan đến việc sử dụng website của Lunacy; không can thiệp, gây ảnh hưởng đến việc sử dụng website của những người sử dụng khác, không can thiệp vào hoạt động và quản lý website của Lunacy<br>
+                                    Bạn nhận thức rõ và chấp nhận rằng Lunacy và/hoặc các công ty thành viên/đơn vị trực thuộc nhân viên Lunacy không chịu trách nhiệm đối với bất kỳ tổn thất, thiệt hại, chi phí phát sinh từ bất kỳ quyết định nào của bạn khi sử dụng bất kỳ thông tin nào trên website với bất kỳ nguyên nhân gì.<br>
+                                    Nếu bạn không bằng lòng với bất kỳ thông tin nào trên Website hoặc với bất kỳ điều khoản và điều kiện sử dụng thông tin trên website này thì phương thức duy nhất bạn nên thực hiện là chấm dứt truy cập/sử dụng thông tin trên website.
+                                </p>
+                                <h5>3. ĐIỀU KHOẢN CHUNG</h5><br>
+                                <p>Một điều khoản sử dụng bị vô hiệu theo quyết định của tòa án có thẩm quyền sẽ không ảnh hưởng đến tính hiệu lực của các điều khoản còn lại. <br>
+                                    Lunacy luôn hoan nghênh những ý kiến góp ý của bạn về nội dung website. Nếu Có một phần nào đó của website này mà bạn cho rằng đã có dấu hiệu vi phạm bản quyền của bên thứ ba, vui lòng gửi liên hệ với Ban Truyền Thông của Lunacy. <br>
+                                    Thông báo này và tất cả các điều khoản sử dụng tạo thành toàn bộ thỏa thuận giữa Lunacy và bạn liên quan đến việc sử dụng các thông tin trên website. Lunacy có thể điều chỉnh nội dung thông báo này bất cứ lúc nào bằng cách cập nhật lên website. Bạn nên thường xuyên truy cập website để theo dõi các quy định ràng buộc này khi sử dụng.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="huong-dan-chon-size">
+                            <h2 class="fz-18 fw-bold border-bottom border-5 border-C05 pb-15 mb-15">HƯỚNG DẪN CHỌN SIZE</h2>
+                            <img src="https://lunacy.vn/1428355432291766272/d/images/bang-size.jpg" alt="" class="d-block w-100 h-auto">
+                        </div>
+                        <div class="tab-pane fade" id="phan-biet-phom-ao">
+                            <h2 class="fz-18 fw-bold border-bottom border-5 border-C05 pb-15 mb-15">PHÂN BIỆT PHOM ÁO</h2>
+                            <img src="https://lunacy.vn/1428355432291766272/d/images/phan-biet-phom-ao.svg" alt="" class="d-block w-100 h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container footer d-flex mb-4 p-0">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 py-2 content-1 pl-2">
+            <div class="footer-title">
+                <p>Giới thiệu</p>
+            </div>
+            <div class="footer-content">
+                <p>
+                    Gọi đơn giản là nơi những ý tưởng, những sự sáng tạo bay bỏng đã được /Chú Em/ ấp ủ từ lâu. Bây giờ đã và đang thực hiện hoá bằng cách truyền tải các thông điệp lên từng sản phẩm. Đó sẽ là cầu nối để truyền đạt ý nghĩa một cách tốt nhất tới tất cả các bạn. 
+                    /Chú Em/ ở hiện tại và sau này rất mong muốn đồng hành cùng với các bạn và cùng nhau xây dựng một cộng đồng thời trang Streetwear văn minh, lành mạnh, đầy nhiệt huyết của tuổi trẻ. 
+                </p>
+                <div class="d-flex footer-social-network ">
+                    <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
+                        <div class="tiktok d-flex justify-content-center align-items-center">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
+                        <div class="facebook d-flex justify-content-center align-items-center ">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none">
+                        <div class="instagram d-flex justify-content-center align-items-center ">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 py-2 content-2">
+            <div class="footer-title">
+                <p>Thông tin liên hệ</p>
+            </div>
+            <div class="footer-contact">
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Tô Hiệu, Phường Hiệp Tân, Quận Tân Phú, TP.HCM</span>
+                </div>
+                <div class="number">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0968758488</span>
+                </div>
+                <div class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>sontruong.vn@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 py-2 content-3">
+            <div class="footer-title">
+                <p>Liên kết</p>
+            </div>
+            <div class="footer-content-item">
+                <ul class="list-unstyled" >
+                    <li class="item"><a class="text-decoration-none text-dark" href="" title="Giới thiệu">Giới thiệu</a></li>
+                    <li class="item py-2"><a class="text-decoration-none text-dark" href="" title="Chính sách đổi trả">Chính sách đổi trả</a></li>
+                    <li class="item"><a class="text-decoration-none text-dark" href="" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+                    <li class="item py-2"><a class="text-decoration-none text-dark" href="" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a></li>
+                    <li class="item"><a class="text-decoration-none text-dark" href="" title="Liên hệ">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 content-4 pr-2">
+            <div class="footer-title">
+                <p>Phương thức thanh toán</p>
+            </div>
+            <div class="footer-bank">
+                <ul class="list-unstyled">
+                    <li class="d-flex">
+                        <img width="35" height="35" src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-MoMo-Square.png" alt="">
+                        <p class="pl-2">Momo</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <p>Tiền mặt</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <p>Ngân hàng</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <p>Thẻ tín dụng Visa / Mastercard</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- <script src="./js/index.js"></script> -->
+</html>
+<script>
+    function showTab(contentId) {
+        // Ẩn tất cả các tab content
+        let tabContents = document.querySelectorAll('.tab-pane');
+        tabContents.forEach(function(tabContent) {
+            tabContent.classList.remove('show'); // Remove the 'show' class
+            tabContent.classList.remove('active'); // Remove the 'active' class
+        });
+        
+        // Hiển thị nội dung của tab được chọn
+        let selectedTabContent = document.getElementById(contentId);
+        selectedTabContent.classList.add('show'); // Add the 'show' class
+        selectedTabContent.classList.add('active'); // Add the 'active' class
+    }
+</script>

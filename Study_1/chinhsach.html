@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sơn</title>
+    <title>Chính sách</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="./Image/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/466513172f.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/chinhsach.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/chinhsach.css">
 </head>
 <body>
-    <div class="container-fluid d-flex header">
-        <div class="header-left">
-            <ul class="d-flex flex-wrap header-menu">
-                <li class="header-item home_page " title="Trang chủ"><a href="./index.html">Trang chủ</a></li>
+    <div class="container-fluid d-flex header m-0">
+        <div class="col-xl-8 col-lg-7 col-md-7 col-sm-2 col-4 d-flex header-left p-0 m-0">
+            <ul class="d-flex flex-wrap header-menu p-0">
+                <li class="header-item nav"><i class="fa-solid fa-bars"></i></li>
+                <li class="header-item home_page" title="Trang chủ"><a href="/index.html">Trang chủ</a></li>
                 <li class="header-item product" title="Sản phẩm">Sản phẩm 
                     <i class="info-item-down fas fa-angle-down"></i>
                     <i class="info-item-up fas fa-angle-up"></i>
@@ -47,66 +48,77 @@
                         <li class="pants" title="Áo Thun Lạnh - Cool"><a href="">Áo Thun Lạnh - Cool</a></li>
                     </ul>
                 </li>
-                <li class="header-item shop_system" title="Hệ thống cửa hàng"><a href="">Hệ thống cửa hàng</a></li>
-                <li class="header-item policy" title="Chính sách"><a href="">Chính sách</a></li>
+                <li class="header-item shop_system" title="Hệ thống cửa hàng"><a href="/hethongcuahang.html">Hệ thống cửa hàng</a></li>
+                <li class="header-item policy" title="Chính sách"><a href="/chinhsach.html">Chính sách</a></li>
                 <li class="header-item fanpage" title="Fanpage"><a href="https://www.facebook.com/">Fanpage</a></li>
             </ul>
         </div>
-        <div class="d-flex flex-wrap header-right">
-            <div class="d-flex flex-wrap search">
-                <input type="text" placeholder="Tìm kiếm" title="Tìm kiếm">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">
-                        <i class="fa-solid fa-arrow-right"></i>
+        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-8 d-flex header-right p-0">
+            <div class="d-flex ">
+                <div class="header-item search m-0" id="search">
+                    <input type="text" placeholder="Tìm kiếm" title="Tìm kiếm">
+                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <div class="header-item header_login" title="Đăng nhập">
+                    <div><i class="fa-regular fa-user"></i></div>
+                    <button class="" type="submit" ><span>Đăng Nhập</span></button>
+                </div>
+                <div class="header-item header_cart" title="Giỏ hàng">
+                    <div>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;" xml:space="preserve"><g><path d="M0,6v21h24V6H0z M22,25H2V8h20V25z"></path></g><g><path d="M12,2c3,0,3,2.3,3,4h2c0-2.8-1-6-5-6S7,3.2,7,6h2C9,4.3,9,2,12,2z"></path></g></svg>
+                        <span class="count">0</span>
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-wrap header-item header_login" title="Đăng nhập">
-                <div><i class="fa-regular fa-user"></i></div>
-                <button class="" type="submit" >Đăng Nhập</button>
+        </div>
+        <div class="notification">
+            <div class=" icon-erro">
+                <span class="notification-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+                    <span class="fs-2">Thông báo!</span>
+                </span>
             </div>
-            <div class="d-flex flex-wrap header-item header_cart" title="Giỏ hàng">
-                <div><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;" xml:space="preserve"><g><path d="M0,6v21h24V6H0z M22,25H2V8h20V25z"></path></g><g><path d="M12,2c3,0,3,2.3,3,4h2c0-2.8-1-6-5-6S7,3.2,7,6h2C9,4.3,9,2,12,2z"></path></g></svg>
-                <span class="count">0</span></div>
+            <div class=" copy-voucher">
+                <p class="m-0">Bạn đã sao chép mã giảm giá: <span id="value-voucher"></span></p>
             </div>
         </div>
     </div>
-    <main class="container " style="padding-top: 100px;">
+    <main class="container pr-0 pl-0">
         <div class="section">
             <div class="d-flex account-wrap ">
-                <div class="col-md-4 account-left ">
+                <div class="col-xl-4 col-lg-12 col-md-4 col-sm-4 col-4 account-left ">
                     <div class="user-box">
-                        <div class="user-box__title fw-bold">CHÍNH SÁCH</div>
+                        <div class="user-box__title py-3 px-1 fs-4 fw-bold">CHÍNH SÁCH</div>
                         <ul class="list-unstyled ">
                             <li>
-                                <a class="nav-link active show px-0" id="tab1" data-toggle="tab" href="#chinh-sach-doi-tra" onclick="showTab('chinh-sach-doi-tra')">Chính sách đổi trả</a>
+                                <a class="nav-link active px-0 show" id="tab1" data-toggle="tab" href="#chinh-sach-doi-tra" onclick="showTab('chinh-sach-doi-tra')"><p>Chính sách đổi trả</p></a>
                             </li>
                             <li>
-                                <a class="nav-link px-0" id="tab2" data-toggle="tab" href="#chinh-sach-bao-hanh" onclick="showTab('chinh-sach-bao-hanh')">Chính sách bảo hành</a>
+                                <a class="nav-link px-0" id="tab2" data-toggle="tab" href="#chinh-sach-bao-hanh" onclick="showTab('chinh-sach-bao-hanh')"><p>Chính sách bảo hành</p></a>
                             </li>
                             <li>
-                                <a class="nav-link px-0" id="tab3" data-toggle="tab" href="#chinh-sach-bao-mat" onclick="showTab('chinh-sach-bao-mat')">Chính sách bảo mật</a>
+                                <a class="nav-link px-0" id="tab3" data-toggle="tab" href="#chinh-sach-bao-mat" onclick="showTab('chinh-sach-bao-mat')"><p>Chính sách bảo mật</p></a>
                             </li>
                             <li>
-                                <a class="nav-link px-0" id="tab4" data-toggle="tab" href="#dieu-khoan-su-dung" onclick="showTab('dieu-khoan-su-dung')">Điều khoản sử dụng</a>
+                                <a class="nav-link px-0" id="tab4" data-toggle="tab" href="#dieu-khoan-su-dung" onclick="showTab('dieu-khoan-su-dung')"><p>Điều khoản sử dụng</p></a>
                             </li>
                         </ul>
                     </div>
                     
-                    <div class="user-box">
+                    <div class="user-box mr-5">
                         <hr>
-                        <div class="user-box__title fw-bold">HƯỚNG DẪN</div>
+                        <div class="user-box__title py-3 px-1 fs-4 fw-bold">HƯỚNG DẪN</div>
                         <ul class="list-unstyled">
                             <li>
-                                <a class="nav-link px-0" id="tab5" data-toggle="tab" href="#huong-dan-chon-size" onclick="showTab('huong-dan-chon-size')">Hướng dẫn chọn size</a>
+                                <a class="nav-link px-0" id="tab5" data-toggle="tab" href="#huong-dan-chon-size" onclick="showTab('huong-dan-chon-size')"><p>Hướng dẫn chọn size</p></a>
                             </li>
                             <li>
-                                <a class="nav-link px-0" id="tab6" data-toggle="tab" href="#phan-biet-phom-ao" onclick="showTab('phan-biet-phom-ao')">Phân biệt phom áo</a>
+                                <a class="nav-link px-0" id="tab6" data-toggle="tab" href="#phan-biet-phom-ao" onclick="showTab('phan-biet-phom-ao')"><p>Phân biệt phom áo</p></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-8 account-right">
+                <div class="col-xl-8 col-lg-12 col-md-8 col-sm-8 col-8 account-right">
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="chinh-sach-doi-tra">
                             <h2>CHÍNH SÁCH ĐỔI TRẢ</h2>
@@ -146,7 +158,7 @@
                                     - Chỉ nhận đổi Size với những sản phẩm cùng loại, không áp dụng đổi Size sang sản phẩm khác.<br>
                                     - Sản phẩm đổi phải chưa qua sử dụng, chưa qua giặt tẩy, không bị vấy bẩn, ám mùi, còn giữ nguyên hóa đơn mua hàng và nhãn mác, sản phẩm đổi phải còn nguyên quà tặng kèm (nếu có).<br>
                                     - Sản phẩm đổi phải có giá trị tương đương hoặc cao hơn sản phẩm được đổi. Vui lòng thanh toán chi phí chênh lệch giá trị sản phẩm nếu có.<br>
-
+    
                                     Mọi thắc mắc về Chính sách đổi hàng, khách hàng vui lòng gọi đến hotline 098 360 51 70 để được bộ phận bán hàng hướng dẫn và giải quyết.<br>
                             </div>
                         </div>
@@ -232,7 +244,7 @@
                             <img src="https://lunacy.vn/1428355432291766272/d/images/bang-size.jpg" alt="" class="d-block w-100 h-auto">
                         </div>
                         <div class="tab-pane fade" id="phan-biet-phom-ao">
-                            <h2 class="fz-18 fw-bold border-bottom border-5 border-C05 pb-15 mb-15">PHÂN BIỆT PHOM ÁO</h2>2
+                            <h2 class="fz-18 fw-bold border-bottom border-5 border-C05 pb-15 mb-15">PHÂN BIỆT PHOM ÁO</h2>
                             <img src="https://lunacy.vn/1428355432291766272/d/images/phan-biet-phom-ao.svg" alt="" class="d-block w-100 h-auto">
                         </div>
                     </div>
@@ -240,8 +252,9 @@
             </div>
         </div>
     </main>
-    <footer class="container footer d-flex mb-4">
-        <div class="col-md-4 py-2 content-1">
+
+    <footer class="container footer d-flex mb-4 p-0">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 py-2 content-1 pl-2">
             <div class="footer-title">
                 <p>Giới thiệu</p>
             </div>
@@ -269,7 +282,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 py-2 content-2">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 py-2 content-2">
             <div class="footer-title">
                 <p>Thông tin liên hệ</p>
             </div>
@@ -288,7 +301,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-2 py-2 content-3 p-0">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 py-2 content-3">
             <div class="footer-title">
                 <p>Liên kết</p>
             </div>
@@ -302,7 +315,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-3 content-4  py-2 px-0">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 content-4 pr-2">
             <div class="footer-title">
                 <p>Phương thức thanh toán</p>
             </div>
@@ -328,20 +341,21 @@
             </div>
         </div>
     </footer>
-    <script>
-        function showTab(contentId) {
-            // Ẩn tất cả các tab content
-            let tabContents = document.querySelectorAll('.tab-pane');
-            tabContents.forEach(function(tabContent) {
-                tabContent.classList.remove('show', 'active');
-            });
-        
-            // Hiển thị nội dung của tab được chọn
-            let selectedTabContent = document.getElementById(contentId);
-            selectedTabContent.classList.add('show', 'active');
-
-            
-        }
-    </script>
-    
+</body>
+<!-- <script src="./js/index.js"></script> -->
 </html>
+<script>
+    function showTab(contentId) {
+        // Ẩn tất cả các tab content
+        let tabContents = document.querySelectorAll('.tab-pane');
+        tabContents.forEach(function(tabContent) {
+            tabContent.classList.remove('show'); // Remove the 'show' class
+            tabContent.classList.remove('active'); // Remove the 'active' class
+        });
+        
+        // Hiển thị nội dung của tab được chọn
+        let selectedTabContent = document.getElementById(contentId);
+        selectedTabContent.classList.add('show'); // Add the 'show' class
+        selectedTabContent.classList.add('active'); // Add the 'active' class
+    }
+</script>

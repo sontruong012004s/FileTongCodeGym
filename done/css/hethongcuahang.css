@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background: white;
+}
+.main {
+    padding-top: 6em;
+    height: max-content;
+}
+main h2 {
+    padding: 10px;
+}
+.container {
+    overflow: hidden;
+}
+.infor-shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item-shop {
+    margin: 10px;
+    position: relative;
+}
+.image-shop {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-shop img {
+    width: auto;
+    min-width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.item-shop:hover .image-shop img {
+    transform: scale(1.1); 
+    opacity: 0.9;
+}
+.item-shop:hover .address-shop {
+    background-color: rgb(224, 222, 222);
+    opacity: 1;
+    color: blue;
+
+}
+
+.address-shop {
+    background-color: white;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* section-1 */
+.section-1 {
+    background-image: url(/image/hethongcuahang.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 270px;
+    width: 100%;
+}
+.row {
+    background-color: black;
+}
+.section-1 h2 {
+    letter-spacing: 1px;
+    padding: 13px;
+}
+
+/* section-2 */
+.section-2 {
+    border-top: 3px solid #16469e;
+    border-bottom: 2px solid #16469e;
+}
+.section-2 .title-support {
+    font-size: 12px;
+}
+.section-2 .hotline .fa {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    transform: translateY(-5px);
+}
+.section-2 a {
+    padding-top: 20px;
+    font-size: 30px;
+    color: black !important;
+}
+.section-2 .text {
+    font-size: 12px;
+}
+.section-2 .input-group input {
+    border: 1px solid #ccc;
+    font-weight: 400;
+    font-size: 13px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+.section-2 .input-group-btn {
+    background-color: black;
+    color: white !important;
+}
+.section-2 .input-group-btn input {
+    border: none;
+}
+.section-2 .input-group .btn {
+    z-index: 1 !important;
+}
+
+
+
+@media only screen and (max-width: 525px) {
+    .item-shop {
+        width: calc(50% - 20px);
+    }
+    .address-shop {
+        font-size: 11px !important;
+    }
+    .image-shop {
+        height: 200px !important;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .item-shop {
+        width: calc(50% - 20px);
+    }
+    .address-shop {
+        font-size: 14px;
+    }
+    .image-shop {
+        height: 200px !important;
+    }
+    .section-1 h2 {
+        font-size: 15px;
+    }
+
+    
+}
+
+/* sm */
+@media only screen and (min-width: 576px) {
+    .item-shop {
+        width: calc(50% - 20px);
+    }
+    .image-shop {
+        height: 300px !important;
+    }
+    .section-1 h2 {
+        font-size: 25px;
+    }
+    .section-2 .input-group input {
+        padding-left: 10px;
+        font-size: 10px;
+        height: 35px;
+    }
+}
+
+/* md */
+@media only screen and (min-width: 768px) {
+    .item-shop {
+        width: calc(33.333% - 20px); /* Chiếm 1/3 chiều rộng */
+    }
+    .image-shop {
+        height: 350px !important;
+    }
+    .section-2 .title-support {
+        font-size: 10px;
+    }
+    .section-2 .hotline .fa {
+        padding: 5px; 
+        transform: translateY(-3px);
+    }
+    .section-2 a {
+        font-size: 20px;
+    }
+    .section-2 .text {
+        font-size: 10px
+    }
+    .section-2 .input-group input {
+        padding-left: 10px;
+        padding-right: 0;
+        font-size: 7px;
+        height: 30px;
+    }
+
+
+}
+
+/* lg */
+@media only screen and (min-width: 992px) {
+    .item-shop {
+        width: calc(25% - 20px);
+    }
+    .section-2 .title-support {
+        font-size: 12px;
+    }
+    .section-2 .hotline .fa {
+        padding: 10px; 
+        transform: translateY(-5px);
+    }
+    .section-2 a {
+        font-size: 30px;
+    }
+    .section-2 .text {
+        font-size: 12px
+    }
+    .section-2 .input-group input {
+        padding-left: 20px;
+        padding-right: 0;
+        font-size: 10px;
+        height: 40px;
+    }
+    
+}

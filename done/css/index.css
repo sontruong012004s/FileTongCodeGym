@@ -65,6 +65,10 @@ body {
     background: #1b55e2;
     transition: background-color 0.3s;
 }
+li:before {
+    background-color: #f74f10 !important;
+    transition: 0.3s linear !important;
+}
 .header-menu .product:hover .product_menu,
 .header-menu .product_Sale:hover .product_menu,
 .header-menu .collection:hover .product_menu {
@@ -543,6 +547,9 @@ main.container-fluid .carousel-dark .carousel-indicators [data-bs-target] {
 .container.d-flex.justify-content-center {
     display: flex;
     justify-content: center;
+}
+.section-4 {
+    border-top: 2px solid #ccc;
 }
 .section-4 .assured-1 {
     flex-wrap: nowrap;

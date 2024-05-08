@@ -23,6 +23,7 @@ const NamePrice = products.map(product => ({ name: product.name, price: product.
 const Price100Map = products.filter(product => product.price > 100).map(product => product.name);
 const Price100Filter = products.filter(product => product.price > 100);
 
+
 console.log("Tên và giá của các sản phẩm:", NamePrice);
 console.log("Tên các sản phẩm có giá trên 100:", Price100Map);
 console.log("Các sản phẩm có giá trên 100:", Price100Filter);

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+</head>
+<body>
+    
+</body>
+<script>
+    // axios.get('https://restcountries.com/v3.1/all?fields=name,flags').then((res) => {
+    //     let list = res.data;
+    //     for(let i = 0;  i < list.length; i++){
+    //         if(list[i].name.common) {
+    //             document.write('<h1>' + list[i].name.common + '</h1>');
+    //         }
+    //     }
+    // })
+    axios.get('https://api-kent.netlify.app/.netlify/functions/api/vn')
+  .then((res) => {
+    const data = res.data.detail;
+
+    // Chuyển đổi object thành mảng
+    const provincesArray = Object.values(data);
+
+    // Sắp xếp mảng theo số ca tử vong giảm dần
+    provincesArray.sort((a, b) => parseInt(b.deaths.replace('.', '')) - parseInt(a.deaths.replace('.', '')));
+
+    // Lấy 3 tỉnh thành có số ca tử vong cao nhất
+    const top3Provinces = provincesArray.slice(0, 3);
+
+    // Hiển thị kết quả
+    for (const province of top3Provinces) {
+      const element = document.createElement('h1');
+      element.textContent = `${province.name}: ${province.deaths}`;
+      document.body.appendChild(element);
+    }
+  })
+  .catch((error) => {
+    console.error('Lỗi khi lấy dữ liệu:', error);
+  });
+
+
+
+
+</script>
+</html>

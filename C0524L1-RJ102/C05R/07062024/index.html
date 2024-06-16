@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+  </head>
+  <body>
+    <input type="text" oninput="search()" id="key" />
+    <div id="list"></div>
+    <script>
+      function search() {
+        let key = document.getElementById("key").value;
+        axios
+          .get(
+            "http://api.giphy.com/v1/gifs/search?q=" +
+              key +
+              "&api_key=JhoNB9V1qvN8CVNN6vXcIKXOAgrIXKqM"
+          )
+          .then((res) => {
+            let list = res.data.data;
+            let str = "";
+            for (let i = 0; i < list.length; i++) {
+              str += `<img src='${list[i].images.original.url}' style='width: 100px'>`;
+            }
+            document.getElementById("list").innerHTML = str;
+          })
+          .catch((error) => {
+            console.error("Error fetching GIFs:", error);
+          });
+      }
+
+      return parseInt(
+        document
+          .querySelector(
+            "#root > div > div > div > div.Tap_tapContainer__1IclA > div.Tap_tapInfoContainer__LZK72 > div > div"
+          )
+          .textContent.match(/\d+/)[0]
+      );
+
+      document
+        .querySelector(
+          "#__nuxt > div > main > div > div.user-tap.has-gap > button > div > div > picture > img"
+        )
+        .click();
+    </script>
+  </body>
+</html>

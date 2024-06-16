@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s1;
+        let s2;
+        let s3;
+        let count = 0;
+        axios.get('http://localhost:3000/students/1').then((res) => {
+            s1 = res.data;
+            count += s1.score;
+            axios.get('http://localhost:3000/students/2').then((res) => {
+                s2 = res.data;
+                count += s2.score;
+                axios.get('http://localhost:3000/students/3').then((res) => {
+                    s3 = res.data;
+                    count += s3.score;
+                });
+                console.log(count);
+            });
+        });
+    </script>
+    
+</body>
+</html>

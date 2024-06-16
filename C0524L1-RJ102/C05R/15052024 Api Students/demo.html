@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+</head>
+<body>
+    <input type="text" name="" id="s" oninput="search()">
+    <h2 id="maxArea"></h2>
+    <h2 id="maxPopulation"></h2>
+    <div id="list">
+        <div class="item">
+            <img src="" alt="">
+            <span>Area</span>
+            <span>Name</span>
+            <span>Population</span>
+        </div>
+    </div>
+    <script>
+        axios.get('https://restcountries.com/v3.1/all?fields=name,area,population,flags').then((res) => {
+            let list = res.data;
+            console.log(list)
+            let str =  ``;
+            let maxArea = list[0];
+            let maxPopulation = list[0];
+            for(let i = 0; i < list.length; i++) {
+                let item = list[i];
+
+                str += `<div><img style='width:100px' src='${item.flags.png}'>${item.name.common},${item.area}, ${item.population}</div>`;
+                if(item.area > maxArea.area) {
+                    maxArea = item;
+                }
+                if(item.population > maxPopulation.population) {
+                    maxPopulation = item;
+                }
+            }
+            document.getElementById('list').innerHTML = str;
+            document.getElementById('maxArea').innerHTML = maxArea.name.common + ', ' + maxArea.area;
+            document.getElementById('maxPopulation').innerHTML = maxPopulation.name.common + ', ' + maxPopulation.population;
+        })
+        function search(){
+            let key = document.getElementById('s').value;
+            axios.get('https://restcountries.com/v3.1/all?fields=name,area,population,flags').then((res) => {
+                let list = res.data;
+                let str =  ``;
+                list.map(item => {
+                    if(item.name.common.includes(key)) {
+                        str += `<div><img style='width:100px' src='${item.flags.png}'>${item.name.common},${item.area}, ${item.population}</div>`;
+                    }
+                })
+                document.getElementById('list').innerHTML = str;
+            })
+        }
+    </script>
+</body>
+</html>

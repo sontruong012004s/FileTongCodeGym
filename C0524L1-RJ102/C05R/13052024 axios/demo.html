@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        axios.get('https://restcountries.com/v3.1/all?fields=name,flags').then((res) => {
+            console.log(res)
+            let list = res.data;
+            for(let i = 0; i < list.length; i++) {
+                document.write('<h1>' + list[i].name.common + '</h1>')
+            }
+        })
+    </script>
+</body>
+</html>

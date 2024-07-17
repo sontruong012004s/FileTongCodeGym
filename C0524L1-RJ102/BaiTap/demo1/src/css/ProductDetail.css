@@ -1,0 +1,133 @@
+.custom-header_area {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.custom-container.custom-see-details {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.custom-product-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.custom-col-md-6 {
+    flex: 0 0 48%;
+}
+
+.custom-carousel {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.custom-carousel-img {
+    max-width: 100%;
+    height: 600px; 
+    object-fit: cover;
+}
+
+.custom-product-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.custom-product-price {
+    color: red;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.custom-product-stock, .custom-product-description {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.custom-product-description {
+    text-indent: 20px;
+    margin-bottom: 20px; 
+}
+
+.custom-shipping-info, .custom-quantity {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.custom-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.custom-quantity label {
+    margin-right: 10px;
+}
+
+.custom-quantity-input {
+    width: 60px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.custom-action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-add-to-cart-btn, .custom-buy-now-btn {
+    width: 48%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.custom-add-to-cart-btn {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+}
+
+.custom-buy-now-btn {
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+}
+
+.custom-add-to-cart-btn:hover {
+    background-color: #e64a19;
+}
+
+.custom-buy-now-btn:hover {
+    background-color: #c62828;
+}
+
+.custom-social-share {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.custom-social-share span {
+    margin-right: 10px;
+}
+
+.custom-social-share a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.custom-social-share a:hover {
+    color: #007bff;
+}

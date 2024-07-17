@@ -1,0 +1,58 @@
+.full-height {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid {
+    border-radius: 8px;
+    padding: 20px;
+}
+.login-card {
+    width: 50vh;
+    padding: 20px;
+    box-shadow: 0 0 100px rgba(8, 154, 199, 0.1);
+    border-radius: 15px;
+    background: aliceblue !important;
+}
+.text-center img {
+    width: 160px;
+}
+.card-footer {
+    margin-top: 10px;
+}
+.txt-primary {
+    color: #00b9f5;
+    font-size: 23px;
+}
+/* Email-Password */
+.text {
+    font-size: 20px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.form-control {
+    transition: border-color 0.3s ease-in-out;
+}
+.form-control:hover {
+    border-color: #007bff;
+}
+.forgot_password {
+    font-weight: 600;
+    float: right;
+    color: #00b9f5;
+}
+
+.btn-submit {
+    padding: 10px 130px;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 10px;
+}
+.register_text {
+    font-weight: 600;
+    color: #00b9f5;
+}
+.register_text:hover, .forgot_password:hover {
+    color: red;
+}

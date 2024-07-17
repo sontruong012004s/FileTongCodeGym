@@ -1,0 +1,90 @@
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-top: 1px solid #ddd; /* Đường kẻ giữa ảnh và nội dung */
+    padding-top: 10px; /* Khoảng cách giữa đường kẻ và nội dung */
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-buttons .btn {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.card-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Số dòng tối đa */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.btn-detail, .btn-add-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.btn-detail {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-add-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-detail:hover, .btn-add-cart:hover {
+    opacity: 0.9;
+}
+
+.row .card {
+    margin: 0 auto;
+}
+
+.row .card:hover {
+    border: solid 1px black;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 400px; /* Chiều cao cố định cho ảnh */
+    width: 100%;
+}
+.cart-container {
+    margin-top: 10px;
+}
+
+.btn-cart {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-cart .bi-cart {
+    font-size: 20px;
+}
+

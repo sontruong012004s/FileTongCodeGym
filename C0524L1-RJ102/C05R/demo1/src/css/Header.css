@@ -1,0 +1,123 @@
+.header_area {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item.active .nav-link {
+    color: #007bff;
+}
+
+.navbar-nav .dropdown-menu {
+    background: #fff;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-nav .dropdown-item {
+    color: #333;
+    padding: 0.5rem 1.5rem;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background: #f8f9fa;
+    color: #007bff;
+}
+
+.navbar-nav .dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-nav .btn {
+    margin: 0 10px;
+}
+
+.navbar-nav .btn .bi {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.navbar-nav .btn:hover .bi {
+    color: #007bff;
+}
+
+.navbar-nav .badge {
+    background: #007bff;
+    color: #fff;
+    font-size: 0.75rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.navbar-nav .btn-primary {
+    background: #007bff;
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar-nav .btn-primary:hover {
+    background: #0056b3;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border-top: 0;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+}
+
+.navbar-collapse {
+    overflow: visible;
+}
+
+.main-content {
+    padding-top: 100px; /* Đảm bảo nội dung không bị che khuất bởi header */
+}

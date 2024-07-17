@@ -1,0 +1,80 @@
+.bg-light-blue {
+    background-color: #add8e6; /* Light blue color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 0 !important;
+}
+.list-inline-item {
+    margin-right: 20px;
+    position: relative; /* Needed for absolute positioning of dropdown */
+}
+
+.product_menu {
+    /* display: none; */
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    padding: 10px;
+    list-style: none;
+    z-index: 1000;
+}
+
+.product:hover .product_menu {
+    display: block;
+}
+.product:hover .info-item-down {
+    display: none;
+}
+.product:hover .info-item-up {
+    display: block;
+    display: inline-flex;
+}
+.info-item-up {
+    display: none;
+}
+
+
+
+.container-fluid {
+    font-size: 20px;
+    border-radius: 0px !important;
+    padding-left: 40px !important;
+}
+.container-fluid li {
+    padding: 0 10px;
+}
+.col-6 {
+    background-color: red;
+    padding: 10px 20px;
+    max-width: fit-content;
+}
+
+
+
+/* Button styling */
+.Search button,
+.Logout button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Search button {
+    background-color: #007bff;
+    color: white;
+}
+
+.Search button:hover {
+    background-color: #0056b3;
+}
+
+.Logout button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.Logout button:hover {
+    background-color: #c82333;
+}

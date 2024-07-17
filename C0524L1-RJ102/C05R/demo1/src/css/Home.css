@@ -1,0 +1,458 @@
+/* Subscription area styles */
+.subscription-area {
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    top: 170px;
+    z-index: 2;
+}
+
+.subscription-inner {
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.subscription-inner h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.subscription-inner p {
+    margin-bottom: 30px;
+}
+
+.subscription-form .input-group {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscription-form .form-control {
+    border-radius: 30px 0 0 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.subscription-form .btn {
+    border-radius: 0 30px 30px 0;
+    padding: 20px 30px;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: #fff;
+}
+
+.subscription-form .btn:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+}
+.subscription-area .col-lg-6 {
+    width: 80% !important;
+    padding: 20px 0 !important;
+}
+
+/* Xem Chi Tiết */
+.row .card:hover {
+    border: solid 1px black;
+}
+
+.custom-select:hover,
+.form-inline > .search:hover {
+    border: solid 1px rgb(221, 0, 0);
+}
+
+body {
+    background-color: #f8f9fa; /* Nền tổng thể màu xám nhạt */
+}
+
+.container.product {
+    margin-top: 5px;
+    background-color: #ffffff; /* Màu nền trắng cho phần sản phẩm */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-inline {
+    padding-left: 10px;
+}
+.form-inline, #inputSearch{
+    margin-right: 5px;
+}
+.custom-select, .search, #inputSearch {
+    height: 33px;
+    width: max-content;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 13px;
+    padding-left: 7px;
+}
+.custom-select {
+    background-color: #f0f8ff;
+    margin-right: 5px;
+    font-size: 18px;
+
+}
+.btn-detail, .btn-add-cart {
+    border-color: black;
+}
+.btn-primary:hover {
+    background-color: #4CAF50;
+
+}
+/* sửa nút tăng giảm số lượng */
+.btn-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white !important;
+    color: black;
+    font-size: 14px;
+    border: solid 1px black;
+    border-radius: 5px; 
+    margin: 0 2px;
+}
+.btn-sm:hover {
+    color: black !important;
+    border: solid 1px red;
+}
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+.quantity-text {
+    margin: 0 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: center; /* Căn giữa nội dung */
+    vertical-align: middle; /* Căn giữa theo chiều dọc */
+    border: 1px solid #ddd; /* Đảm bảo đường viền của bảng có màu xám nhạt */
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table .quantity-container .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa các nút */
+    border: none; /* Xóa đường viền của .input-group */
+    flex-wrap:nowrap;
+}
+
+.table .quantity-container .input-group .btn {
+    margin: 0;
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd; /* Đặt lại đường viền cho các nút */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table .quantity-container .input-group .form-control {
+    width: 50px;
+    text-align: center;
+    border-radius: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border: 1px solid #ddd; /* Đặt lại đường viền cho ô nhập liệu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.table .quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa nội dung */
+    border: none; /* Xóa đường viền của quantity-container */
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-bordered th, .table-bordered td {
+    margin-top: 10px;
+}
+
+.delete {
+    float: right;
+    border-radius: 10px;
+    padding: 3px 10px;
+    margin-bottom: 5px;
+    color: white;
+    background: #0d6efd;
+}
+
+.table .btn {
+    margin: 0 auto;
+    display: block;
+}
+
+.main-content {
+    padding-top: 60px;
+}
+
+/* CSS giỏ hàng */
+/* CSS giỏ hàng */
+.cart-container {
+    margin-top: -40px !important;
+    position: fixed;
+    right: 20px;
+    top: 100px; /* Điều chỉnh khoảng cách từ top nếu cần */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px; /* Tăng độ rộng của giỏ hàng */
+    max-width: 90%; /* Đặt chiều rộng tối đa để tránh chiếm quá nhiều không gian */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    overflow-y: auto; /* Đảm bảo giỏ hàng có thể cuộn nếu nội dung quá dài */
+    max-height: 80vh; /* Đặt chiều cao tối đa để tránh che khuất quá nhiều nội dung */
+}
+
+.cart-container .delete {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Làm cho nút xóa tất cả chiếm toàn bộ chiều rộng */
+    text-align: center; /* Căn giữa văn bản trong nút */
+    margin-bottom: 10px; /* Khoảng cách phía dưới nút */
+}
+
+.cart-container .table {
+    margin-top: 10px;
+    width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng của giỏ hàng */
+}
+
+
+.cart-container .table th, .cart-container .table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.cart-container .table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cart-container .quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-container .quantity-container .btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cart-container .quantity-container .form-control {
+    width: 50px;
+    text-align: center;
+}
+
+.cart-container .btn-sm.btn-danger {
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px 3px;
+}
+
+.cart-container .btn-sm.btn-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: black;
+}
+
+.cart-container .btn-sm.btn-secondary {
+    border-color: #ddd;
+}
+
+.cart-container .btn-sm.btn-secondary:hover {
+    background-color: #f8f9fa;
+}
+
+/* CSS khác */
+body {
+    background-color: #f8f9fa; /* Nền tổng thể màu xám nhạt */
+}
+
+.container.product {
+    background-color: #ffffff; /* Màu nền trắng cho phần sản phẩm */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-inline {
+    padding-left: 10px;
+}
+.form-inline, #inputSearch {
+    margin-right: 5px;
+}
+.custom-select, .search, #inputSearch {
+    height: 33px;
+    width: max-content;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 13px;
+    padding-left: 7px;
+}
+.custom-select {
+    background-color: #f0f8ff;
+    margin-right: 5px;
+    font-size: 18px;
+
+}
+.btn-detail, .btn-add-cart {
+    border-color: black;
+}
+
+.btn-primary:hover {
+    background-color: #4CAF50;
+}
+
+/* sửa nút tăng giảm số lượng */
+.btn-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white !important;
+    color: black;
+    font-size: 14px;
+    border: solid 1px black;
+    border-radius: 5px; 
+    margin: 0 2px;
+}
+.btn-sm:hover {
+    color: black !important;
+    border: solid 1px red;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-text {
+    margin: 0 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: center; /* Căn giữa nội dung */
+    vertical-align: middle; /* Căn giữa theo chiều dọc */
+    border: 1px solid #ddd; /* Đảm bảo đường viền của bảng có màu xám nhạt */
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table .quantity-container .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa các nút */
+    border: none; /* Xóa đường viền của .input-group */
+    flex-wrap:nowrap;
+}
+
+.table .quantity-container .input-group .btn {
+    margin: 0;
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd; /* Đặt lại đường viền cho các nút */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table .quantity-container .input-group .form-control {
+    width: 50px;
+    text-align: center;
+    border-radius: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border: 1px solid #ddd; /* Đặt lại đường viền cho ô nhập liệu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.table .quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa nội dung */
+    border: none; /* Xóa đường viền của quantity-container */
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-bordered th, .table-bordered td {
+    margin-top: 10px;
+}
+
+.delete {
+    float: right;
+    border-radius: 10px;
+    padding: 3px 10px;
+    margin-bottom: 5px;
+    color: white;
+    background: #0d6efd;
+}
+
+.table .btn {
+    margin: 0 auto;
+    display: block;
+}
+
+.main-content {
+    padding-top: 60px;
+}
